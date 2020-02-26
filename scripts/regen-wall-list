@@ -1,0 +1,4 @@
+#!/bin/env fish
+cd $WALLPAPER
+rm -f .wall-list
+touch .wall-list

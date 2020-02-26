@@ -1,0 +1,5 @@
+#!/bin/env fish
+
+set -l wall (tail -n 1 /home/luc/.fehbg | sed -e "s/.jpeg\(.*\)\'/\1/" | sed -e "s/home\(.*\)luc/\1/" | sed -e "s/Images\(.*\)wallpapers/\1/" | sed -e "s/\/\/\/\/\(.*\)\/wallpaper/\1/" | sed "s/\.jpg\(.*\)/\1/" | sed "s/\.png\(.*\)/\1/" | sed "s/feh\ --no-fehbg\ --bg-fill\ \(.*\)/\1/" | xargs echo "")
+
+echo $wall

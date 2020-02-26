@@ -1,2 +1,2 @@
-# dotfiles
-Here's my scripts and configs
+# Dotfiles
+Here's my scripts and configs. Hope you enjoy

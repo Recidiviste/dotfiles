@@ -1,0 +1,6 @@
+#!/bin/fish
+
+for wal in (cat $WALLPAPER/.wall-list)
+            feh --bg-fill $WALLPAPER/$wal
+            sleep 0.5
+end

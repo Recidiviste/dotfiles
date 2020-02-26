@@ -1,0 +1,7 @@
+rofi.modi:window,drun,run,calc
+rofi.drun-icon-theme: Papirus-Dark
+rofi.show-icons: true
+rofi.sidebar-mode: true
+rofi.m: -4
+rofi.theme: onedark
+rofi.theme: /usr/share/rofi/themes/gruvbox-dark-hard.rasi

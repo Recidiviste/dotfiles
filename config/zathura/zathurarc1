@@ -1,0 +1,41 @@
+# Colors
+set recolor-reverse-video 	"false"
+set font                        "Source Code Pro Regular 11"
+set default-bg                  "#2f3136" #06
+set default-fg                  "#e2c8c7" #01
+
+set statusbar-bg                "#181a1b" #04
+set statusbar-fg                "#e2c8c7" #02
+
+set inputbar-bg                 "#111111" # currently not used
+set inputbar-fg                 "#e2c8c7" #02
+
+set notification-error-bg       "#111111" #08
+set notification-error-fg       "#e2c8c7" #06
+
+set notification-warning-bg     "#1c1e26" #08
+set notification-warning-fg     "#e2c8c7" #06
+
+set highlight-color             "#F4BF75" #0A
+set highlight-active-color      "#AA759F" #08
+
+set highlight-color             "#111111" #0A
+set highlight-active-color      "#e2c8c7" #08
+
+set completion-highlight-bg     "#111111" #0C
+set completion-highlight-fg     "#e2c8c7" #05
+
+set completion-bg               "#111111" #05
+set completion-fg               "#e2c8c7" #0C
+
+set notification-bg             "#111111" #0B
+set notification-fg             "#e2c8c7" #07
+
+set recolor-lightcolor          "#202225" #06
+set recolor-darkcolor           "#e2c8c7" #02
+set recolor                     "true"
+
+# setting recolor-keephue true will keep any color your pdf
+set recolor-keephue "true"
+
+set selection-clipboard clipboard

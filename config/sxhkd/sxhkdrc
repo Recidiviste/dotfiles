@@ -1,0 +1,177 @@
+######################
+# Terminal emulators #
+######################
+super + Return
+	termite
+super + shift + Return
+	/home/luc/bin/st
+super + BackSpace
+	urxvt
+super + c
+	/home/luc/bin/draw_term
+
+#####################
+# Program launchers #
+#####################
+super + a
+	rofi -show run -columns 2
+super + o
+	rofi -show drun -columns 2 -show-icons -modi drun
+super + shift + o
+	rofi -show window
+super + d
+	dmenu_run
+super + shift + d
+	networkmanager_dmenu
+super + shift + y
+	btmenu
+super + e
+	rofi -show calc -modi calc -no-show-match -no-sort -lines 2
+super + u 
+	rofi-theme-selector
+super + button3
+	jgmenu_run &
+
+#################
+# File Managers #
+#################
+super + p
+	thunar
+super + shift + p
+	termite -e "vifm"
+
+################
+# Web Browsers #
+################
+super + t
+	firefox
+super + shift + t
+	/home/luc/bin/surf /home/luc/Build/Github/perso/startpage/index.html
+super + n
+	qutebrowser
+
+#########
+# Print #
+#########
+Print
+	i3-scrot
+
+##################
+# Volume Control #
+##################
+XF86AudioLowerVolume
+	volume-control dec
+XF86AudioRaiseVolume
+	volume-control inc
+XF86AudioMute
+	volume-control mute
+
+#########################
+# Restart bspwm/polybar #
+#########################
+super + shift + r
+	bspc wm -r
+super + shift + q
+	$HOME/.config/polybar/launch.sh
+
+###################
+# Polybar Control #
+###################
+super + q
+	polybar-msg cmd toggle
+
+##############
+# Exit bspwm #
+##############
+super + shift + e
+	/home/luc/bin/powermenu
+
+##############
+# Lock bspwm #
+##############
+super + shift + f
+	betterlockscreen -l dim
+super + shift + z
+	mantablockscreen -cc
+#	i3lock-fancy
+super + shift + s
+	gllock
+
+#####################
+# Wallpaper Control #
+#####################
+super + i
+	/home/luc/bin/random-wall
+super + shift + i
+	/home/luc/bin/current-wal
+
+###############
+# MPD Control #
+###############
+XF86Audio{Play,Pause,Next,Prev,Stop}
+	/home/luc/bin/mpd-control {toggle,toggle,next,prev,stop}
+shift + XF86Audio{Stop,Play,Pause,Prev}
+	/home/luc/bin/mpd-control {volume-up,volume-down,volume-down,menu}
+
+#####################
+# Backlight Control #
+#####################
+XF86MonBrightness{Up,Down}
+	backlight-control {inc,dec}
+
+#################
+# Close or Kill #
+#################
+super + {shift + a,r}
+	bspc node -{c,k}
+
+###################
+# State and flags #
+###################
+super + {s,z,shift + space}
+	bspc node -t {tiled,pseudo_tiled,floating}
+super + {h,l,k,j}
+	bspc node -g {hidden,locked,sticky,private}
+super + shift + h
+	bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off
+super + f
+	bspc node -t fullscreen
+
+#########
+# Focus #
+#########
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+super + {_,shift + }{ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+super + g
+	bspc node -s biggest
+super + m
+	bspc desktop -l next
+super + Tab
+	skippy-xd &
+
+#############
+# Preselect #
+#############
+super + KP_{4,8,6,2,5}
+	bspc node -p {west,north,east,south,cancel}
+
+##########################
+# Move a floating window #
+##########################
+super + alt + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+############################
+# Resize a floating window #
+############################
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+
+#####################
+# Notification dock #
+#####################
+super + shift + u
+	kill -s USR1 (pidof deadd-notification-center)

@@ -1,0 +1,798 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/luc/
+	..
+1574258231
+'b
+	/home/luc/bin/
+	..
+1576772718
+'d
+	/home/luc/Documents/
+	..
+1576772718
+'h
+	/home/luc/
+	..
+1576772718
+'l
+	/home/luc/Documents/LaTeX/
+	..
+1576772718
+'m
+	/home/luc/Musique/
+	..
+1576772718
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l16,2
+r2
+
+# Left window history (oldest to newest):
+d/home/luc
+	Documents
+7
+d/home/luc/Documents
+	Paquets inutilement notables
+18
+d/home/luc/.local/share/fonts
+	Input_Fonts
+1
+d/home/luc/.local/share/fonts/Input_Fonts
+	InputSans
+2
+d/home/luc/.local/share/fonts
+	Input_Fonts
+1
+d/home/luc/.local/share
+	fonts
+27
+d/home/luc/.local
+	share
+5
+d/home/luc
+	.local
+4
+d/home
+	luc
+2
+d/home/luc
+	.reicast
+19
+d/home/luc/Documents/Python
+	pydf2img.py
+5
+d/home/luc/Documents/To Read/Thanks Allen !/Prog
+	elemprog_2019-09-10.pdf
+1
+d/home/luc/Documents/To Read/Thanks Allen !/CS
+	MIPI14-cours-06.pdf
+5
+d/home/luc/Documents/To Read/Thanks Allen !
+	Excercises
+3
+d/home/luc/Documents/To Read
+	Thanks Allen !
+1
+d/home/luc/Documents
+	To Read
+16
+d/home/luc
+	.TeXmacs
+2
+d/home/luc/Documents/To Read/Thanks Allen !
+	Physics
+5
+d/home/luc/Documents/To Read/Thanks Allen !/Physics
+	TD_MP1__TD1-5_04sept.pdf
+3
+d/home/luc/Documents/To Read/Thanks Allen !
+	.zip
+7
+d/home/luc/Documents/To Read
+	Thanks Allen !
+1
+d/home/luc/Documents/To Read/Thanks Allen !
+	.zip
+7
+d/home/luc/Documents/To Read
+	Thanks Allen !
+1
+d/home/luc/Documents
+	Philo
+11
+d/home/luc/Documents/Philo
+	LA CROYANCE
+13
+d/home/luc/Documents
+	Markdown
+9
+d/home/luc/Documents/Markdown
+	..
+0
+d/home/luc/Documents
+	C
+2
+d/home/luc/Documents/C
+	Essais
+1
+d/home/luc/Documents/C/Essais
+	..
+0
+d/home/luc/Documents/C
+	Essais
+1
+d/home/luc/Documents
+	C
+2
+d/home/luc
+	.QuickWall
+1
+d/home/luc/.QuickWall
+	ljuBktTzgRQ.jpg
+1
+d/home/luc/.config/rofi
+	config
+2
+d/usr/share/plymouth/themes
+	Arch-Wireframe-Plymouth-Theme
+1
+d/usr/share/plymouth/themes/Arch-Wireframe-Plymouth-Theme
+	arch-wireframe.plymouth
+6
+d/usr/share/plymouth/themes
+	..
+0
+d/usr/share/lightdm-webkit
+	themes
+1
+d/usr/share/lightdm-webkit/themes
+	lightdm-webkit-theme-aether
+3
+d/usr/share/lightdm-webkit/themes/lightdm-webkit-theme-aether
+	src
+2
+d/usr/share/lightdm-webkit/themes/lightdm-webkit-theme-aether/src
+	img
+3
+d/usr/share/lightdm-webkit/themes/lightdm-webkit-theme-aether/src/img
+	wallpapers
+3
+d/usr/share/lightdm-webkit/themes/lightdm-webkit-theme-aether/src/img/wallpapers
+	..
+0
+d/usr/share/sddm/themes/abstractdark
+	background.png
+6
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Math
+	Suites.tex
+22
+d/home/luc/Vidéos/Séries
+	..
+0
+d/home/luc/Vidéos
+	Séries Audio
+4
+d/home/luc/Vidéos/Séries Audio
+	Donjon De Naheulbeuk
+2
+d/home/luc/Vidéos
+	Séries Audio
+4
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches
+	Philo
+4
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Math
+	Suites.tex
+28
+d/home/luc/Téléchargements/Torrent
+	Doctor.Who.2005.S01.1080p.BluRay.x264-SHORTBREHD[rartv]
+1
+d/home/luc/Téléchargements/Torrent/Doctor.Who.2005.S01.1080p.BluRay.x264-SHORTBREHD[rartv]
+	doctor.who.2005.s01e02.1080p.bluray.x264-shortbrehd.mkv
+2
+d/home/luc
+	.QuickWall
+1
+d/home/luc/.QuickWall
+	ljuBktTzgRQ.jpg
+1
+d/home/luc
+	Documents
+47
+d/home/luc/Documents
+	C
+2
+d/home/luc/Documents/C
+	Essais
+1
+d/home/luc/Documents/C/Essais
+	suite.c
+11
+d/home/luc
+	Downloads
+47
+d/home/luc/Downloads
+	..
+0
+d/home/luc
+	Downloads
+47
+d/home/luc/Downloads
+	..
+0
+d/home/luc
+	Music
+50
+d/home/luc/Documents/LaTeX
+	Années
+1
+d/home/luc/Documents
+	C
+2
+d/home/luc/Documents/C
+	NPeriodic
+2
+d/home/luc/Documents/C/NPeriodic
+	..
+0
+d/home/luc/Documents/C
+	Ncurses
+3
+d/home/luc/Documents/C/Ncurses
+	Documentation
+1
+d/home/luc/Documents/C/Ncurses/Documentation
+	..
+0
+d/home/luc/Documents/C/Ncurses
+	Programmes
+2
+d/home/luc/Documents/C/Ncurses/Programmes
+	Essais
+1
+d/home/luc/Documents/C/Ncurses/Programmes/Essais
+	..
+0
+d/home/luc/Documents/C/Ncurses/Programmes
+	Essais
+1
+d/home/luc/Documents/C/Ncurses/Programmes/Essais
+	src
+2
+d/home/luc/Documents/C/Ncurses/Programmes/Essais/src
+	first_programm.c
+3
+d/home/luc/Documents
+	Go
+5
+d/home/luc/Documents/Go
+	Essais
+1
+d/home/luc/Documents/Go/Essais
+	..
+0
+d/home/luc/Documents/Go
+	..
+0
+d/home/luc/Documents
+	Haskell
+7
+d/home/luc/Documents/Haskell
+	..
+0
+d/home/luc/Documents
+	Documentation
+4
+d/home/luc/.cache/wal
+	schemes
+1
+d/home/luc/.cache/wal/schemes
+	_home_luc_Images_wallpapers_wallpaper315_jpg_dark_None_None_1.1.0.json
+5
+d/home/luc/Images/wallpapers
+	wallpaper924.png
+51
+d/home/luc/Images
+	wallpapers
+7
+d/home/luc/Bureau/VVVVVV
+	data.zip
+7
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Histoire-Géo/Transcription
+	..
+0
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Histoire-Géo
+	..
+0
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches
+	Prepa_Math
+6
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Prepa_Math
+	Logique-page2.png
+7
+d/home/luc/Documents/Documentation/C
+	theCprogrammingLanguage.pdf
+5
+d/home/luc/Documents/Documentation
+	Python
+7
+d/home/luc/Documents/Documentation/Python
+	Non-Programmer's_Tutorial_for_Python_3.pdf
+1
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Physique-Chimie
+	images
+1
+d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Physique-Chimie/images
+	graphe_rectiligne_uniformement_varie.png
+7
+d/home/luc/Documents/To Read/Thanks Allen !
+	Lessons.zip
+6
+d
+
+# Right window history (oldest to newest):
+D/home/luc/Documents/LaTeX/Années/Terminale/Devoirs/Musique
+	caravan_palace.log
+2
+D/home/luc/Documents/LaTeX/Années/Terminale/Devoirs
+	Philo
+5
+D/home/luc
+	bin
+14
+D/home/luc/bin
+	betterdiscordctl
+7
+D/home/luc
+	bin
+14
+D/home/luc/bin
+	battery
+6
+D/home/luc
+	Build
+1
+D/home/luc/Build
+	Github
+2
+D/home/luc/Build/Github
+	perso
+2
+D/home/luc/Build/Github/perso
+	..
+0
+D/home/luc/Build/Github
+	externals
+1
+D/home/luc/Build/Github/externals
+	2048.c
+1
+D/home/luc/Build/Github/externals/2048.c
+	Makefile
+2
+D/root
+	..
+0
+D/
+	home
+4
+D/home
+	luc
+2
+D/home/luc
+	Téléchargements
+12
+D/home/luc/Téléchargements
+	PDF
+2
+D/home/luc/Téléchargements/PDF
+	cg2018_01.pdf
+5
+D/home/luc/Téléchargements
+	PDF
+2
+D/home/luc/Téléchargements/PDF
+	concours-general-mathematiques-2016-corrige.pdf
+6
+D/home/luc/Téléchargements
+	OCaml
+2
+D/home/luc/Téléchargements/OCaml
+	..
+0
+D/home/luc/Téléchargements
+	PDF
+3
+D/home/luc/Téléchargements/PDF
+	concours-general-mathematiques-2016-corrige.pdf
+6
+D/home/luc/Téléchargements
+	PDF
+2
+D/home/luc/Téléchargements/PDF
+	concours-general-mathematiques-2018-corrige.pdf
+7
+D/home/luc/Téléchargements
+	Input-Font
+1
+D/home/luc/Téléchargements/Input-Font
+	Scripts
+1
+D/home/luc/Téléchargements/Input-Font/Scripts
+	..
+0
+D/home/luc/Téléchargements/Input-Font
+	Scripts
+1
+D/home/luc/Téléchargements
+	Input-Font
+1
+D/home/luc
+	Music
+7
+D/home/luc/Music
+	..
+0
+D/home/luc
+	Downloads
+4
+D/home/luc/Downloads
+	..
+0
+D/home/luc
+	GPUCache
+5
+D/home/luc/GPUCache
+	..
+0
+D/home/luc
+	Documents
+3
+D/home/luc/Documents
+	Python
+12
+D/home/luc/Documents/Python
+	periodic
+2
+D/home/luc/Documents/Python/periodic
+	..
+0
+D/home/luc/Documents/Python
+	Exercises
+1
+D/home/luc/Documents/Python/Exercises
+	..
+0
+D/home/luc/Documents/Python
+	sort
+3
+D/home/luc/Documents/Python/sort
+	..
+0
+D/home/luc/Documents/Python
+	sort
+3
+D/home/luc/Documents
+	SQLite3
+13
+D/home/luc/Documents/SQLite3
+	..
+0
+D/home/luc/Documents
+	To Read
+16
+D/home/luc/Documents/To Read
+	..
+0
+D/home/luc/Documents
+	mega_sync
+17
+D/home/luc/Documents/mega_sync
+	PDF
+1
+D/home/luc/Documents/mega_sync/PDF
+	..
+0
+D/home/luc/Documents/mega_sync
+	Sources
+2
+D/home/luc/Documents/mega_sync/Sources
+	..
+0
+D/home/luc/Documents/mega_sync
+	Sources
+2
+D/home/luc/Documents
+	Philo
+11
+D/home/luc/Documents/Philo
+	..
+0
+D/home/luc/Documents
+	MuseScore3
+10
+D/home/luc/Documents/MuseScore3
+	..
+0
+D/home/luc/Documents
+	Markdown
+9
+D/home/luc/Documents/Markdown
+	SCP Foundation
+1
+D/home/luc/Documents/Markdown/SCP Foundation
+	..
+0
+D/home/luc/Documents/Markdown
+	SCP Foundation
+1
+D/home/luc/Documents
+	LaTeX
+8
+D/home/luc/Documents/LaTeX
+	Années
+1
+D/home/luc/Documents
+	Haskell
+7
+D/home/luc/Documents/Haskell
+	..
+0
+D/home/luc/Documents
+	Hacking-Security-Books
+6
+D/home/luc/Documents/Hacking-Security-Books
+	..
+0
+D/home/luc/Documents
+	Go
+5
+D/home/luc/Documents/Go
+	Essais
+1
+D/home/luc/Documents/Go/Essais
+	..
+0
+D/home/luc/Documents/Go
+	Essais
+1
+D/home/luc/Documents
+	Documentation
+4
+D/home/luc/Documents/Documentation
+	..
+0
+D/home/luc/Documents
+	Calibre
+3
+D/home/luc/Documents/Calibre
+	..
+0
+D/home/luc/Documents
+	C
+2
+D/home/luc/Documents/C
+	..
+0
+D/home/luc/Documents
+	C
+2
+D/home/luc
+	Documents
+3
+D/home/luc/Documents
+	C
+2
+D/home/luc/Documents/C
+	Essais
+1
+D/home/luc/Documents/C/Essais
+	fscanf.c
+7
+D/home/luc/Documents/C
+	Essais
+1
+D/home/luc/Documents
+	BLEU
+1
+D/home/luc/Documents/BLEU
+	..
+0
+D/home/luc/Documents
+	LaTeX
+8
+D/home/luc/Documents/LaTeX
+	Années
+1
+D/home/luc/Documents/LaTeX/Années
+	Terminale
+2
+D/home/luc/Documents/LaTeX/Années/Terminale
+	Fiches
+2
+D/home/luc/Documents/LaTeX/Années/Terminale/Fiches
+	..
+0
+D/home/luc/Documents/LaTeX/Années/Terminale
+	Fiches
+2
+D/home/luc/Documents/LaTeX/Années/Terminale/Fiches
+	Math
+3
+D/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Math
+	..
+0
+D/home/luc/Documents/LaTeX/Années/Terminale/Fiches
+	Math
+2
+D/home/luc/Documents/LaTeX/Années/Terminale
+	Fiches
+2
+D/home/luc/Documents/LaTeX/Années/Terminale/Fiches
+	Math
+3
+D
+
+# Command line history (oldest to newest):
+:colorscheme matrix
+:colorscheme Default
+:delbm
+:delmarks l, Z, p, z
+:delmarks L, Z, p, z
+:delmarks L
+:delmarks Z
+:delmarks z
+:delmarks p
+:mkdir Musique
+:!mklatex caravan_palace
+:!xelatex
+:.,$!
+:!xelatex caravan_palace.tex
+:!xelatex L_Art.tex
+:open
+:move 
+:!texlcear Devoir_7.tex
+:!texclearear Devoir_7.tex
+:!texclear Devoir_7.tex
+:!mklatex Devoir_8
+:move
+:hideui
+:.!
+:shell allatex-comp
+:shell
+:.!allatex-comp
+:sort
+:!allatex-comp
+:!xelatex Injectivition_Surjection_Bijection.tex
+:qiot
+:quit
+:colorscheme
+:colorscheme ph
+:q
+
+# Search history (oldest to newest):
+/La
+/Im
+/la
+/Doc
+
+# Prompt history (oldest to newest):
+ples exercices philosophiques[1;5A[1;5A
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/luc/.local/share/vifm/Trash/000_feh_1010618_000001_Injectivition_Surjection_Bijection-page1.png
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/luc/.local/share/vifm/Trash/000_temp
+	/home/luc/temp
+t/home/luc/.local/share/vifm/Trash/000_cookies.txt
+	/home/luc/cookies.txt
+t/home/luc/.local/share/vifm/Trash/000_GLASGOW 3
+	/home/luc/Documents/Philo/GLASGOW 3
+t/home/luc/.local/share/vifm/Trash/000_GPUCache
+	/home/luc/Téléchargements/GPUCache
+t/home/luc/.local/share/vifm/Trash/000_MEMES
+	/home/luc/Téléchargements/MEMES
+t/home/luc/.local/share/vifm/Trash/000_Modpack
+	/home/luc/Téléchargements/Modpack
+t/home/luc/.local/share/vifm/Trash/000_Screenshots
+	/home/luc/Téléchargements/Screenshots
+t/home/luc/.local/share/vifm/Trash/000_Snapchat
+	/home/luc/Téléchargements/Snapchat
+t/home/luc/.local/share/vifm/Trash/000_§2[§a1.14.3-F§2] §6StackItems §2x32
+	/home/luc/Téléchargements/§2[§a1.14.3-F§2] §6StackItems §2x32
+t/home/luc/.local/share/vifm/Trash/000_02_Fair_Trade.mp3.txt
+	/home/luc/Téléchargements/02_Fair_Trade.mp3.txt
+t/home/luc/.local/share/vifm/Trash/000_02_Fair_Trade.opus
+	/home/luc/Téléchargements/02_Fair_Trade.opus
+t/home/luc/.local/share/vifm/Trash/000_Android App Development in Android Studio_ Java+Android Edition for Beginners ( PDFDrive.com ).pdf
+	/home/luc/Téléchargements/Android App Development in Android Studio_ Java+Android Edition for Beginners ( PDFDrive.com ).pdf
+t/home/luc/.local/share/vifm/Trash/000_BacS_Juin2005_Specialite_Polynesie_Corrige.pdf
+	/home/luc/Téléchargements/BacS_Juin2005_Specialite_Polynesie_Corrige.pdf
+t/home/luc/.local/share/vifm/Trash/000_DM_Spé_Math.pdf
+	/home/luc/Téléchargements/DM_Spé_Math.pdf
+t/home/luc/.local/share/vifm/Trash/000_Document numérisé-page1.png
+	/home/luc/Téléchargements/Document numérisé-page1.png
+t/home/luc/.local/share/vifm/Trash/000_Document numérisé-page2.png
+	/home/luc/Téléchargements/Document numérisé-page2.png
+t/home/luc/.local/share/vifm/Trash/000_Document numérisé-page3.png
+	/home/luc/Téléchargements/Document numérisé-page3.png
+t/home/luc/.local/share/vifm/Trash/000_Document numérisé.pdf
+	/home/luc/Téléchargements/Document numérisé.pdf
+t/home/luc/.local/share/vifm/Trash/000_Entire.mp4
+	/home/luc/Téléchargements/Entire.mp4
+t/home/luc/.local/share/vifm/Trash/000_John.Wick.Chapter.3.Parabellum.2019.FANSUB.VOSTFR.HDRiP.XviD-Slay3R.WwW.Zone-Telechargement.Net.avi
+	/home/luc/Téléchargements/John.Wick.Chapter.3.Parabellum.2019.FANSUB.VOSTFR.HDRiP.XviD-Slay3R.WwW.Zone-Telechargement.Net.avi
+t/home/luc/.local/share/vifm/Trash/000_Scott Pilgrim (2010) - VF 1080p BluRay - HDLight - x265 AAC 5.1 - CCATS-zone-Telechargement.ws.mp4
+	/home/luc/Téléchargements/Scott Pilgrim (2010) - VF 1080p BluRay - HDLight - x265 AAC 5.1 - CCATS-zone-Telechargement.ws.mp4
+t/home/luc/.local/share/vifm/Trash/000_Screenshot_2019-11-03-17-15-05.png
+	/home/luc/Téléchargements/Screenshot_2019-11-03-17-15-05.png
+t/home/luc/.local/share/vifm/Trash/000_Screenshots.zip
+	/home/luc/Téléchargements/Screenshots.zip
+t/home/luc/.local/share/vifm/Trash/000_WhatsApp Image 2019-10-27 at 22.27.58.jpeg
+	/home/luc/Téléchargements/WhatsApp Image 2019-10-27 at 22.27.58.jpeg
+t/home/luc/.local/share/vifm/Trash/000_forge-1.7.10-10.13.2.1230-installer.jar
+	/home/luc/Téléchargements/forge-1.7.10-10.13.2.1230-installer.jar
+t/home/luc/.local/share/vifm/Trash/000_forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
+	/home/luc/Téléchargements/forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
+t/home/luc/.local/share/vifm/Trash/000_forge-1.7.10-10.13.4.1614-1.7.10-installer.jar
+	/home/luc/Téléchargements/forge-1.7.10-10.13.4.1614-1.7.10-installer.jar
+t/home/luc/.local/share/vifm/Trash/000_forge-1.10-12.18.0.2000-1.10.0-installer.jar
+	/home/luc/Téléchargements/forge-1.10-12.18.0.2000-1.10.0-installer.jar
+t/home/luc/.local/share/vifm/Trash/000_forge-1.12.2-14.23.5.2768-installer.jar
+	/home/luc/Téléchargements/forge-1.12.2-14.23.5.2768-installer.jar
+t/home/luc/.local/share/vifm/Trash/000_glitch_shader.gif
+	/home/luc/Téléchargements/glitch_shader.gif
+t/home/luc/.local/share/vifm/Trash/000_hashcatch-1.1-1-x86_64.pkg.tar.xz
+	/home/luc/Téléchargements/hashcatch-1.1-1-x86_64.pkg.tar.xz
+t/home/luc/.local/share/vifm/Trash/000_installer.log
+	/home/luc/Téléchargements/installer.log
+t/home/luc/.local/share/vifm/Trash/000_modpack.zip
+	/home/luc/Téléchargements/modpack.zip
+t/home/luc/.local/share/vifm/Trash/000_orespawn-1.7.10-20.3.zip
+	/home/luc/Téléchargements/orespawn-1.7.10-20.3.zip
+t/home/luc/.local/share/vifm/Trash/001_temp
+	/home/luc/Téléchargements/temp
+t/home/luc/.local/share/vifm/Trash/000_temp.png
+	/home/luc/Téléchargements/temp.png
+t/home/luc/.local/share/vifm/Trash/000_temp2
+	/home/luc/Téléchargements/temp2
+t/home/luc/.local/share/vifm/Trash/000_test.mp4
+	/home/luc/Téléchargements/test.mp4
+t/home/luc/.local/share/vifm/Trash/000_wynncraft.jpg
+	/home/luc/Téléchargements/wynncraft.jpg
+t/home/luc/.local/share/vifm/Trash/000_OCaml
+	/home/luc/Téléchargements/OCaml
+t/home/luc/.local/share/vifm/Trash/000_suite.log
+	/home/luc/Documents/C/Essais/suite.log
+t/home/luc/.local/share/vifm/Trash/000_Injectivition_Surjection_Bijection.one.gnuplot
+	/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Prepa_Math/Injectivition_Surjection_Bijection.one.gnuplot
+t/home/luc/.local/share/vifm/Trash/000_Injectivition_Surjection_Bijection.x.gnuplot
+	/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Prepa_Math/Injectivition_Surjection_Bijection.x.gnuplot
+t/home/luc/.local/share/vifm/Trash/000_feh_1010618_000001_Injectivition_Surjection_Bijection-page1.png
+	/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Prepa_Math/feh_1010618_000001_Injectivition_Surjection_Bijection-page1.png
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].1
+]F
+s0

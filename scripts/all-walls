@@ -1,0 +1,6 @@
+#!/bin/fish
+
+for file in $WALLPAPER/*
+	feh --bg-fill $file
+	sleep 0.5
+end

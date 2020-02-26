@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+if [ -z $1 ]
+then
+	cd /home/luc/Images/wallpapers/
+	chosen_wall="$(ls | shuf -n 1)"
+	feh --bg-fill $chosen_wall
+	echo $chosen_wall >> .wall-list
+else
+	if [ -n $1 ]
+	then
+		feh --bg-fill $1
+		echo $(basename $1) >> $WALLPAPER/.wall-list
+	fi
+fi

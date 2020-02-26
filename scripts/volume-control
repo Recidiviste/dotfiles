@@ -1,0 +1,15 @@
+#!/bin/bash
+
+case "$1" in
+	inc) amixer set Master 1%+
+	dunstify --urgency=normal --icon=audio-volume-high --replace=14062005 "Volume Control" "Volume increased\nCurrent volume : $(pamixer --get-volume)%"
+	;;
+
+	dec) amixer set Master 1%-
+	dunstify --urgency=normal --icon=audio-volume-low --replace=14062005 "Volume Control" "Backlight decreased\nCurrent volume : $(pamixer --get-volume)%"
+	;;
+
+	mute) amixer -q set Master toggle
+	dunstify --urgency=normal --icon='stock_volume' --replace=14062005 "Volume Control" "Backlight decreased\nCurrent volume : $(pamixer --get-volume)%"
+	;;
+esac
