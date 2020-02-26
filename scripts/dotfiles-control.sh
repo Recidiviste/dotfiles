@@ -27,6 +27,11 @@ function update_repo {
 		cp -r ~/.config/zathura config/
 		cp ~/.config/i3-scrot.conf config/
 		cp ~/.zshrc config/
+		git add *
+		read -p "Commmit ? [y/n]: " a
+		if [[ $a =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
+		read -p "Push ? [y/n]: " b
+		if [[ $b =~ ^[Yy]$ ]] ; then git push origin master; fi
 }
 
 printf "${RED}+${GREEN}--------------------------${RED}+
