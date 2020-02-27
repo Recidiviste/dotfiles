@@ -5,8 +5,11 @@ RED='\033[0;31m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 BRED='\033[1;31m'
+BGREEN='\033[1;32m'
 BCYAN='\033[1;36m'
+BWIHTE='\033[1;37m'
 GIT_DIR=~/Build/Github/perso/dotfiles
+WAL_DIR=~/Build/Github/perso/wallpapers
 
 function update_repo {
 	cd $GIT_DIR
@@ -51,7 +54,6 @@ function update_repo {
 		if [[ $a =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
 		read -p "Push ? [y/n]: " b
 		if [[ $b =~ ^[Yy]$ ]] ; then git push origin master; fi
-		echo $WALLPAPER
 }
 
 function update_pc {
@@ -60,6 +62,27 @@ function update_pc {
 	rsync -av config/* ~/.config/ --exclude .zshrc
 	mv config/.zshrc ~/.zshrc
 	printf "Copied ${BRED}all configs ${NC}to PC"
+}
+
+function wals_changes {
+	printf "${BLUE} 1${BWHITE} Import Wallpapers ${BGREEN}($(ls $WAL_DIR/wallpapers | wc -l) wals on git)
+${BLUE} 2${BWHITE} Upload to Github ${BGREEN}($(ls $WALLPAPER | wc -l) wals on PC)${NC}\n"
+	read -p "Choose: " choice
+	case $choice in
+		1) cd $WAL_DIR
+			git pull
+			rsync -av wallpapers/* $WALLPAPER
+			printf "${BCYAN}Wallpapers Copied${NC}\n"
+			;;
+		2) cd $WALLPAPER
+			rsync -av * $WAL_DIR/wallpapers --exclude .wall-list
+			git add *
+			read -p "Commit ? [y/n]: " c
+			if [[ $c =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
+			read -p "Push ? [y/n]: " d
+			if [[ $d =~ ^[Yy]$ ]] ; then git push origine master; fi
+			;;
+	esac
 }
 
 printf "${RED}+${GREEN}--------------------------${RED}+
