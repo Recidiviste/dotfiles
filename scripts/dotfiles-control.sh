@@ -51,6 +51,7 @@ function update_repo {
 		if [[ $a =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
 		read -p "Push ? [y/n]: " b
 		if [[ $b =~ ^[Yy]$ ]] ; then git push origin master; fi
+		echo $WALLPAPER
 }
 
 function update_pc {
