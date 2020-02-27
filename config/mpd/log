@@ -58917,3 +58917,34 @@ Feb 26 22:20 : client: [166] opened from [::1]:38776
 Feb 26 22:20 : client: [166] closed
 Feb 26 22:20 : client: [167] opened from [::1]:38778
 Feb 26 22:20 : client: [167] closed
+Feb 26 22:56 : client: [168] opened from [::1]:39094
+Feb 26 22:56 : client: [168] closed
+Feb 26 22:56 : client: [169] opened from [::1]:39096
+Feb 26 22:56 : client: [169] closed
+Feb 26 22:57 : client: [117] closed
+Feb 26 22:57 : client: [170] opened from [::1]:39098
+Feb 26 22:57 : player: played "C2C/C2C - Who Are You (feat. Olivier Daysoul)-oMRZp7cp79g.opus"
+Feb 26 22:57 : client: [170] closed
+Feb 26 22:57 : client: [171] opened from [::1]:39100
+Feb 26 22:57 : client: [171] closed
+Feb 27 07:24 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 07:24 : client: [0] opened from [::1]:51678
+Feb 27 07:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 07:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 07:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 07:55 : player: played "Awon/Reflections (feat. Rodney the Soul Singer)-z9lTz44MjuQ.opus"
+Feb 27 08:01 : client: [1] opened from [::1]:52092
+Feb 27 08:01 : player: played "C2C/C2C - Who Are You (feat. Olivier Daysoul)-oMRZp7cp79g.opus"
+Feb 27 08:01 : client: [1] closed
+Feb 27 08:01 : client: [2] opened from [::1]:52094
+Feb 27 08:01 : client: [2] closed
+Feb 27 19:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 27 19:48 : client: [0] opened from [::1]:58988
+Feb 27 21:31 : client: [1] opened from [::1]:59684
+Feb 27 21:31 : client: [1] closed
+Feb 27 21:31 : client: [2] opened from [::1]:59686
+Feb 27 21:31 : client: [2] closed
+Feb 27 21:34 : client: [3] opened from [::1]:59750
+Feb 27 21:34 : client: [3] closed
+Feb 27 21:34 : client: [4] opened from [::1]:59752
+Feb 27 21:34 : client: [4] closed
