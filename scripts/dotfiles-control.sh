@@ -20,7 +20,7 @@ function update_repo {
 		printf "Copied ${BRED}dunst ${NC}config\n"
 		cp -r ~/.config/i3 config/
 		printf "Copied ${BRED}i3 ${NC}config\n"
-		cp -r ~/.config/mpd config/
+		rsync -a ~/.config/mpd config/ --exclude database --exclude log --exclude pid --exclude state --exclude sticker.sql
 		printf "Copied ${BRED}mpd ${NC}config\n"
 		cp -r ~/.config/mpv config/
 		printf "Copied ${BRED}mpv ${NC}config\n"
