@@ -76,12 +76,15 @@ ${BLUE} 2${BWHITE} Upload to Github ${BGREEN}($(ls $WALLPAPER | wc -l) wals on P
 			;;
 		2) cd $WALLPAPER
 			rsync -av * $WAL_DIR/wallpapers --exclude .wall-list
+			cd $WAL_DIR
 			git add *
 			read -p "Commit ? [y/n]: " c
 			if [[ $c =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
 			read -p "Push ? [y/n]: " d
-			if [[ $d =~ ^[Yy]$ ]] ; then git push origine master; fi
+			if [[ $d =~ ^[Yy]$ ]] ; then git push origin master; fi
 			;;
+		*) printf "${RED}!!${NC} Bad option ${RED}!!${NC}"
+			false
 	esac
 }
 

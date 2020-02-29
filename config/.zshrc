@@ -55,6 +55,7 @@ bindkey "^R" history-incremental-search-backward # Rechercher
 export PATH=$HOME/bin:$HOME/.cargo/bin:/home/luc/go/bin:/home/luc/.local/bin:/home/luc/.gem/ruby/2.7.0/bin:$PATH
 export WALLPAPER=/home/luc/Images/wallpapers
 export TORRENT_DIR=/home/luc/Téléchargements/Torrent/
+export QT_QPA_PLATFORMTHEME=gtk2
 export EDITOR=nvim
 export TERMINAL=termite
 
