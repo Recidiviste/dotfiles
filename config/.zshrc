@@ -72,6 +72,7 @@ alias ll='ls -l'
 alias lexa='exa -Tla'
 alias allatex-comp='for file in $(ls | grep '.tex'); do xelatex $file; done; rm *.aux *.log'
 alias open='xdg-open $argv'
+alias manim='python3.7 ~/Build/Github/externals/manim/manim.py'
 eval $(thefuck --alias)
 
 # zsh-autosuggestion

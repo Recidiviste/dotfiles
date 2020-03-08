@@ -60,11 +60,11 @@ Print
 # Volume Control #
 ##################
 XF86AudioLowerVolume
-	volume-control dec
+	/home/luc/bin/volume-control dec
 XF86AudioRaiseVolume
-	volume-control inc
+	/home/luc/bin/volume-control inc
 XF86AudioMute
-	volume-control mute
+	/home/luc/bin/volume-control mute
 
 #########################
 # Restart bspwm/polybar #
@@ -117,7 +117,7 @@ shift + XF86Audio{Stop,Play,Pause,Prev}
 # Backlight Control #
 #####################
 XF86MonBrightness{Up,Down}
-	backlight-control {inc,dec}
+	/home/luc/bin/backlight-control {inc,dec}
 
 #################
 # Close or Kill #
