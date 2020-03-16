@@ -8,4 +8,6 @@ case "$1" in
 	dec) xbacklight -dec 5
 	dunstify --urgency=normal --icon=lighttable --replace=14062004 "Backlight Control" "Backlight decreased\nCurrent backlight : $(xbacklight -get | awk '{print ($0-int($0)<0.499)?int($0):int($0)+1}')%"
 	;;
+	set) xbacklight -set $2
+		;;
 esac

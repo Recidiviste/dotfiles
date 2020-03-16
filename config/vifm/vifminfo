@@ -38,39 +38,6 @@ l16,2
 r2
 
 # Left window history (oldest to newest):
-d/home/luc
-	Documents
-7
-d/home/luc/Documents
-	Paquets inutilement notables
-18
-d/home/luc/.local/share/fonts
-	Input_Fonts
-1
-d/home/luc/.local/share/fonts/Input_Fonts
-	InputSans
-2
-d/home/luc/.local/share/fonts
-	Input_Fonts
-1
-d/home/luc/.local/share
-	fonts
-27
-d/home/luc/.local
-	share
-5
-d/home/luc
-	.local
-4
-d/home
-	luc
-2
-d/home/luc
-	.reicast
-19
-d/home/luc/Documents/Python
-	pydf2img.py
-5
 d/home/luc/Documents/To Read/Thanks Allen !/Prog
 	elemprog_2019-09-10.pdf
 1
@@ -338,6 +305,39 @@ d/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Physique-Chimie/images
 d/home/luc/Documents/To Read/Thanks Allen !
 	Lessons.zip
 6
+d/home/luc/.TinyTeX
+	texmf-dist
+3
+d/home/luc/.TinyTeX/texmf-dist
+	..
+0
+d/home/luc/.TinyTeX
+	texmf-local
+4
+d/home/luc/.TinyTeX/texmf-local
+	tex
+6
+d/home/luc/.TinyTeX
+	texmf-dist
+3
+d/home/luc/.TinyTeX/texmf-dist
+	..
+0
+d/home/luc/.TinyTeX
+	..
+0
+d/home/luc
+	.adobe
+2
+d/home/luc/.adobe
+	..
+0
+d/home/luc/.TinyTeX
+	tlpkg
+6
+d/home/luc/bin
+	mpd-control
+22
 d
 
 # Right window history (oldest to newest):
@@ -692,7 +692,7 @@ ples exercices philosophiques[1;5A[1;5A
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/luc/.local/share/vifm/Trash/000_feh_1010618_000001_Injectivition_Surjection_Bijection-page1.png
+""/home/luc/.local/share/vifm/Trash/000_mkofm
 
 # Directory stack (oldest to newest):
 
@@ -785,6 +785,44 @@ t/home/luc/.local/share/vifm/Trash/000_Injectivition_Surjection_Bijection.x.gnup
 	/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Prepa_Math/Injectivition_Surjection_Bijection.x.gnuplot
 t/home/luc/.local/share/vifm/Trash/000_feh_1010618_000001_Injectivition_Surjection_Bijection-page1.png
 	/home/luc/Documents/LaTeX/Années/Terminale/Fiches/Prepa_Math/feh_1010618_000001_Injectivition_Surjection_Bijection-page1.png
+t/home/luc/.local/share/vifm/Trash/000_texluajitc
+	/home/luc/bin/texluajitc
+t/home/luc/.local/share/vifm/Trash/000_texlua53
+	/home/luc/bin/texlua53
+t/home/luc/.local/share/vifm/Trash/000_texconfig
+	/home/luc/bin/texconfig
+t/home/luc/.local/share/vifm/Trash/000_texconfig-dialog
+	/home/luc/bin/texconfig-dialog
+t/home/luc/.local/share/vifm/Trash/000_texconfig-sys
+	/home/luc/bin/texconfig-sys
+t/home/luc/.local/share/vifm/Trash/000_texlinks
+	/home/luc/bin/texlinks
+t/home/luc/.local/share/vifm/Trash/000_allcm
+	/home/luc/bin/allcm
+t/home/luc/.local/share/vifm/Trash/000_allec
+	/home/luc/bin/allec
+t/home/luc/.local/share/vifm/Trash/000_allneeded
+	/home/luc/bin/allneeded
+t/home/luc/.local/share/vifm/Trash/000_dvi2fax
+	/home/luc/bin/dvi2fax
+t/home/luc/.local/share/vifm/Trash/000_dvired
+	/home/luc/bin/dvired
+t/home/luc/.local/share/vifm/Trash/000_kpsepath
+	/home/luc/bin/kpsepath
+t/home/luc/.local/share/vifm/Trash/000_kpsetool
+	/home/luc/bin/kpsetool
+t/home/luc/.local/share/vifm/Trash/000_kpsewhere
+	/home/luc/bin/kpsewhere
+t/home/luc/.local/share/vifm/Trash/000_kpsexpand
+	/home/luc/bin/kpsexpand
+t/home/luc/.local/share/vifm/Trash/000_luajittex
+	/home/luc/bin/luajittex
+t/home/luc/.local/share/vifm/Trash/000_luatex53
+	/home/luc/bin/luatex53
+t/home/luc/.local/share/vifm/Trash/000_mkocp
+	/home/luc/bin/mkocp
+t/home/luc/.local/share/vifm/Trash/000_mkofm
+	/home/luc/bin/mkofm
 
 # State:
 f

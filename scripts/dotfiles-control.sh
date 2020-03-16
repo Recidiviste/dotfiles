@@ -17,15 +17,15 @@ function update_repo {
 	cp ~/bin/all-walls ~/bin/backlight-control ~/bin/current-wal ~/bin/draw_term ~/bin/dunst-reload ~/bin/last-walls ~/bin/mpd-control ~/bin/opout ~/bin/powermenu ~/bin/random-wall ~/bin/regen-wall-list ~/bin/texclear ~/bin/volume-control ~/bin/wallpaper-name ~/bin/dotfiles-control.sh scripts/
 	# Configs
 		# BSPWM
-		cp -r ~/.config/bspwm config/
+		rsync -a ~/.config/bspwm config/
 		printf "Copied ${BRED}bspwm ${NC}config\n"
-		cp -r ~/.config/dunst config/
+		rsync -a ~/.config/dunst config/
 		printf "Copied ${BRED}dunst ${NC}config\n"
-		cp -r ~/.config/i3 config/
+		rsync -a ~/.config/i3 config/
 		printf "Copied ${BRED}i3 ${NC}config\n"
 		rsync -a ~/.config/mpd config/ --exclude database --exclude log --exclude pid --exclude state --exclude sticker.sql
 		printf "Copied ${BRED}mpd ${NC}config\n"
-		cp -r ~/.config/mpv config/
+		rsync -a ~/.config/mpv config/
 		printf "Copied ${BRED}mpv ${NC}config\n"
 		rsync -a ~/.config/ncmpcpp config/ --exclude lyrics --exclude error.log
 		printf "Copied ${BRED}ncmpcpp ${NC}config\n"
@@ -33,21 +33,21 @@ function update_repo {
 		printf "Copied ${BRED}nvim ${NC}config\n"
 		rsync -a ~/.config/polybar config/ --exclude polybar-themes
 		printf "Copied ${BRED}polybar ${NC}config\n"
-		cp -r ~/.config/ranger config/
+		rsync -a ~/.config/ranger config/
 		printf "Copied ${BRED}ranger ${NC}config\n"
-		cp -r ~/.config/rofi config/
+		rsync -a ~/.config/rofi config/
 		printf "Copied ${BRED}rofi ${NC}config\n"
-		cp -r ~/.config/sxhkd config/
+		rsync -a ~/.config/sxhkd config/
 		printf "Copied ${BRED}sxhkd ${NC}config\n"
-		cp -r ~/.config/termite config/
+		rsync -a ~/.config/termite config/
 		printf "Copied ${BRED}termite ${NC}config\n"
-		cp -r ~/.config/vifm config/
+		rsync -a ~/.config/vifm config/
 		printf "Copied ${BRED}vifm ${NC}config\n"
-		cp -r ~/.config/zathura config/
+		rsync -a ~/.config/zathura config/
 		printf "Copied ${BRED}zathura ${NC}config\n"
-		cp ~/.config/i3-scrot.conf config/
+		rsync -a ~/.config/i3-scrot.conf config/
 		printf "Copied ${BRED}i3-scrot ${NC}config\n"
-		cp ~/.zshrc config/
+		rsync -a ~/.zshrc config/
 		printf "Copied ${BRED} zsh ${NC}config\n"
 		git add *
 		read -p "Commmit ? [y/n]: " a
