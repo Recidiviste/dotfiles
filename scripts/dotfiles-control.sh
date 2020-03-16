@@ -41,7 +41,7 @@ function update_repo {
 		printf "Copied ${BRED}sxhkd ${NC}config\n"
 		rsync -a ~/.config/termite config/
 		printf "Copied ${BRED}termite ${NC}config\n"
-		rsync -a ~/.config/vifm config/
+		rsync -a ~/.config/vifm config/ --exclude vifminfo --exclude vifm-help.txt
 		printf "Copied ${BRED}vifm ${NC}config\n"
 		rsync -a ~/.config/zathura config/
 		printf "Copied ${BRED}zathura ${NC}config\n"
