@@ -11,5 +11,3 @@ case "$1" in
 	*.html) setsid "$BROWSER" --new-window "$basename".html >/dev/null 2>&1 & ;;
 	*.sent) setsid sent "$1" >/dev/null 2>&1 & ;;
 esac
-
-echo $basename

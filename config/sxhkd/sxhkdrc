@@ -4,11 +4,11 @@
 super + Return
 	termite
 super + shift + Return
-	/home/luc/bin/st
+	/home/luc/bin/apps/st
 super + BackSpace
 	urxvt
 super + c
-	/home/luc/bin/draw_term
+	/home/luc/bin/apps/draw_term
 
 #####################
 # Program launchers #
@@ -29,8 +29,6 @@ super + e
 	rofi -show calc -modi calc -no-show-match -no-sort -lines 2
 super + u 
 	rofi-theme-selector
-super + button3
-	jgmenu_run &
 
 #################
 # File Managers #
@@ -46,7 +44,7 @@ super + shift + p
 super + t
 	firefox
 super + shift + t
-	/home/luc/bin/surf /home/luc/Build/Github/perso/startpage/index.html
+	/home/luc/bin/apps/surf /home/luc/Build/Github/perso/startpage/index.html
 super + n
 	qutebrowser
 
@@ -60,11 +58,11 @@ Print
 # Volume Control #
 ##################
 XF86AudioLowerVolume
-	/home/luc/bin/volume-control dec
+	/home/luc/bin/control/volume-control dec
 XF86AudioRaiseVolume
-	/home/luc/bin/volume-control inc
+	/home/luc/bin/control/volume-control inc
 XF86AudioMute
-	/home/luc/bin/volume-control mute
+	/home/luc/bin/control/volume-control mute
 
 #########################
 # Restart bspwm/polybar #
@@ -109,15 +107,15 @@ super + shift + i
 # MPD Control #
 ###############
 XF86Audio{Play,Pause,Next,Prev,Stop}
-	/home/luc/bin/mpd-control {toggle,toggle,next,prev,stop}
+	/home/luc/bin/control/mpd-control {toggle,toggle,next,prev,stop}
 shift + XF86Audio{Stop,Play,Pause,Prev}
-	/home/luc/bin/mpd-control {volume-up,volume-down,volume-down,menu}
+	/home/luc/bin/control/mpd-control {volume-up,volume-down,volume-down,menu}
 
 #####################
 # Backlight Control #
 #####################
 XF86MonBrightness{Up,Down}
-	/home/luc/bin/backlight-control {inc,dec}
+	/home/luc/bin/control/backlight-control {inc,dec}
 
 #################
 # Close or Kill #

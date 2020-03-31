@@ -1,0 +1,81 @@
+#!/bin/fish
+# Script to update the wallpapers thanks the github repo
+# Or to update the github repo thanks the wallpapers i have
+
+cd $HOME
+set -l wall (count Images/wallpapers/*)
+set -l wall_git (count Build/Github/perso/wallpapers/wallpapers/*)
+
+function update_repo
+	cd $HOME/Build/Github/perso/wallpapers/
+	echo "Copying the wallpapers"
+	cp -r $WALLPAPER ./
+	echo "Done !"
+	sleep 0.2
+	echo "Adding the wallpapers"
+	git add wallpapers/*
+	echo "Done !"
+	sleep 0.2
+	echo "Committing the wallpapers"
+	git commit -m "Add some wallpapers"
+	echo "Pushing the wallpapers"
+	git push -u origin master
+end
+
+function pull_repo
+	cd $HOME/Build/Github/perso/wallpapers/
+	git pull
+	cp -r wallpapers/* $WALLPAPER/
+end
+
+echo "Current wallpapers : $wall"
+echo "Github wallpapers : $wall_git"
+
+sleep 0.4
+
+if test $wall_git -gt $wall
+	echo "New wallpapers comming !"
+	echo "Copying the walls"
+	cp Build/Github/perso/wallpapers/wallpapers/* $WALLPAPER/
+else if test $wall -gt $wall_git
+	echo "Time to update your repo !"
+	read -l -P "Update the repo (y/n) ? " choice
+	switch $choice
+	case y
+		update_repo
+	case Y
+		update_repo
+	case yes
+		update_repo
+	case Yes
+		update_repo
+	case n
+	case N
+	case no
+	case No
+	case '*'
+		echo "Try again"
+	end
+else if test $wall -eq $wall_git
+	read -l -P "Try to pull the repo (y/n) ?" choice
+	switch $choice
+	case y
+		pull_repo
+	case Y
+		pull_repo
+	case yes
+		pull_repo
+	case Yes
+		pull_repo
+	case n
+		echo "Nothing to do"
+	case N
+		echo "Nothing to do"
+	case no
+		echo "Nothing to do"
+	case No
+		echo "Nothing to do"
+	case '*'
+		echo "Try again"
+	end
+end

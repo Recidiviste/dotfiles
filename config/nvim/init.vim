@@ -9,14 +9,11 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  } "Markdown preview
 	let g:mkdp_browser='surf' " Use surf for preview
 Plug 'scrooloose/nerdtree' "Nerdtree
-Plug 'junegunn/goyo.vim' " Goyo (writing mode)
-Plug 'PotatoesMaster/i3-vim-syntax' " i3 syntax highlighting
 Plug 'bling/vim-airline' "Vim-airline
 Plug 'vim-airline/vim-airline-themes' "Themes for vim-airline
 	let g:airline_theme='lucius' " Use murmur theme
 Plug 'dag/vim-fish' " fish syntax highlighting
 Plug 'w0rp/ale' " Check syntax
-Plug 'kovetskiy/sxhkd-vim' " sxhkd syntax highlighting
 Plug 'junegunn/fzf', { 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
@@ -61,9 +58,6 @@ let g:airline#extensions#whitespace#symbol= '!'
 
 
 " ===================== MAPPINGS =========================== "
-
-" Goyo
-map <leader>g :Goyo \| set linebreak<CR>
 
 " Spell Verification
 map <leader>o :setlocal spell spelllang=fr<CR>
@@ -193,7 +187,7 @@ autocmd FileType tex inoremap ,ol \begin{enumerate}<Enter><Enter>\end{enumerate}
 autocmd FileType tex inoremap ,ul \begin{itemize}<Enter><Enter>\end{itemize}<Enter><Enter><++><Esc>3kA\item<Space>
 autocmd FileType tex inoremap ,li <Enter>\item<Space>
 autocmd FileType tex inoremap ,tab \begin{tabular}<Enter><++><Enter>\end{tabular}<Enter><Enter><++><Esc>4kA{}<Esc>i
-autocmd FileType tex inoremap ,ve \begin{verse}<Enter><Enter>\end{verse}
+autocmd FileType tex inoremap ,ver \begin{verse}<Enter><Enter>\end{verse}
 autocmd FileType tex inoremap ,sc \textsc{}<Space><++><Esc>T{i
 autocmd FileType tex inoremap ,chap \chapter{}<Enter><Enter><++><Esc>2kf}i
 autocmd FileType tex inoremap ,sec \section{}<Enter><Enter><++><Esc>2kf}i
@@ -211,6 +205,9 @@ autocmd FileType tex inoremap ,sp \vspace{\baselineskip}
 autocmd FileType tex inoremap ,name \AddToShipoutPictureBG*{%<Enter>\AtPageUpperLeft{%<Enter>\raisebox{-\baselineskip}{%<Enter>\makebox[0pt][l]{ Luc Saccoccio--Le Guennec}<Enter>}<Enter>\raisebox{-2\baselineskip}{%<Enter>\makebox[0pt][l]{TS5}<Enter><Enter>}}}%
 autocmd FileType tex inoremap ,qu \begin{quote}<Enter>\attrib{ {\em }}<Enter>\end{quote}
 autocmd Filetype tex inoremap ,func \begin{tikzpicture}<CR>\draw[thin, dashed, gray] (startx, starty) grid (endx, endy);<CR>\draw[->] (startx, 0) -- (endx, 0) node[right] {$x$};<CR>\draw[->] (0, starty) -- (0, endy) node[above] {$y$};<CR>\end{tikzpicture}<Esc>$v4<Up>0:Coordinates
+autocmd FileType tex inoremap ,tikz \begin{tikzpicture}<CR><CR>\end{tikzpicture}<Up>
+autocmd Filetype tex inoremap ,cal \mathcal{}<Left>
+autocmd FileType tex inoremap ,V \vect{}<Left>
 
 
 " ======================= HTML ============================= "

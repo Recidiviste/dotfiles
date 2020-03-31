@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Basics like verbosity and settings
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible
+alias \
+	ls="ls -hN --color=auto $argv" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# Others
+alias \
+	la="ls -lahN --color=auto $argv" \
+	ll="ls -l" \
+	lsa="ls -a" \
+	lexa="exa -Tla" \
+	allatex-comp="for file in $(ls | grep '.tex'); do xelatex $file; done; rm *.aux *.log" \
+	perscrot="go-scrot -cr"
+
+# vim: filetype=sh

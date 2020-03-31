@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 ##########
 # Basics #
 ##########
@@ -31,3 +30,8 @@ discord &
 
 nm-applet & # Network Manager
 copyq & # CopyQ
+
+##################
+# Usual cleaning #
+##################
+rm -f ~/.python_history

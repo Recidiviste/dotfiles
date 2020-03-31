@@ -1,0 +1,127 @@
+#/bin/bash
+
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+BRED='\033[1;31m'
+BGREEN='\033[1;32m'
+BCYAN='\033[1;36m'
+BWIHTE='\033[1;37m'
+GIT_DIR="$HOME/Build/Github/perso/dotfiles"
+WAL_DIR="$HOME/Build/Github/perso/wallpapers"
+
+function update_repo {
+	cd $GIT_DIR
+	# Scripts
+	rsync -ar ~/bin/* scripts/ --exclude apps/st --exclude latex_scripts/ --exclude apps/surf --exclude apps/xwinter
+	# Configs
+		# BSPWM
+		rsync -a ~/.config/bspwm config/
+		printf "Copied ${BRED}bspwm ${NC}config\n"
+		rsync -a ~/.config/dunst config/
+		printf "Copied ${BRED}dunst ${NC}config\n"
+		rsync -a ~/.config/i3 config/
+		printf "Copied ${BRED}i3 ${NC}config\n"
+		rsync -a ~/.config/mpd config/ --exclude database --exclude log --exclude pid --exclude state --exclude sticker.sql
+		printf "Copied ${BRED}mpd ${NC}config\n"
+		rsync -a ~/.config/mpv config/
+		printf "Copied ${BRED}mpv ${NC}config\n"
+		rsync -a ~/.config/ncmpcpp config/ --exclude lyrics --exclude error.log
+		printf "Copied ${BRED}ncmpcpp ${NC}config\n"
+		rsync -a ~/.config/nvim config/ --exclude autoload --exclude plugged --exclude spell
+		printf "Copied ${BRED}nvim ${NC}config\n"
+		rsync -a ~/.config/polybar config/ --exclude polybar-themes
+		printf "Copied ${BRED}polybar ${NC}config\n"
+		rsync -a ~/.config/ranger config/
+		printf "Copied ${BRED}ranger ${NC}config\n"
+		rsync -a ~/.config/rofi config/
+		printf "Copied ${BRED}rofi ${NC}config\n"
+		rsync -a ~/.config/sxhkd config/
+		printf "Copied ${BRED}sxhkd ${NC}config\n"
+		rsync -a ~/.config/termite config/
+		printf "Copied ${BRED}termite ${NC}config\n"
+		rsync -a ~/.config/vifm config/ --exclude vifminfo --exclude vifm-help.txt
+		printf "Copied ${BRED}vifm ${NC}config\n"
+		rsync -a ~/.config/zathura config/
+		printf "Copied ${BRED}zathura ${NC}config\n"
+		rsync -a ~/.config/i3-scrot.conf config/
+		printf "Copied ${BRED}i3-scrot ${NC}config\n"
+		rsync -a ~/.zshrc config/
+		printf "Copied ${BRED} zsh ${NC}config\n"
+		rsync -a ~/.config/aliasrc config/
+		printf "Copied ${BRED} alias ${NC}config\n"
+		git add *
+		read -p "Commmit ? [y/n]: " a
+		if [[ $a =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
+		read -p "Push ? [y/n]: " b
+		if [[ $b =~ ^[Yy]$ ]] ; then git push origin master; fi
+}
+
+function update_pc {
+	cd $GIT_DIR
+	git pull
+	rsync -av config/* ~/.config/ --exclude .zshrc
+	mv config/.zshrc ~/.zshrc
+	printf "Copied ${BRED}all configs ${NC}to PC"
+}
+
+function wals_changes {
+	printf "${BLUE} 1${BWHITE} Import Wallpapers ${BGREEN}($(ls $WAL_DIR/wallpapers | wc -l) wals on git)
+${BLUE} 2${BWHITE} Upload to Github ${BGREEN}($(ls $WALLPAPER | wc -l) wals on PC)${NC}\n"
+	read -p "Choose: " choice
+	case $choice in
+		1) cd $WAL_DIR
+			git pull
+			rsync -av wallpapers/* $WALLPAPER
+			printf "${BCYAN}Wallpapers Copied${NC}\n"
+			;;
+		2) cd $WALLPAPER
+			rsync -av * $WAL_DIR/wallpapers --exclude .wall-list
+			cd $WAL_DIR
+			git add *
+			read -p "Commit ? [y/n]: " c
+			if [[ $c =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
+			read -p "Push ? [y/n]: " d
+			if [[ $d =~ ^[Yy]$ ]] ; then git push origin master; fi
+			;;
+		*) printf "${RED}!!${NC} Bad option ${RED}!!${NC}"
+			false
+	esac
+}
+
+function initialize_pc {
+	if ! $(lsb_release -d | grep -q "Arch Linux"); then
+		printf "Sorry, but you're not using ${BRED}Arch${NC} !"
+		exit 1
+	else
+		command -v yay > /dev/null
+		if ! $status; then
+			printf "${BGREEN}yay${NC} isn't installed."
+			read -p "Install it ? [y/n]: " ya
+		fi
+	fi
+}
+
+printf "${RED}+${GREEN}--------------------------${RED}+
+${GREEN}|  ${BLUE}1 · ${NC}Upload to Github    ${GREEN}|
+${GREEN}|  ${BLUE}2 · ${NC}Import configs      ${GREEN}|
+${GREEN}|  ${BLUE}3 · ${NC}Wallpapers Changes  ${GREEN}|
+${GREEN}|  ${BLUE}4 · ${NC}Initialize PC       ${GREEN}|
+${RED}+${GREEN}--------------------------${RED}+${NC}\n"
+read -p "Choose: " dec
+
+case $dec in
+	1) update_repo
+		;;
+	2) update_pc
+		;;
+	3) wals_changes
+		;;
+	4) initialize_pc
+		;;
+	*) printf "${RED}!!${NC} Bad option ${RED}!!${NC}\n"
+		false
+esac
+
+# vim: filetype=sh
