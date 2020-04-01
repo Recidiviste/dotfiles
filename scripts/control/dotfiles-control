@@ -25,7 +25,7 @@ function update_repo {
 		printf "Copied ${BRED}i3 ${NC}config\n"
 		rsync -a ~/.config/mpd config/ --exclude database --exclude log --exclude pid --exclude state --exclude sticker.sql
 		printf "Copied ${BRED}mpd ${NC}config\n"
-		rsync -a ~/.config/mpv config/
+		rsync -ar ~/.config/mpv config/ --exclude watch_later
 		printf "Copied ${BRED}mpv ${NC}config\n"
 		rsync -a ~/.config/ncmpcpp config/ --exclude lyrics --exclude error.log
 		printf "Copied ${BRED}ncmpcpp ${NC}config\n"
