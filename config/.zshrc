@@ -56,8 +56,6 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
-# Environment variables
-
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
