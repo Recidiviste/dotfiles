@@ -82,7 +82,7 @@ super + q
 # Exit bspwm #
 ##############
 super + shift + e
-	/home/luc/bin/powermenu
+	/home/luc/bin/apps/powermenu
 
 ##############
 # Lock bspwm #

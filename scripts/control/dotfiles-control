@@ -48,9 +48,11 @@ function update_repo {
 		rsync -a ~/.config/i3-scrot.conf config/
 		printf "Copied ${BRED}i3-scrot ${NC}config\n"
 		rsync -a ~/.zshrc config/
-		printf "Copied ${BRED} zsh ${NC}config\n"
+		printf "Copied ${BRED}zsh ${NC}config\n"
 		rsync -a ~/.config/aliasrc config/
 		printf "Copied ${BRED} alias ${NC}config\n"
+		rsync -a ~/.profile config/
+		printf "Copied ${BRED}profile ${NC}config\n"
 		git add *
 		read -p "Commmit ? [y/n]: " a
 		if [[ $a =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
