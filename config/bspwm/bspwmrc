@@ -44,7 +44,6 @@ bspc rule -a Gimp desktop='^8' state=floating follow=on # Gimp spawn floating on
 bspc rule -a inkscape desktop='^8' follow=on # Inkscape spawn floating on desktop 8
 bspc rule -a krita desktop='^8' follow=on # Krita spawn floating on desktop 8
 
-bspc rule -a Spotify desktop='^1' follow=true # Spotify spawn on first desktop. Follow it.
 bspc rule -a discord desktop='^2' follow=false # Discord spawn on desktop 2
 bspc rule -a Steam desktop='^3' follow=false # Steam spawn on desktop 3
 
