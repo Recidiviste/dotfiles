@@ -8,7 +8,8 @@ alias \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner"
+	ffmpeg="ffmpeg -hide_banner" \
+	tmux="tmux -f .config/tmux.conf"
 
 # Colorize commands when possible
 alias \
@@ -23,7 +24,7 @@ alias \
 	ll="ls -l" \
 	lsa="ls -a" \
 	lexa="exa -Tla" \
-	allatex-comp="for file in $(ls | grep '.tex'); do xelatex $file; done; rm *.aux *.log" \
+	allatexcomp='for file in $(ls | grep ".tex"); do xelatex $file; done; rm *.aux *.log' \
 	perscrot="go-scrot -cr"
 
 # vim: filetype=sh

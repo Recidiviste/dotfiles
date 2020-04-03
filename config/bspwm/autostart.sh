@@ -31,6 +31,11 @@ discord &
 nm-applet & # Network Manager
 copyq & # CopyQ
 
+#######
+# TMP #
+#######
+mkdir /tmp/qutebrowser
+
 ##################
 # Usual cleaning #
 ##################

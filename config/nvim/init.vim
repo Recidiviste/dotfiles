@@ -27,9 +27,6 @@ Plug 'jaredgorski/spacecamp'
 
 call plug#end()
 
-
-
-
 " ===================== GENERAL ============================ "
 
 set encoding=utf-8 " Use utf-8 encoding
@@ -150,14 +147,18 @@ map <leader>I :colorscheme iceberg<CR>:let g:airline_theme='iceberg'<CR>
 map <leader>S :colorscheme spacecamp<CR>
 
 
-
-" ====================== LATEX ============================ "
+" ================== USUALS FOR DOCMENTS ================== "
 
 " Compile
-command C !xelatex %
+command C !compiler %
 
-" View the PDF
+" View the result
 command O !opout %
+
+
+
+
+" ====================== LATEX ============================ "
 
 " Tikz
 function ReplaceCoordinates(startx, starty, endx, endy) range
