@@ -167,9 +167,8 @@ super + alt + {Left,Down,Up,Right}
 super + ctrl + {Left,Down,Up,Right}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-
-#####################
-# Notification dock #
-#####################
-super + shift + u
-	kill -s USR1 (pidof deadd-notification-center)
+####################
+# Screenkey toggle #
+####################
+super + b
+	/home/luc/bin/toggle-screenkey

@@ -9,7 +9,7 @@ alias \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
-	tmux="tmux -f .config/tmux.conf"
+	tmux="tmux -f ~/.config/tmux.conf"
 
 # Colorize commands when possible
 alias \

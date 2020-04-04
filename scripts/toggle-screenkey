@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if $(ps -u luc | grep "screenkey" >/dev/null); then
+	killall screenkey
+else
+	screenkey
+fi
