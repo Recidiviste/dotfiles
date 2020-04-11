@@ -1,0 +1,7 @@
+# Colors
+set recolor-reverse-video 	"false"
+set font                        "Source Code Pro Regular 11"
+# setting recolor-keephue true will keep any color your pdf
+set recolor-keephue "true"
+
+set selection-clipboard clipboard

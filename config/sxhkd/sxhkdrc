@@ -87,8 +87,6 @@ super + shift + e
 ##############
 # Lock bspwm #
 ##############
-super + shift + f
-	betterlockscreen -l dim
 super + shift + z
 	mantablockscreen -cc
 #	i3lock-fancy
@@ -126,7 +124,7 @@ super + {shift + a,r}
 ###################
 # State and flags #
 ###################
-super + {s,z,shift + space}
+super + {s,z,shift + f}
 	bspc node -t {tiled,pseudo_tiled,floating}
 super + {h,l,k,j}
 	bspc node -g {hidden,locked,sticky,private}

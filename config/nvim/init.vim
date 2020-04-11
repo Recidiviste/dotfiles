@@ -6,24 +6,19 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  } "Markdown preview
-	let g:mkdp_browser='surf' " Use surf for preview
-Plug 'scrooloose/nerdtree' "Nerdtree
+Plug 'jarun/nnn.vim' "nnn file manager
 Plug 'bling/vim-airline' "Vim-airline
 Plug 'vim-airline/vim-airline-themes' "Themes for vim-airline
 	let g:airline_theme='lucius' " Use murmur theme
-Plug 'dag/vim-fish' " fish syntax highlighting
 Plug 'w0rp/ale' " Check syntax
 Plug 'junegunn/fzf', { 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'sheerun/vim-polyglot'
-	let g:tex_fold_enabled=1
+"Plug 'sheerun/vim-polyglot'
+"	let g:tex_fold_enabled=1
 Plug 'edkolev/tmuxline.vim'
 Plug 'nightsense/rusticated'
 Plug 'ryanoasis/vim-devicons'
 Plug 'aurieh/discord.nvim'
-Plug 'cocopon/iceberg.vim'
-Plug 'jaredgorski/spacecamp'
 
 call plug#end()
 
@@ -60,9 +55,8 @@ let g:airline#extensions#whitespace#symbol= '!'
 map <leader>o :setlocal spell spelllang=fr<CR>
 
 " NerdTree
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+map <C-n> :NnnPicker '%:p:h'<CR>
+let g:nnn#layout = 'new' " Split
 
 " Navigating between marks
 inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
@@ -143,8 +137,6 @@ let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 
 map <leader>D :colorscheme horizon<CR>:let g:airline_theme='lucius'<CR>
 map <leader>L :colorscheme rusticated<CR>:let g:airline_theme='papercolor'<CR>
-map <leader>I :colorscheme iceberg<CR>:let g:airline_theme='iceberg'<CR>
-map <leader>S :colorscheme spacecamp<CR>
 
 
 " ================== USUALS FOR DOCMENTS ================== "
