@@ -1,6 +1,4 @@
-#!/bin/fish
+#!/bin/bash
 
-set -l wal (tail --lines 1 $WALLPAPER/.wall-list | sed 's/wallpaper/wal\ -i\ $WALLPAPER\/wallpaper/')
-fish -c $wal
-systemctl --user restart dunst
-dunstify --urgency=normal --icon=preferences-wallpaper "Pywal" "Theme updated according the wallpaper you are using"
+WAL=$(tail -n 1 ~/.fehbg | sed 's/feh\ --no-fehbg\ --bg-fill\ //')
+echo $WAL | xargs wal -i && dunstify --urgency=normal --icon=preferences-wallpaper "Pywal" "Theme updated according the wallpaper you are using"
