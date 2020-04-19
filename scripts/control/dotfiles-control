@@ -33,20 +33,18 @@ function update_repo {
 		printf "Copied ${BRED}nvim ${NC}config\n"
 		rsync -a ~/.config/polybar config/ --exclude polybar-themes
 		printf "Copied ${BRED}polybar ${NC}config\n"
-		rsync -a ~/.config/ranger config/
-		printf "Copied ${BRED}ranger ${NC}config\n"
 		rsync -a ~/.config/rofi config/
 		printf "Copied ${BRED}rofi ${NC}config\n"
 		rsync -a ~/.config/sxhkd config/
 		printf "Copied ${BRED}sxhkd ${NC}config\n"
 		rsync -a ~/.config/termite config/
 		printf "Copied ${BRED}termite ${NC}config\n"
-		rsync -a ~/.config/vifm config/ --exclude vifminfo --exclude vifm-help.txt
-		printf "Copied ${BRED}vifm ${NC}config\n"
 		rsync -a ~/.config/zathura config/
 		printf "Copied ${BRED}zathura ${NC}config\n"
 		rsync -a ~/.config/i3-scrot.conf config/
 		printf "Copied ${BRED}i3-scrot ${NC}config\n"
+		rsync -a ~/.config/mimeapps.list config/
+		printf "Copied ${BRED}mimeapps.list ${NC}\n"
 		rsync -a ~/.zshrc config/
 		printf "Copied ${BRED}zsh ${NC}config\n"
 		rsync -a ~/.config/aliasrc config/

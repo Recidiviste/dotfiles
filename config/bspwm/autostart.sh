@@ -30,6 +30,7 @@ discord &
 
 nm-applet & # Network Manager
 copyq & # CopyQ
+clipmenud & # Dmenu clipboard
 
 #######
 # TMP #
