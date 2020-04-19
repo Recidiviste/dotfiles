@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/luc/.config/termite'
 let g:netrw_dirhist_9='/home/luc/bin'
 let g:netrw_dirhist_8='/home/luc/.config/sxhkd'
 let g:netrw_dirhist_7='/usr/share/applications'
