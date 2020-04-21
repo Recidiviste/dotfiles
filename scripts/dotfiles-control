@@ -14,7 +14,7 @@ WAL_DIR="$HOME/Build/Github/perso/wallpapers"
 function update_repo {
 	cd $GIT_DIR
 	# Scripts
-	rsync -ar ~/bin/* scripts/ --exclude apps/st --exclude latex_scripts/ --exclude apps/surf --exclude apps/xwinter
+	rsync -ar ~/.local/bin/* scripts/ --exclude st --exclude nhentai --exclude surf --exclude xwinter --exclude tabbed --exclude sent
 	# Configs
 		# BSPWM
 		rsync -a ~/.config/bspwm config/
@@ -29,7 +29,7 @@ function update_repo {
 		printf "Copied ${BRED}mpv ${NC}config\n"
 		rsync -a ~/.config/ncmpcpp config/ --exclude lyrics --exclude error.log
 		printf "Copied ${BRED}ncmpcpp ${NC}config\n"
-		rsync -a ~/.config/nvim config/ --exclude autoload --exclude plugged --exclude spell
+		rsync -a ~/.config/nvim config/ --exclude autoload --exclude plugged --exclude spell --exclude .netrwhist
 		printf "Copied ${BRED}nvim ${NC}config\n"
 		rsync -a ~/.config/polybar config/ --exclude polybar-themes
 		printf "Copied ${BRED}polybar ${NC}config\n"
