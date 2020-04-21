@@ -4,11 +4,11 @@
 super + Return
 	termite
 super + shift + Return
-	/home/luc/bin/apps/st
+	/home/luc/.local/bin/st
 super + BackSpace
 	urxvt
 super + c
-	/home/luc/bin/apps/draw_term
+	/home/luc/.local/bin/draw_term
 
 #####################
 # Program launchers #
@@ -46,7 +46,7 @@ super + shift + p
 super + t
 	firefox
 super + shift + t
-	/home/luc/bin/apps/surf /home/luc/Build/Github/perso/startpage/index.html
+	/home/luc/.local/bin/surf /home/luc/Build/Github/perso/startpage/index.html
 super + n
 	qutebrowser
 
@@ -60,11 +60,11 @@ Print
 # Volume Control #
 ##################
 XF86AudioLowerVolume
-	/home/luc/bin/control/volume-control dec
+	/home/luc/.local/bin/volume-control dec
 XF86AudioRaiseVolume
-	/home/luc/bin/control/volume-control inc
+	/home/luc/.local/bin/volume-control inc
 XF86AudioMute
-	/home/luc/bin/control/volume-control mute
+	/home/luc/.local/bin/volume-control mute
 
 #########################
 # Restart bspwm/polybar #
@@ -84,7 +84,7 @@ super + q
 # Exit bspwm #
 ##############
 super + shift + e
-	/home/luc/bin/apps/powermenu
+	/home/luc/.local/bin/powermenu
 
 ##############
 # Lock bspwm #
@@ -99,23 +99,23 @@ super + shift + s
 # Wallpaper Control #
 #####################
 super + i
-	/home/luc/bin/random-wall
+	/home/luc/.local/bin/random-wall
 super + shift + i
-	/home/luc/bin/current-wal
+	/home/luc/.local/bin/current-wal
 
 ###############
 # MPD Control #
 ###############
 XF86Audio{Play,Pause,Next,Prev,Stop}
-	/home/luc/bin/control/mpd-control {toggle,toggle,next,prev,stop}
+	/home/luc/.local/bin/mpd-control {toggle,toggle,next,prev,stop}
 shift + XF86Audio{Stop,Play,Pause,Prev}
-	/home/luc/bin/control/mpd-control {volume-up,volume-down,volume-down,menu}
+	/home/luc/.local/bin/mpd-control {volume-up,volume-down,volume-down,menu}
 
 #####################
 # Backlight Control #
 #####################
 XF86MonBrightness{Up,Down}
-	/home/luc/bin/control/backlight-control {inc,dec}
+	/home/luc/.local/bin/backlight-control {inc,dec}
 
 #################
 # Close or Kill #
@@ -171,4 +171,4 @@ super + ctrl + {Left,Down,Up,Right}
 # Screenkey toggle #
 ####################
 super + b
-	/home/luc/bin/toggle-screenkey
+	/home/luc/.local/bin/toggle-screenkey
