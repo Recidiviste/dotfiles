@@ -10,8 +10,8 @@ PS1="%B%{$fg[red]┌─<%}%{$fg[blue]%}%n%{$fg[grey]%}@%{$fg[cyan]%}%M %{$fg[gre
 
 # ZSH History
 HISTFILE=~/.cache/zshistory
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 
 # Load aliases
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"

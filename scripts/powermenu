@@ -1,21 +1,18 @@
-#!/bin/fish
+#!/bin/bash
 
-function pc_shutdown
-	/home/luc/bin/control/mpd-control shutdown
-	systemctl -i poweroff
-end
+menu=$(echo " Lock| Logout| Reboot| Shutdown" | rofi -sep "|" -dmenu -i -p 'System' -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 | head --lines=1 )
 
-
-
-set -l menu (echo " Lock| Logout| Reboot| Shutdown" | rofi -sep "|" -dmenu -i -p 'System' -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 | head --lines=1 )
-
-switch $menu
-	case '*Lock'
+case $menu in
+	'*Lock')
 		i3lock-fancy
-	case '*Logout'
+		;;
+	'*Logout')
 		bspc quit
-	case '*Reboot'
+		;;
+	'*Reboot')
 		systemctl reboot
-	case '*Shutdown'
-		pc_shutdown
-end
+		;;
+	'*Shutdown')
+		systemctl poweroff
+		;;
+esac

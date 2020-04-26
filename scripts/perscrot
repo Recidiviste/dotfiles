@@ -1,0 +1,3 @@
+#!/bin/bash
+
+shotgun $(slop -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard

@@ -6,8 +6,10 @@ read -r X Y W H < <(slop -f "%x %y %w %h" -b 1 -t 0 -q)
 (( H /= 16 ))
 g=${W}x${H}+${X}+${Y}
 bspc rule -a st-256color -o state=floating
-if [ "$1" == "perl6" ]; then
-    /home/luc/bin/apps/st -g $g -e perl6
-else
-    /home/luc/bin/apps/st -g $g
+if [ -z $W ] || [ -z $H ]; then
+	if [ "$1" == "perl6" ]; then
+	    /home/luc/.local/bin/st -g $g -e perl6
+	else
+	    /home/luc/.local/bin/st -g $g
+	fi
 fi

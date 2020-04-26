@@ -23,22 +23,19 @@ super + d
 	dmenu_run
 super + shift + d
 	networkmanager_dmenu
-super + shift + y
-	btmenu
 super + e
 	rofi -show calc -modi calc -no-show-match -no-sort -lines 2
 super + u 
 	rofi-theme-selector
 super + shift + m
 	clipmenu
-
+super + shift + p
+	/home/luc/.local/bin/dmenuunicode
 #################
 # File Managers #
 #################
 super + p
 	thunar
-super + shift + p
-	termite -e "vifm"
 
 ################
 # Web Browsers #
