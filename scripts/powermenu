@@ -13,6 +13,6 @@ case $menu in
 		systemctl reboot
 		;;
 	'*Shutdown')
-		systemctl poweroff
+		systemctl -i poweroff
 		;;
 esac

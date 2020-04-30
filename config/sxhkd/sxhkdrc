@@ -51,7 +51,10 @@ super + n
 # Print #
 #########
 Print
-	i3-scrot
+	scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Images/screenshots' && notify-send --icon=itmages-information "Screenshot" "Screenshot saved to /home/luc/Images/screenshots"
+super + shift + Print
+	shotgun $(slop -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard && notify-send --icon=itmages-information "Screenshot" "Screenshot saved to clipboard"
+	
 
 ##################
 # Volume Control #
@@ -99,6 +102,8 @@ super + i
 	/home/luc/.local/bin/random-wall
 super + shift + i
 	/home/luc/.local/bin/current-wal
+super + w
+	/home/luc/.local/bin/Wall-d
 
 ###############
 # MPD Control #

@@ -1,5 +1,5 @@
 [Default Applications]
-text/html=surf.desktop
+text/html=qute.desktop
 text/plain=text.desktop
 text/x-shellscript=text.desktop
 text/x-makefile=text.desktop
@@ -33,3 +33,4 @@ video/x-ogm=video.desktop
 video/x-theora=video.desktop
 video/quicktime=video.desktop
 video/x-ms-wmv=video.desktop
+audio/mpeg=video.desktop

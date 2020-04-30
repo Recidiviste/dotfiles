@@ -9,7 +9,8 @@ alias \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
-	tmux="tmux -f ~/.config/tmux.conf"
+	tmux="tmux -f ~/.config/tmux.conf" \
+	sxivr="sxiv-rifle"
 
 # Colorize commands when possible
 alias \
@@ -25,6 +26,8 @@ alias \
 	lsa="ls -a" \
 	lexa="exa -Tla" \
 	allatexcomp='for file in $(ls | grep ".tex"); do xelatex $file; done; rm *.aux *.log' \
-	vim="nvim"
+	vim="nvim" \
+	open="xdg-open" \
+	wm-name="xprop | grep 'WM_NAME'"
 
 # vim: filetype=sh

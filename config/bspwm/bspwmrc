@@ -47,6 +47,7 @@ bspc rule -a krita desktop='^8' follow=on # Krita spawn floating on desktop 8
 
 bspc rule -a discord desktop='^2' follow=false # Discord spawn on desktop 2
 bspc rule -a Steam desktop='^3' follow=false # Steam spawn on desktop 3
+bspc rule -a Sxiv state=floating
 
 
 #############

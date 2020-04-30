@@ -147,9 +147,6 @@ command C !compiler %
 " View the result
 command O !opout %
 
-
-
-
 " ====================== LATEX ============================ "
 
 " Tikz
