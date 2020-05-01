@@ -4,7 +4,7 @@
 # Thanks Luke Smith
 
 basename="$(echo "$1" | sed 's/\.[^\/.]*$//')"
-READER="$(zathura)"
+READER="zathura"
 BROWSER="surf"
 
 case "$1" in

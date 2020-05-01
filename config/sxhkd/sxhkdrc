@@ -51,10 +51,7 @@ super + n
 # Print #
 #########
 Print
-	scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Images/screenshots' && notify-send --icon=itmages-information "Screenshot" "Screenshot saved to /home/luc/Images/screenshots"
-super + shift + Print
-	shotgun $(slop -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard && notify-send --icon=itmages-information "Screenshot" "Screenshot saved to clipboard"
-	
+	/home/luc/.local/bin/perscrot
 
 ##################
 # Volume Control #

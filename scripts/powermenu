@@ -1,18 +1,14 @@
 #!/bin/bash
 
-menu=$(echo " Lock| Logout| Reboot| Shutdown" | rofi -sep "|" -dmenu -i -p 'System' -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 | head --lines=1 )
+menu=$( rofi -sep "|" -dmenu -i -p 'System' -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 <<< " Lock| Logout| Reboot| Shutdown")
 
 case $menu in
-	'*Lock')
-		i3lock-fancy
-		;;
-	'*Logout')
-		bspc quit
-		;;
-	'*Reboot')
-		systemctl reboot
-		;;
-	'*Shutdown')
-		systemctl -i poweroff
-		;;
+	*Lock)
+		i3lock-fancy;;
+	*Logout)
+		bspc quit;;
+	*Reboot)
+		systemctl reboot;;
+	*Shutdown)
+		systemctl -i poweroff;;
 esac

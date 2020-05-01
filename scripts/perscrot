@@ -1,3 +1,37 @@
 #!/bin/bash
 
-shotgun $(slop -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard
+WALLPAPER="$HOME/Images/wallpapers/"
+MODE=$(echo -e "Whole screen\nSelected Zone" | dmenu -l 2 -p "Type?")
+WHERE=$(echo -e "Clipboard\nSave" | dmenu -l 2 -p "Where?")
+file="/tmp/perscrot_tmp.png"
+
+case "$MODE" in
+	Whole*)
+		case $WHERE in
+			Clipboard)
+				sleep 1 && shotgun - | xclip -t 'image/png' -selection clipboard &&
+				notify-send --icon=itmages-information "Screenshot" "Screenshot saved to clipboard"
+				;;
+			Save)
+				scrot --delay 1 '%Y-%m-%d-%s_$wx$h.png' -e 'mv $f ~/Images/screenshots' &&
+				notify-send --icon=itmages-information "Screenshot" "Screenshot saved to /home/luc/Images/screenshots"
+				;;
+		esac
+		;;
+	Selected*)
+		case $WHERE in
+			Clipboard)
+				shotgun $(slop -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard &&
+				notify-send --icon=itmages-information "Screenshot" "Screenshot saved to clipboard"
+				;;
+			Save)
+				shotgun $(slop -f "-i %i -g %g") $file &&
+				width=$(identify -format "%w" "$file")> /dev/null &&
+				height=$(identify -format "%h" "$file")> /dev/null &&
+				name="$(date +%Y-%m-%d-%s)_${width}x${height}.png" &&
+				mv $file /home/luc/Images/screenshots/$name &&
+				notify-send --icon=itmages-information "Screenshot" "Screenshot saved to /home/luc/Images/screenshots"
+				;;
+		esac
+		;;
+esac
