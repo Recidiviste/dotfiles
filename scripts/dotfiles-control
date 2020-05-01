@@ -90,24 +90,11 @@ ${BLUE} 2${BWHITE} Upload to Github ${BGREEN}($(ls $WALLPAPER | wc -l) wals on P
 	esac
 }
 
-function initialize_pc {
-	if ! $(lsb_release -d | grep -q "Arch Linux"); then
-		printf "Sorry, but you're not using ${BRED}Arch${NC} !"
-		exit 1
-	else
-		command -v yay > /dev/null
-		if ! $status; then
-			printf "${BGREEN}yay${NC} isn't installed."
-			read -p "Install it ? [y/n]: " ya
-		fi
-	fi
-}
 
 printf "${RED}+${GREEN}--------------------------${RED}+
 ${GREEN}|  ${BLUE}1 · ${NC}Upload to Github    ${GREEN}|
 ${GREEN}|  ${BLUE}2 · ${NC}Import configs      ${GREEN}|
 ${GREEN}|  ${BLUE}3 · ${NC}Wallpapers Changes  ${GREEN}|
-${GREEN}|  ${BLUE}4 · ${NC}Initialize PC       ${GREEN}|
 ${RED}+${GREEN}--------------------------${RED}+${NC}\n"
 read -p "Choose: " dec
 
@@ -117,8 +104,6 @@ case $dec in
 	2) update_pc
 		;;
 	3) wals_changes
-		;;
-	4) initialize_pc
 		;;
 	*) printf "${RED}!!${NC} Bad option ${RED}!!${NC}\n"
 		false
