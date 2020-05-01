@@ -52,6 +52,8 @@ super + n
 #########
 Print
 	/home/luc/.local/bin/perscrot
+super + shift + Print
+	scrot '%Y-%m-%d-%s_$wx$h.png' -e 'mv $f ~/Images/screenshots/' && notify-send --icon=itmages-information "Screenshot" "Screenshot saved to /home/luc/Images/screenshots"
 
 ##################
 # Volume Control #
