@@ -31,6 +31,8 @@ super + shift + m
 	clipmenu
 super + shift + p
 	/home/luc/.local/bin/dmenuunicode
+super + shift + l
+	/home/luc/.local/bin/thelist
 #################
 # File Managers #
 #################

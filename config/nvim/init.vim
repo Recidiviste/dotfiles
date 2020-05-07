@@ -37,6 +37,7 @@ syntax enable " Enable syntax highlighting
 colorscheme horizon " Use horizon colorscheme
 set number "relativenumber
 set splitbelow splitright
+set viminfo='100,f1
 let mapleader = "µ" " Use a different map leader
 
 " Airline

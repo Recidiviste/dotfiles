@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd Documents/Code/R/Liste/
+
+MENU="dmenu -l 3 -p "Doing?""
+DOING=$(echo -e "Edit : Open a terminal and edit The List\nCompile : Open a terminal and compile The List\nOpen : Open the list with surf" | $MENU)
+
+case "$DOING" in
+	Edit*) st -e nvim list.Rmd ;;
+	Compile*) urxvt -e sh -c "compiler list.Rmd && read" ;;
+	Open*) surf list.html ;;
+	*) exit 1
+esac

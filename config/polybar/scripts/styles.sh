@@ -50,7 +50,7 @@ sed -i -e 's/off: .*/off:    #EC7875ff;/g' $rofi_path/colors.rasi
 elif  [[ $1 = "--Light" ]]; then
 
 # polybar ---------------------------------
-sed -i -e 's/bg = .*/bg = #FFFFFF/g' $polybar_path/colors.ini
+sed -i -e 's/bg = .*/bg = #D3D2CE/g' $polybar_path/colors.ini
 sed -i -e 's/bg-alt = .*/bg-alt = #CACACA/g' $polybar_path/colors.ini
 sed -i -e 's/fg = .*/fg = #555555/g' $polybar_path/colors.ini
 sed -i -e 's/ac = .*/ac = #4DA8B9/g' $polybar_path/colors.ini
@@ -67,7 +67,7 @@ sed -i -e 's/yellow = .*/yellow = #D2A91D/g' $polybar_path/colors.ini
 sed -i -e 's/amber = .*/amber = #FD890F/g' $polybar_path/colors.ini
 sed -i -e 's/orange = .*/orange = #EA7222/g' $polybar_path/colors.ini
 sed -i -e 's/brown = .*/brown = #AC5C4E/g' $polybar_path/colors.ini
-sed -i -e 's/indigo = .*/indigo = #4759C6/g' $polybar_path/colors.ini
+#sed -i -e 's/indigo = .*/indigo = #4759C6/g' $polybar_path/colors.ini
 
 # relaunch polybar
 polybar-msg cmd restart
