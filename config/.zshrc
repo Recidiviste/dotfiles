@@ -32,6 +32,9 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+bindkey -a "^[[3~" delete-char
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 export KEYTIMEOUT=1
 
