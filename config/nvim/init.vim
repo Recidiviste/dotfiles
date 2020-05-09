@@ -201,6 +201,12 @@ autocmd FileType tex inoremap ,tikz \begin{tikzpicture}<CR><CR>\end{tikzpicture}
 autocmd Filetype tex inoremap ,cal \mathcal{}<Left>
 autocmd FileType tex inoremap ,V \vect{}<Left>
 
+" ======================= LIST ============================= "
+
+autocmd BufRead,BufEnter list.Rmd setlocal noautoindent | setlocal nocindent | setlocal nosmartindent | setlocal indentexpr=
+
+autocmd BufRead,BufEnter list.Rmd inoremap ,e <details><summary>**Informations**</summary><Enter><p><Esc>8ji</p></details><Enter><Esc>
+autocmd BufRead,BufEnter list.Rmd inoremap ,n <details><summary>**Informations**</summary><Enter><p><Enter>* Nom Français : <Enter>* Nom Originel : <Enter>* Réalisateur : <Enter>* Possession : <Enter>* Chemin d'accès : <Enter>* Vu : <Enter></p></details><Enter><Esc>
 
 " ======================= HTML ============================= "
 
