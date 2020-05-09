@@ -33,8 +33,6 @@ bspc rule -a st-256color state=floating
 bspc rule -a Gpick state=floating # Gpick spawm floating
 bspc rule -a mpv state=floating # mpv spawn floating
 bspc rule -a Orage state=floating # Spawn orage floating
-bspc rule -a Galculator state=floating # Spawn Galculator floating
-bspc rule -a Keybase state=floating # Spawn Keybase floating
 bspc rule -a Pavucontrol state=floating # Spawn Pulseaudio control panel floating
 bspc rule -a Pdf2png state=floating # Spawn Pdf2png floating
 bspc rule -a minecraft-launcher state=pseudo_tiled # Spawn Minecraft Launcher floating
@@ -42,10 +40,8 @@ bspc rule -a hakuneko-desktop state=floating # Spawn manga downloader floating
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on # Gimp spawn floating on desktop 8 (and follow it)
 bspc rule -a inkscape desktop='^8' follow=on # Inkscape spawn floating on desktop 8
-bspc rule -a krita desktop='^8' follow=on # Krita spawn floating on desktop 8
 
 bspc rule -a discord desktop='^2' follow=false # Discord spawn on desktop 2
-bspc rule -a Steam desktop='^3' follow=false # Steam spawn on desktop 3
 bspc rule -a Sxiv state=floating
 
 

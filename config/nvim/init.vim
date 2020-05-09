@@ -37,7 +37,8 @@ syntax enable " Enable syntax highlighting
 colorscheme horizon " Use horizon colorscheme
 set number "relativenumber
 set splitbelow splitright
-set viminfo='100,f1
+set history=10
+set shada='100,f1
 let mapleader = "µ" " Use a different map leader
 
 " Airline
@@ -100,7 +101,7 @@ nnoremap <leader>/ :BLines<CR>
 " ====================== AUTOCMD ============================ "
 
 " Spell verification on md and tex file
-autocmd BufEnter *.md set spell spelllang=fr
+autocmd BufEnter *.Rmd set spell spelllang=fr
 autocmd BufEnter *.tex set spell spelllang=fr
 autocmd bufenter * if (("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

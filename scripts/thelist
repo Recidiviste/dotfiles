@@ -5,9 +5,25 @@ cd Documents/Code/R/Liste/
 MENU="dmenu -l 3 -p "Doing?""
 DOING=$(echo -e "Edit : Open a terminal and edit The List\nCompile : Open a terminal and compile The List\nOpen : Open the list with surf" | $MENU)
 
+Edit() {
+	EditMenu="dmenu -l 7 -p "Which?""
+	EditCommand="st -e nvim list.Rmd"
+	place=$(echo -e "Normal : Ouvre simplement le fichier\nLivres : Aller à la marque livres\nDocumentaires : Aller à la marque documentaires\nFilms : Aller à la marque films\nSéries : Aller à la marque Séries\nSéries Audios : Aller à la marque Séries Audios\nAutres : Aller à la marque Autres" | $EditMenu)
+	case "$place" in
+		Normal*) $EditCommand ;;
+		Livres*) $EditCommand -c "'l" ;;
+		Documentaires*) $EditCommand -c "'d" ;;
+		Films*) $EditCommand -c "'f" ;;
+		"Séries :"*) $EditCommand -c "'s" ;;
+		"Séries Audios"*) $EditCommand -c "'a" ;;
+		Autres*) $EditCommand -c "'o" ;;
+		*) exit 1
+	esac
+}
+
 case "$DOING" in
-	Edit*) st -e nvim list.Rmd ;;
-	Compile*) urxvt -e sh -c "compiler list.Rmd && read" ;;
+	Edit*) Edit ;;
+	Compile*) urxvt -e sh -c "compiler list.Rmd && echo -e '\nPress [Enter] to close' && read" ;;
 	Open*) surf list.html ;;
 	*) exit 1
 esac

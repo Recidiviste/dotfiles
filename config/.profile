@@ -6,13 +6,14 @@ export EDITOR="nvim"
 export TERMINAL="termite"
 export BROWSER="firefox"
 export READER="zathura"
+export NNN_LOCKER="bashlock"
 
 # Path
 export PATH=/home/luc/go/bin:/home/luc/.local/bin:$PATH$( find $HOME/bin/ -type d -printf ":%p" )
 
 # Useful directories
 export WALLPAPER="/home/luc/Images/wallpapers"
-export TORRENT_DIR="/home/luc/Téléchargements/Torrent/"
+export TORRENT_DIR="/home/luc/Téléchargements/Torrent"
 
 # FZF
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
