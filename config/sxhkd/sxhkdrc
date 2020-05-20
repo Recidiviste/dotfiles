@@ -4,7 +4,7 @@
 super + Return
 	termite
 super + shift + Return
-	/home/luc/.local/bin/st
+	/home/luc/.local/bin/st -c floating
 super + BackSpace
 	urxvt
 super + c

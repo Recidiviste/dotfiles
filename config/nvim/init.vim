@@ -19,6 +19,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'nightsense/rusticated'
 Plug 'ryanoasis/vim-devicons'
 Plug 'aurieh/discord.nvim'
+Plug 'evansalter/vim-checklist'
 
 call plug#end()
 
@@ -38,7 +39,7 @@ colorscheme horizon " Use horizon colorscheme
 set number "relativenumber
 set splitbelow splitright
 set history=10
-set shada='100,f1
+set shada='100,f0
 let mapleader = "µ" " Use a different map leader
 
 " Airline
@@ -141,7 +142,7 @@ map <leader>D :colorscheme horizon<CR>:let g:airline_theme='lucius'<CR>
 map <leader>L :colorscheme rusticated<CR>:let g:airline_theme='papercolor'<CR>
 
 
-" ================== USUALS FOR DOCMENTS ================== "
+" ================== USUALS FOR DOCUMENTS ================== "
 
 " Compile
 command C !compiler %
@@ -200,13 +201,18 @@ autocmd Filetype tex inoremap ,func \begin{tikzpicture}<CR>\draw[thin, dashed, g
 autocmd FileType tex inoremap ,tikz \begin{tikzpicture}<CR><CR>\end{tikzpicture}<Up>
 autocmd Filetype tex inoremap ,cal \mathcal{}<Left>
 autocmd FileType tex inoremap ,V \vect{}<Left>
+autocmd FileType tex inoremap ,de \begin{description}<Enter><Enter>\end{description}<Enter><Enter><++><Esc>3kA\item<Space>
+autocmd FileType tex inoremap ,dq \begin{description}<Enter><Enter>\end{description}<Enter><Enter><++><Esc>3kA\item[$\circ$]<Space><Enter>\item[$\circ$]<Space><Enter>\item[$\circ$]<Space>
 
 " ======================= LIST ============================= "
 
-autocmd BufRead,BufEnter list.Rmd setlocal noautoindent | setlocal nocindent | setlocal nosmartindent | setlocal indentexpr=
+autocmd BufRead,BufEnter *.Rmd setlocal noautoindent | setlocal nocindent | setlocal nosmartindent | setlocal indentexpr=
 
-autocmd BufRead,BufEnter list.Rmd inoremap ,e <details><summary>**Informations**</summary><Enter><p><Esc>8ji</p></details><Enter><Esc>
-autocmd BufRead,BufEnter list.Rmd inoremap ,n <details><summary>**Informations**</summary><Enter><p><Enter>* Nom Français : <Enter>* Nom Originel : <Enter>* Réalisateur : <Enter>* Possession : <Enter>* Chemin d'accès : <Enter>* Vu : <Enter></p></details><Enter><Esc>
+autocmd BufRead,BufEnter *.Rmd inoremap ,e <details><summary>**Informations**</summary><Enter><p><Esc>8ji</p></details><Enter><Esc>
+autocmd BufRead,BufEnter *.Rmd inoremap ,n <details><summary>**Informations**</summary><Enter><p><Enter>* Nom Français : <Enter>* Nom Originel : <Enter>* Réalisateur : <Enter>* Année de sortie : <Enter>* Possession : <Enter>* Chemin d'accès : <Enter>* Vu : <Enter></p></details><Enter><Esc>
+
+nnoremap <leader>ct :ChecklistToggleCheckbox<cr>
+vnoremap <leader>ct :ChecklistToggleCheckbox<cr>
 
 " ======================= HTML ============================= "
 

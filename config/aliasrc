@@ -10,7 +10,6 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	tmux="tmux -f ~/.config/tmux.conf" \
-	sxivr="sxiv-rifle"
 
 # Colorize commands when possible
 alias \

@@ -5,7 +5,7 @@ EOF
 
 autoload -U colors && colors
 # Prompt
-PS1="%B%{$fg[red]┌─<%}%{$fg[blue]%}%n%{$fg[grey]%}@%{$fg[cyan]%}%M %{$fg[grey]%}in %{$fg[green]%}%~%{$fg[red]%}>
+PS1="%B%{$fg[red]┌─<%}%{$fg[blue]%}%n%{$fg[magenta]%}@%{$fg[cyan]%}%M %{$fg[magenta]%}in %{$fg[green]%}%~%{$fg[red]%}>
 └─<>──%{$fg[yellow]%}»%b "
 
 # ZSH History

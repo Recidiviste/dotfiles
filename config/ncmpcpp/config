@@ -306,7 +306,7 @@ browser_display_mode = classic
 #
 #seek_time = 1
 #
-#volume_change_step = 2
+volume_change_step = 1
 #
 #autocenter_mode = no
 #

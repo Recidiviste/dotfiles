@@ -34,3 +34,6 @@ video/x-theora=video.desktop
 video/quicktime=video.desktop
 video/x-ms-wmv=video.desktop
 audio/mpeg=video.desktop
+
+[Added Associations]
+application/binary=text.desktop;

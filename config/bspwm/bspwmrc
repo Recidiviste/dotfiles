@@ -29,7 +29,7 @@ bspc config focus_follows_pointer true # The cursor auto-focus the window under
 # Rules #
 #########
 bspc rule -a URxvt state=floating # URxvt spawn floating
-bspc rule -a st-256color state=floating
+bspc rule -a floating state=floating
 bspc rule -a Gpick state=floating # Gpick spawm floating
 bspc rule -a mpv state=floating # mpv spawn floating
 bspc rule -a Orage state=floating # Spawn orage floating
