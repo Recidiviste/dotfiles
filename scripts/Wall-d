@@ -26,9 +26,9 @@ Single(){
     fi
 
     SingleWallMenu="dmenu -i -l 5 -p "Options""
-    SingleWallOptions=$(echo -e "zoom\ncenter\ntile\nstretch\nno-randr" | $SingleWallMenu)
+    SingleWallOptions=$(echo -e "fill\ncenter\ntile\nscale\nseamless" | $SingleWallMenu)
 
-    xwallpaper --$SingleWallOptions $wall1  && sed -i "s|xwallpaper.*|xwallpaper  --$SingleWallOptions $wall1|" $HOME/.config/Wall-d/defaultwallpaper.sh
+    feh --bg-$SingleWallOptions $wall1
 }
 
 # to set to diffrent wallpapers on each desktop

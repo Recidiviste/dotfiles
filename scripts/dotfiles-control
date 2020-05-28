@@ -41,8 +41,6 @@ function update_repo {
 		printf "Copied ${BRED}termite ${NC}config\n"
 		rsync -a ~/.config/zathura config/
 		printf "Copied ${BRED}zathura ${NC}config\n"
-		rsync -a ~/.config/i3-scrot.conf config/
-		printf "Copied ${BRED}i3-scrot ${NC}config\n"
 		rsync -a ~/.config/mimeapps.list config/
 		printf "Copied ${BRED}mimeapps.list ${NC}\n"
 		rsync -a ~/.zshrc config/

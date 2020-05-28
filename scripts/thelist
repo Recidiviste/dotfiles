@@ -1,11 +1,12 @@
 #!/bin/bash
 
-cd Documents/Liste/source/
+cd Documents/Liste/
 
 MENU="dmenu -l 3 -p "Doing?""
 DOING=$(echo -e "Edit : Open a terminal and edit The List\nCompile : Open a terminal and compile The List\nOpen : Open the list with surf" | $MENU)
 
 Edit() {
+	cd src/
 	EditMenu="dmenu -l 7 -p "Which?""
 	place=$(echo -e "Index : Ouvrir l'index\nLivres : Ouvrir le liste de livres\nDocumentaires : Ouvrir la liste documentaires\nFilms : Ouvrir la liste films\nSéries : Ouvrir la liste Séries\nSéries Audios : Ouvrir la liste Séries Audios\nAutres : Ouvrir la liste Autres" | $EditMenu)
 	case "$place" in
@@ -22,7 +23,7 @@ Edit() {
 
 case "$DOING" in
 	Edit*) Edit ;;
-	Compile*) urxvt -e sh -c 'cd ../ && ./render.sh && echo -e "\nPress [Enter] to close" && read' ;;
-	Open*) surf ../site/index.html ;;
+	Compile*) urxvt -e sh -c 'make comp && echo -e "\nPress [Enter] to close" && read' ;;
+	Open*) surf site/index.html ;;
 	*) exit 1
 esac

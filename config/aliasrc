@@ -10,13 +10,14 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
 	tmux="tmux -f ~/.config/tmux.conf" \
+	nnn="nnn -a"
 
 # Colorize commands when possible
 alias \
 	ls="ls -hN --color=auto $argv" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+	ccat="highlight -l --out-format=ansi --force"
 
 # Others
 alias \

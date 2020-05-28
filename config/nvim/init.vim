@@ -80,6 +80,10 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+nmap <silent> <A-S-Up> :wincmd K<CR>
+nmap <silent> <A-S-Down> :wincmd J<CR>
+nmap <silent> <A-S-Left> :wincmd H<CR>
+nmap <silent> <A-S-Right> :wincmd L<CR>
 
 " Moving lines 
 nnoremap <A-j> :m .+1<CR>==

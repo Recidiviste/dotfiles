@@ -60,7 +60,7 @@ zle-line-init() {
 zle -N zle-line-init
 
 # FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.config/fzf/fzf.zsh ] && source ~/.config/fzf/fzf.zsh
 
 eval $(thefuck --alias)
 

@@ -9,6 +9,7 @@ mkdir /tmp/qutebrowser
 # Usual cleaning #
 ##################
 rm -f ~/.python_history
+rm -f ~/.lesshst ~/.wget-hsts
 
 ##########
 # Basics #
