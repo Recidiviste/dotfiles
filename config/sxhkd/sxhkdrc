@@ -90,8 +90,6 @@ super + shift + e
 ##############
 super + shift + z
 	/home/luc/.local/bin/lock.sh
-super + shift + s
-	gllock
 
 #####################
 # Wallpaper Control #
