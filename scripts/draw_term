@@ -8,8 +8,8 @@ g=${W}x${H}+${X}+${Y}
 bspc rule -a st-256color -o state=floating
 if [ -z $W ] || [ -z $H ]; then
 	if [ "$1" == "perl6" ]; then
-	    /home/luc/.local/bin/st -g $g -e perl6
+	    st -g $g -e perl6
 	else
-	    /home/luc/.local/bin/st -g $g
+	    st -g $g
 	fi
 fi

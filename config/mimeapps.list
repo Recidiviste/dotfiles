@@ -34,6 +34,5 @@ video/x-theora=video.desktop
 video/quicktime=video.desktop
 video/x-ms-wmv=video.desktop
 audio/mpeg=video.desktop
-
-[Added Associations]
-application/binary=text.desktop;
+x-scheme-handler/discord-577632370602278912=discord-577632370602278912.desktop
+x-scheme-handler/discord-474605546457137157=discord-474605546457137157.desktop

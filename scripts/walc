@@ -1,0 +1,22 @@
+#!/bin/sh
+
+
+DIR="$HOME/Images/wallpapers/" # Path to wallpapers
+Monitor1=$(xrandr --listactivemonitors | grep "+" | awk '{print $4}' | awk NR==1) # Select the first monitor for dual mode
+Monitor2=$(xrandr --listactivemonitors | grep "+" | awk '{print $4}' | awk NR==2) # Select the second monitor for dual mode
+
+walls=$(sxiv -t -o -r -g 750x750+585+165 $DIR | xargs)  # running sxiv in thumbnail mode.
+wall1=$(printf "%s" "$walls" | awk '{w = 1; for (--w; w >=0; w--){printf "%s\t",$(NF-w)}print ""}') # Only print the last marked Wallpaper
+
+# if no picture is marked in sxiv, exit.
+if [ -z "$walls" ]
+then
+exit 0
+else
+$SingleWallMenu
+fi
+
+SingleWallMenu="dmenu -i -l 5 -p "Options""
+SingleWallOptions=$(echo -e "fill\ncenter\ntile\nscale\nseamless" | $SingleWallMenu)
+
+feh --bg-$SingleWallOptions $wall1

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tail -n 1 ~/.fehbg | cut --delimiter="'" -f 2

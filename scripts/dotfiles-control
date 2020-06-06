@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -8,13 +8,13 @@ BRED='\033[1;31m'
 BGREEN='\033[1;32m'
 BCYAN='\033[1;36m'
 BWIHTE='\033[1;37m'
-GIT_DIR="$HOME/Build/Github/perso/dotfiles"
-WAL_DIR="$HOME/Build/Github/perso/wallpapers"
+GIT_DIR="$HOME/repos/perso/dotfiles"
+WAL_DIR="$HOME/repos/perso/wallpapers"
 
 function update_repo {
 	cd $GIT_DIR
 	# Scripts
-	rsync -ar ~/.local/bin/* scripts/ --exclude st --exclude nhentai --exclude surf --exclude xwinter --exclude tabbed --exclude sent
+	rsync -ar ~/.local/bin/* scripts/ --exclude nhentai
 	# Configs
 		# BSPWM
 		rsync -a ~/.config/bspwm config/

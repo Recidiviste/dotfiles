@@ -30,7 +30,7 @@ $HOME/.fehbg # Restore last wallpaper
 
 picom -fb --dbus & # Compositor
 $HOME/.config/polybar/launch.sh & # Polybar
-$HOME/bin/regen-wall-list # Recreate wall list
+echo > Images/wallpapers/.wall-list # Recreate wall list
 xautolock -locker "~/.local/bin/i3lock-blue.sh" -time 15 & # Autolock
 mpd & # Music Player Daemon
 
@@ -42,14 +42,13 @@ mpd & # Music Player Daemon
 nm-applet & # Network Manager
 copyq & # CopyQ
 clipmenud & # Dmenu clipboard
-
+udiskie --appindicator & # Udiskie automount
 
 ####################
 # GUI Applications #
 ####################
 
 discord & # Discord
-sleep 5; termite --name="ncmpcpp" --class="ncmpcpp" -e ncmpcpp & bspc rule -a ncmpcpp:ncmpcpp desktop='^1' &
-sleep 5; termite --name="calcurse" --class="calcurse" -e calcurse & bspc rule -a calcurse:calcurse desktop='^10' &
-# Spawn a terminal with ncmpcpp so I can have my interface to MPD already there. I'm lazy, i know.
-# Spawn calcurses so I can know what the fuck I'm supposed to do of my time
+sleep 2; termite --name="ncmpcpp" --class="ncmpcpp" -e ncmpcpp & bspc rule -a ncmpcpp:ncmpcpp desktop='^1' &
+sleep 2; termite --name="calcurse" --class="calcurse" -e calcurse & bspc rule -a calcurse:calcurse desktop='^10' &
+sleep 2; termite --name="newsboat" --class="newsboat" -e newsboat & bspc rule -a newsboat:newsboat desktop='^10' &

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+while read -r dir; do
+	if [ "$dir" == "./surf" ]; then
+		continue
+	else
+		if [[ -d "$dir/.git" ]]; then
+			cd "$dir" || continue
+			echo -e "\033[32m$(pwd)\033[0m"
+			git fetch
+			n=$(git log ..origin/master --oneline | wc -l)
+			if [ "$n" -gt "0" ]; then
+				echo -e "\033[91m$n\033[0m commits behind"
+			else
+				echo -e "\033[94mUp to date\033[0m"
+			fi
+			cd ..
+		fi
+	fi
+done < <(find . -mindepth 1 -maxdepth 1 -type d)

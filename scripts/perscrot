@@ -9,7 +9,7 @@ case "$MODE" in
 	Whole*)
 		case $WHERE in
 			Clipboard)
-				sleep 1 && shotgun - | xclip -t 'image/png' -selection clipboard &&
+				sleep 0.4 && shotgun - | xclip -t 'image/png' -selection clipboard &&
 				notify-send --icon=itmages-information "Screenshot" "Screenshot saved to clipboard"
 				;;
 			Save)

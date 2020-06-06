@@ -59,6 +59,8 @@ zle-line-init() {
 }
 zle -N zle-line-init
 
+setopt auto_cd
+
 # FZF
 [ -f ~/.config/fzf/fzf.zsh ] && source ~/.config/fzf/fzf.zsh
 

@@ -4,7 +4,7 @@
 super + Return
 	termite
 super + shift + Return
-	/home/luc/.local/bin/st -c floating
+	st -c floating
 super + BackSpace
 	urxvt
 super + c
@@ -31,8 +31,6 @@ super + shift + m
 	clipmenu
 super + shift + p
 	/home/luc/.local/bin/dmenuunicode
-super + shift + l
-	/home/luc/.local/bin/thelist
 #################
 # File Managers #
 #################
@@ -45,7 +43,7 @@ super + p
 super + t
 	firefox
 super + shift + t
-	/home/luc/.local/bin/surf /home/luc/Build/Github/perso/startpage/index.html
+	surf /home/luc/repos/perso/startpage/index.html
 super + n
 	qutebrowser
 
@@ -91,8 +89,7 @@ super + shift + e
 # Lock bspwm #
 ##############
 super + shift + z
-	mantablockscreen -cc
-#	i3lock-fancy
+	/home/luc/.local/bin/lock.sh
 super + shift + s
 	gllock
 
@@ -104,7 +101,7 @@ super + i
 super + shift + i
 	/home/luc/.local/bin/current-wal
 super + w
-	/home/luc/.local/bin/Wall-d
+	/home/luc/.local/bin/walc
 
 ###############
 # MPD Control #
@@ -134,7 +131,7 @@ super + {s,z,shift + f}
 super + {h,l,k,j}
 	bspc node -g {hidden,locked,sticky,private}
 super + shift + h
-	bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off
+	~/.local/bin/dmenuhidden
 super + f
 	bspc node -t fullscreen
 

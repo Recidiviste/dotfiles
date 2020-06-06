@@ -24,6 +24,7 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --preview-window right:70
 export NNN_PLUG='p:preview-tabbed;P:preview-tui'
 
 # Cleanup
+export TERMINFO="$HOME/.locah/share/termingo"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
