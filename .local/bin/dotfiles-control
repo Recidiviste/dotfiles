@@ -14,41 +14,45 @@ WAL_DIR="$HOME/repos/perso/wallpapers"
 function update_repo {
 	cd $GIT_DIR
 	# Scripts
-	rsync -ar ~/.local/bin/* scripts/ --exclude nhentai
+	rsync -ar ~/.local/bin/* .local/bin/ --exclude nhentai
 	# Configs
 		# BSPWM
-		rsync -a ~/.config/bspwm config/
+		rsync -a ~/.config/bspwm .config/
 		printf "Copied ${BRED}bspwm ${NC}config\n"
-		rsync -a ~/.config/dunst config/
+		rsync -a ~/.config/dunst .config/
 		printf "Copied ${BRED}dunst ${NC}config\n"
-		rsync -a ~/.config/i3 config/
+		rsync -a ~/.config/i3 .config/
 		printf "Copied ${BRED}i3 ${NC}config\n"
-		rsync -a ~/.config/mpd config/ --exclude database --exclude log --exclude pid --exclude state --exclude sticker.sql
+		rsync -a ~/.config/mpd .config/ --exclude database --exclude log --exclude pid --exclude state --exclude sticker.sql
 		printf "Copied ${BRED}mpd ${NC}config\n"
-		rsync -ar ~/.config/mpv config/ --exclude watch_later
+		rsync -ar ~/.config/mpv .config/ --exclude watch_later
 		printf "Copied ${BRED}mpv ${NC}config\n"
-		rsync -a ~/.config/ncmpcpp config/ --exclude lyrics --exclude error.log
+		rsync -a ~/.config/ncmpcpp .config/ --exclude lyrics --exclude error.log
 		printf "Copied ${BRED}ncmpcpp ${NC}config\n"
-		rsync -a ~/.config/nvim config/ --exclude autoload --exclude plugged --exclude spell --exclude .netrwhist
+		rsync -a ~/.config/nvim .config/ --exclude autoload --exclude plugged --exclude spell --exclude .netrwhist
 		printf "Copied ${BRED}nvim ${NC}config\n"
-		rsync -a ~/.config/polybar config/ --exclude polybar-themes
+		rsync -a ~/.config/polybar .config/ --exclude polybar-themes
 		printf "Copied ${BRED}polybar ${NC}config\n"
-		rsync -a ~/.config/rofi config/
+		rsync -a ~/.config/rofi .config/
 		printf "Copied ${BRED}rofi ${NC}config\n"
-		rsync -a ~/.config/sxhkd config/
+		rsync -a ~/.config/sxhkd .config/
 		printf "Copied ${BRED}sxhkd ${NC}config\n"
-		rsync -a ~/.config/termite config/
+		rsync -a ~/.config/termite .config/
 		printf "Copied ${BRED}termite ${NC}config\n"
-		rsync -a ~/.config/zathura config/
+		rsync -a ~/.config/zathura .config/
 		printf "Copied ${BRED}zathura ${NC}config\n"
-		rsync -a ~/.config/mimeapps.list config/
+		rsync -a ~/.config/mimeapps.list .config/
 		printf "Copied ${BRED}mimeapps.list ${NC}\n"
-		rsync -a ~/.zshrc config/
+		rsync -a ~/.zshrc .config/
 		printf "Copied ${BRED}zsh ${NC}config\n"
-		rsync -a ~/.config/aliasrc config/
+		rsync -a ~/.config/aliasrc .config/
 		printf "Copied ${BRED} alias ${NC}config\n"
-		rsync -a ~/.profile config/
+		rsync -a ~/.profile .config/
 		printf "Copied ${BRED}profile ${NC}config\n"
+		rsync -a ~/.config/mutt .config/
+		printf "Copied ${BRED}neomutt ${NC}config\n"
+		rsync -a ~/.config/newsboat .config/
+		printf "Copied ${BRED}newsboat ${NC}config\n"
 		git add *
 		read -p "Commmit ? [y/n]: " a
 		if [[ $a =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi

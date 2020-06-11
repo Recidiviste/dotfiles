@@ -4,7 +4,7 @@ menu=$( rofi -sep "|" -dmenu -i -p 'System' -width 10 -hide-scrollbar -line-padd
 
 case $menu in
 	*Lock)
-		i3lock-fancy;;
+		/home/luc/.local/bin/lock.sh;;
 	*Logout)
 		bspc quit;;
 	*Reboot)

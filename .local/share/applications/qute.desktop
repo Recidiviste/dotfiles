@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Surf Browser
+Exec=/usr/bin/qutebrowser -R %u

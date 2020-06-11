@@ -1,0 +1,49 @@
+auto-reload yes
+
+notify-always yes
+notify-program "~/.local/bin/newsboat-notifier"
+
+reload-time 30
+
+bind-key j down
+bind-key k up
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+bind-key T clear-tag
+
+color background          default default
+color listnormal          color8  default
+color listnormal_unread   default default
+color listfocus_unread    color4  color0
+color listfocus           color3  color0
+color info                color4  color0
+color article             white   default
+
+highlight all "---.*---" yellow
+highlight feedlist ".*(0/0))" black
+highlight article "^Feed:.*" black default bold
+highlight article "^Title:.*" blue default bold
+highlight article "^Author:.*" cyan default bold
+highlight article "^Date:.*" magenta default
+highlight article "^Link:.*" blue default bold
+highlight article "\\[[0-9][0-9]*\\]" green default bold
+highlight article "\\[image\\ [0-9]+\\]" yellow default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" yellow default bold
+highlight article ":.*\\(link\\)$" blue default underline
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" magenta default
+highlight article "https?://[^ ]+" blue default underline

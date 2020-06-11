@@ -52,3 +52,4 @@ discord & # Discord
 sleep 2; termite --name="ncmpcpp" --class="ncmpcpp" -e ncmpcpp & bspc rule -a ncmpcpp:ncmpcpp desktop='^1' &
 sleep 2; termite --name="calcurse" --class="calcurse" -e calcurse & bspc rule -a calcurse:calcurse desktop='^10' &
 sleep 2; termite --name="newsboat" --class="newsboat" -e newsboat & bspc rule -a newsboat:newsboat desktop='^10' &
+sleep 2; termite --name="neomutt" --class="neomutt" -e neomutt & bspc rule -a neomutt:neomutt desktop='^9' &

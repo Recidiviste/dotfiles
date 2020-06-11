@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Video/Audio Viewer
+Exec=/usr/bin/mpv --player-operation-mode=pseudo-gui %u

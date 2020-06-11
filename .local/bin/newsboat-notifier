@@ -1,0 +1,3 @@
+#!/bin/sh
+
+[ "$(/usr/bin/dunstify -A f,focus --urgency=normal --icon='~/.local/share/newsboat/logo.svg' "Newsboat" "$1")" = f ] && xdo activate -N newsboat

@@ -6,7 +6,9 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'jarun/nnn.vim' "nnn file manager
+" Plug 'jarun/nnn.vim' "nnn file manager
+Plug 'preservim/nerdtree' " Nerdtree file manager
+Plug 'Xuyuanp/nerdtree-git-plugin' " And the git plugin
 Plug 'bling/vim-airline' "Vim-airline
 Plug 'vim-airline/vim-airline-themes' "Themes for vim-airline
 	let g:airline_theme='lucius' " Use murmur theme
@@ -31,11 +33,9 @@ set nohlsearch " Don't hightlight all when searching
 set clipboard=unnamedplus " Use system clipboard
 set nocompatible " Use Vim settings instead of Vi settings
 filetype plugin on " Autodetect filetype
-if (has("termguicolors")) " Doesn't work for urxvt
-	set termguicolors
-endif
 syntax enable " Enable syntax highlighting
-colorscheme horizon " Use horizon colorscheme
+set termguicolors " Set termguicolors
+colorscheme base16-seti " Use base16-seti colorscheme
 set number "relativenumber
 set splitbelow splitright
 set history=10
@@ -52,14 +52,43 @@ let g:airline#extensions#branch#empty_message = ''
 let g:airline#extensions#whitespace#symbol= '!'
 
 
+" ========================== TMUX ========================== "
+
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'b'    : '#T',
+      \'c'    : '#(whoami)',
+      \'win'  : '#I #W',
+      \'cwin' : ['#I', '#W', '#F'],
+      \'x'    : '',
+      \'y'    : ['%T', '%a', '%Y'],
+      \'z'    : '#(battery)'}
+
 " ===================== MAPPINGS =========================== "
 
 " Spell Verification
 map <leader>o :setlocal spell spelllang=fr<CR>
 
 " NerdTree
-map <C-n> :NnnPicker '%:p:h'<CR>
-let g:nnn#layout = 'new' " Split
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Git Plugin
+" let g:NERDTreeIndicatorMapCustom = {
+"     \ "Modified"  : "✹",
+"     \ "Staged"    : "✚",
+"     \ "Untracked" : "✭",
+"     \ "Renamed"   : "➜",
+"     \ "Unmerged"  : "═",
+"     \ "Deleted"   : "✖",
+"     \ "Dirty"     : "✗",
+"     \ "Clean"     : "✔︎",
+"     \ 'Ignored'   : '☒',
+"     \ "Unknown"   : "?"
+"     \ }
+
+" nnn
+"map <C-n> :NnnPicker '%:p:h'<CR>
+"let g:nnn#layout = 'new' " Split
 
 " Navigating between marks
 inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
@@ -102,6 +131,9 @@ nnoremap tn :tabnew<CR>
 
 " Advanced Searching
 nnoremap <leader>/ :BLines<CR>
+
+" Shellcheck
+nnoremap <leader>aS :sp term://shellcheck %<cr>:resize 15<cr>
 
 " ====================== AUTOCMD ============================ "
 
