@@ -1,247 +1,362 @@
-┃ cheet               ┃ <Alt-1~4>                   ┃ Copy contents from column 1~4.                          ┃  ┃
-┃ cheet               ┃ <ctrl-a>                    ┃ Add new items.                                          ┃  ┃
-┃ cheet               ┃ <ctrl-e>                    ┃ Edit current item                                       ┃  ┃
-┃ cheet               ┃ <ctrl-i>                    ┃ Edit all items                                          ┃  ┃
-┃ neomutt             ┃ $                           ┃ Save modifications                                      ┃  ┃
-┃ neomutt             ┃ 1-9                         ┃ Go the 1-9 index number                                 ┃  ┃
-┃ neomutt             ┃ a                           ┃ Add the sender address to abook                         ┃  ┃
-┃ neomutt             ┃ ;                           ┃ Apply the next function to marked messages              ┃  ┃
-┃ neomutt             ┃ A                           ┃ Show all messages (undo limit)                          ┃  ┃
-┃ neomutt             ┃ #                           ┃ Break the thread in two                                 ┃  ┃
-┃ neomutt             ┃ b                           ┃ Send the message to another user                        ┃  ┃
-┃ neomutt             ┃ B                           ┃ Toggle side bar                                         ┃  ┃
-┃ neomutt             ┃ Ca                          ┃ Copy mail to archive                                    ┃  ┃
-┃ neomutt             ┃ c                           ┃ Change the folder                                       ┃  ┃
-┃ neomutt             ┃ Cd                          ┃ Copy mail to drafts                                     ┃  ┃
-┃ neomutt             ┃ &                           ┃ Change the update option of the mailbox                 ┃  ┃
-┃ neomutt             ┃ Ci                          ┃ Copy mail to Inbox                                      ┃  ┃
-┃ neomutt             ┃ Cj                          ┃ Copy mail to Junk                                       ┃  ┃
-┃ neomutt             ┃ Cs                          ┃ Copy mail to Sent                                       ┃  ┃
-┃ neomutt             ┃ Ct                          ┃ Copy mail to Trash                                      ┃  ┃
-┃ neomutt             ┃ CTRL+N                      ┃ Move the mark to the next mailbox with new messages     ┃  ┃
-┃ neomutt             ┃ CTRL+O                      ┃ Open the selected mailbox                               ┃  ┃
-┃ neomutt             ┃ CTRL+P                      ┃ Move the mark to the previous mailbox with new messages ┃  ┃
-┃ neomutt             ┃ CTRL+R                      ┃ Mark all messages as read                               ┃  ┃
-┃ neomutt             ┃ CTRL+T                      ┃ Unmark every message corresponding to a motif           ┃  ┃
-┃ neomutt             ┃ CTRL+U                      ┃ Recover every message of the thread                     ┃  ┃
-┃ neomutt             ┃ CTRL+Y                      ┃ Go to previous not deleted message                      ┃  ┃
-┃ neomutt             ┃ D                           ┃ Erase the entry                                         ┃  ┃
-┃ neomutt             ┃ d                           ┃ Half a page down                                        ┃  ┃
-┃ neomutt             ┃ Down                        ┃ Go to next entry                                        ┃  ┃
-┃ neomutt             ┃ Down                        ┃ Next existing message                                   ┃  ┃
-┃ neomutt             ┃ e                           ┃ Edit or view the raw message                            ┃  ┃
-┃ neomutt             ┃ End                         ┃ Go to last entry                                        ┃  ┃
-┃ neomutt             ┃ :                           ┃ Enter a command                                         ┃  ┃
-┃ neomutt             ┃ Enter                       ┃ Select the entry                                        ┃  ┃
-┃ neomutt             ┃ <Esc>b                      ┃ Search in message bodies                                ┃  ┃
-┃ neomutt             ┃ <Esc>C                      ┃ Make a decoded (text/plain) copy                        ┃  ┃
-┃ neomutt             ┃ <Esc>c                      ┃ Open a new directory in read only                       ┃  ┃
-┃ neomutt             ┃ <Esc>d                      ┃ Delete every message of the subthread                   ┃  ┃
-┃ neomutt             ┃ <Esc>e                      ┃ Use the existing message as a model for a new message   ┃  ┃
-┃ neomutt             ┃ <Esc>i                      ┃ Open a different newsgroup in read only mode            ┃  ┃
-┃ neomutt             ┃ <Esc>k                      ┃ Send a plublic PGP key                                  ┃  ┃
-┃ neomutt             ┃ <Esc>l                      ┃ Show the actual limit                                   ┃  ┃
-┃ neomutt             ┃ <Esc>n                      ┃ Next read subthread                                     ┃  ┃
-┃ neomutt             ┃ <Esc>p                      ┃ Previous read subthread                                 ┃  ┃
-┃ neomutt             ┃ <Esc>P                      ┃ Traditional PGP                                         ┃  ┃
-┃ neomutt             ┃ Esc/                        ┃ Reverse Search                                          ┃  ┃
-┃ neomutt             ┃ <Esc>r                      ┃ Mark the thread as Read                                 ┃  ┃
-┃ neomutt             ┃ <Esc>s                      ┃ Make a copy of the plain text and erase                 ┃  ┃
-┃ neomutt             ┃ <Esc><Tab>                  ┃ Go to next new/unread message                           ┃  ┃
-┃ neomutt             ┃ <Esc>t                      ┃ Tag the thread                                          ┃  ┃
-┃ neomutt             ┃ <Esc>u                      ┃ Recover every message of the subthread                  ┃  ┃
-┃ neomutt             ┃ <Esc>V                      ┃ Toggle Collapsing for all threads                       ┃  ┃
-┃ neomutt             ┃ <Esc>v                      ┃ Toggle collapsing of the thread                         ┃  ┃
-┃ neomutt             ┃ F1                          ┃ show NeoMutt documentation                              ┃  ┃
-┃ neomutt             ┃ f                           ┃ Forward a message                                       ┃  ┃
-┃ neomutt             ┃ =                           ┃ First Entry                                             ┃  ┃
-┃ neomutt             ┃ F                           ┃ Modify 'Important' flag of a message                    ┃  ┃
-┃ neomutt             ┃ ga                          ┃ Go to Archive                                           ┃  ┃
-┃ neomutt             ┃ gd                          ┃ Go to Drafts                                            ┃  ┃
-┃ neomutt             ┃ gg                          ┃ Go to first entry                                       ┃  ┃
-┃ neomutt             ┃ G                           ┃ Go to last Entry                                        ┃  ┃
-┃ neomutt             ┃ gi                          ┃ Go to Inbox                                             ┃  ┃
-┃ neomutt             ┃ gj                          ┃ Go to Junk                                              ┃  ┃
-┃ neomutt             ┃ gs                          ┃ Go to Sent                                              ┃  ┃
-┃ neomutt             ┃ gt                          ┃ Go to Trash                                             ┃  ┃
-┃ neomutt             ┃ ]                           ┃ Half a page down                                        ┃  ┃
-┃ neomutt             ┃ [                           ┃ Half a page up                                          ┃  ┃
-┃ neomutt             ┃ H                           ┃ Go to top of the page                                   ┃  ┃
-┃ neomutt             ┃ Home                        ┃ Go to first entry                                       ┃  ┃
-┃ neomutt             ┃ H                           ┃ Show the raw message                                    ┃  ┃
-┃ neomutt             ┃ i1                          ┃ Switch to lucsaccoccio@disroot.org                      ┃  ┃
-┃ neomutt             ┃ j                           ┃ Go to next entry                                        ┃  ┃
-┃ neomutt             ┃ J                           ┃ Next Entry                                              ┃  ┃
-┃ neomutt             ┃ k                           ┃ Go to previous entry                                    ┃  ┃
-┃ neomutt             ┃ K                           ┃ Previous entry                                          ┃  ┃
-┃ neomutt             ┃ *                           ┃ Last Entry                                              ┃  ┃
-┃ neomutt             ┃ L                           ┃ Display only the messages corresponding to this pattern ┃  ┃
-┃ neomutt             ┃ l                           ┃ Display the message                                     ┃  ┃
-┃ neomutt             ┃ Left                        ┃ Go to previous page                                     ┃  ┃
-┃ neomutt             ┃ L                           ┃ Go to bottom of the page                                ┃  ┃
-┃ neomutt             ┃ .                           ┃ List mailbox having new messages                        ┃  ┃
-┃ neomutt             ┃ ^L                          ┃ Refresh the screen                                      ┃  ┃
-┃ neomutt             ┃ Ma                          ┃ Move mail to Archive                                    ┃  ┃
-┃ neomutt             ┃ ~                           ┃ Mark message                                            ┃  ┃
-┃ neomutt             ┃ Md                          ┃ Move mail to Drafts                                     ┃  ┃
-┃ neomutt             ┃ Mi                          ┃ Move mail to Inbox                                      ┃  ┃
-┃ neomutt             ┃ Mj                          ┃ Move mail to Junk                                       ┃  ┃
-┃ neomutt             ┃ M                           ┃ Middle of the page                                      ┃  ┃
-┃ neomutt             ┃ Ms                          ┃ Move mail to Sent                                       ┃  ┃
-┃ neomutt             ┃ Mt                          ┃ Move mail to Trash                                      ┃  ┃
-┃ neomutt             ┃ m                           ┃ Write a new message                                     ┃  ┃
-┃ neomutt             ┃ >                           ┃ Next Line                                               ┃  ┃
-┃ neomutt             ┃ n                           ┃ Next occurrence                                         ┃  ┃
-┃ neomutt             ┃ N                           ┃ Toggle new/not new                                      ┃  ┃
-┃ neomutt             ┃ O                           ┃ Run mbsync to sync all mail                             ┃  ┃
-┃ neomutt             ┃ o                           ┃ Run mbsync to sync prep                                 ┃  ┃
-┃ neomutt             ┃ PageDown                    ┃ Go to next page                                         ┃  ┃
-┃ neomutt             ┃ PageUp                      ┃ Go to previous page                                     ┃  ┃
-┃ neomutt             ┃ P                           ┃ Go to parent message                                    ┃  ┃
-┃ neomutt             ┃ |                           ┃ Pipe the message to a shell command                     ┃  ┃
-┃ neomutt             ┃ p                           ┃ Print the entry                                         ┃  ┃
-┃ neomutt             ┃ <                           ┃ Previous Line                                           ┃  ┃
-┃ neomutt             ┃ Q                           ┃ Ask adress from another program                         ┃  ┃
-┃ neomutt             ┃ q                           ┃ Exit                                                    ┃  ┃
-┃ neomutt             ┃ q                           ┃ Quit (saving)                                           ┃  ┃
-┃ neomutt             ┃ <Return>                    ┃ Display a message                                       ┃  ┃
-┃ neomutt             ┃ Return                      ┃ Select the entry (Searching)                            ┃  ┃
-┃ neomutt             ┃ Right                       ┃ Go to next page                                         ┃  ┃
-┃ neomutt             ┃ r                           ┃ Reply to a message                                      ┃  ┃
-┃ neomutt             ┃ R                           ┃ Respond to everyone in the conversation                 ┃  ┃
-┃ neomutt             ┃ R                           ┃ Show the help                                           ┃  ┃
-┃ neomutt             ┃ /                           ┃ Search rationnal expression                             ┃  ┃
-┃ neomutt             ┃ @                           ┃ Show complete address of the sender                     ┃  ┃
-┃ neomutt             ┃ Space                       ┃ Mark the entry                                          ┃  ┃
-┃ neomutt             ┃ s                           ┃ Save the message                                        ┃  ┃
-┃ neomutt             ┃ S                           ┃ Sync mailbox                                            ┃  ┃
-┃ neomutt             ┃ t                           ┃ Mark the entry                                          ┃  ┃
-┃ neomutt             ┃ T                           ┃ Mark the messages with a tab                            ┃  ┃
-┃ neomutt             ┃ u                           ┃ Half Up                                                 ┃  ┃
-┃ neomutt             ┃ Up                          ┃ Go to previous entry                                    ┃  ┃
-┃ neomutt             ┃ Up                          ┃ Previous existing message                               ┃  ┃
-┃ neomutt             ┃ U                           ┃ Recover the entry                                       ┃  ┃
-┃ neomutt             ┃ V                           ┃ Show the version of neomutt                             ┃  ┃
-┃ neomutt             ┃ v                           ┃ View MIME attachments                                   ┃  ┃
-┃ neomutt             ┃ W                           ┃ Erase a status of a message                             ┃  ┃
-┃ neomutt             ┃ w                           ┃ Set a flag                                              ┃  ┃
-┃ neomutt             ┃ x                           ┃ Exit the menu                                           ┃  ┃
-┃ neomutt             ┃ Y                           ┃ Modify the label of a message                           ┃  ┃
-┃ neomutt             ┃ y                           ┃ Show incoming mailboxes list                            ┃  ┃
-┃ neomutt             ┃ z                           ┃ Go to next page                                         ┃  ┃
-┃ neomutt             ┃ Z                           ┃ Previous Page                                           ┃  ┃
-┃ newsboat            ┃ A                           ┃ Mark the feed as read                                   ┃  ┃
-┃ newsboat            ┃ C                           ┃ Mark all feeds as read                                  ┃  ┃
-┃ newsboat            ┃ CTRL+F                      ┃ Clear a filter                                          ┃  ┃
-┃ newsboat            ┃ CTRL+G                      ┃ Previous dialog                                         ┃  ┃
-┃ newsboat            ┃ CTRL+K                      ┃ Random unread article                                   ┃  ┃
-┃ newsboat            ┃ CTRL+L                      ┃ Redraw screen                                           ┃  ┃
-┃ newsboat            ┃ CTRL+R                      ┃ Reload all links                                        ┃  ┃
-┃ newsboat            ┃ CTRL+T                      ┃ Clear tag                                               ┃  ┃
-┃ newsboat            ┃ CTRL+V                      ┃ Next dialog                                             ┃  ┃
-┃ newsboat            ┃ d                           ┃ Next page                                               ┃  ┃
-┃ newsboat            ┃ E                           ┃ Edit urls                                               ┃  ┃
-┃ newsboat            ┃ Enter                       ┃ Open the feed                                           ┃  ┃
-┃ newsboat            ┃ f                           ┃ Select a filter                                         ┃  ┃
-┃ newsboat            ┃ F                           ┃ Set a filter                                            ┃  ┃
-┃ newsboat            ┃ G                           ┃ Go to the end of the list/page                          ┃  ┃
-┃ newsboat            ┃ g                           ┃ Go to the start of the list/page                        ┃  ┃
-┃ newsboat            ┃ h                           ┃ Quit/Return to previous interface                       ┃  ┃
-┃ newsboat            ┃ J                           ┃ Next article                                            ┃  ┃
-┃ newsboat            ┃ j                           ┃ Next element                                            ┃  ┃
-┃ newsboat            ┃ K                           ┃ Previous Article                                        ┃  ┃
-┃ newsboat            ┃ k                           ┃ Previous element                                        ┃  ┃
-┃ newsboat            ┃ ,                           ┃ Launch a macro                                          ┃  ┃
-┃ newsboat            ┃ l                           ┃ Open the feed                                           ┃  ┃
-┃ newsboat            ┃ n                           ┃ Next unread article                                     ┃  ┃
-┃ newsboat            ┃ N                           ┃ Previous unread article                                 ┃  ┃
-┃ newsboat            ┃ o                           ┃ Open in browser                                         ┃  ┃
-┃ newsboat            ┃ /                           ┃ Open a research                                         ┃  ┃
-┃ newsboat            ┃ :                           ┃ Open prompt                                             ┃  ┃
-┃ newsboat            ┃ p                           ┃ Previous unread article                                 ┃  ┃
-┃ newsboat            ┃ Q                           ┃ Hard Quit                                               ┃  ┃
-┃ newsboat            ┃ q                           ┃ Quit/Return to previous interface                       ┃  ┃
-┃ newsboat            ┃ R                           ┃ Display help                                            ┃  ┃
-┃ newsboat            ┃ R                           ┃ Reload all feeds                                        ┃  ┃
-┃ newsboat            ┃ r                           ┃ Reload the feed                                         ┃  ┃
-┃ newsboat            ┃ T                           ┃ Clear tag                                               ┃  ┃
-┃ newsboat            ┃ t                           ┃ Set a tag                                               ┃  ┃
-┃ newsboat            ┃ u                           ┃ Previous Page                                           ┃  ┃
-┃ newsboat            ┃ v                           ┃ View dialogs                                            ┃  ┃
-┃ nnn                 ┃ `                           ┃ /                                                       ┃  ┃
-┃ nnn                 ┃ 0                           ┃ Lock                                                    ┃  ┃
-┃ nnn                 ┃ 1-4                         ┃ Contexts 1-4                                            ┃  ┃
-┃ nnn                 ┃ Alt                         ┃ Select Plugin                                           ┃  ┃
-┃ nnn                 ┃ a                           ┃ Select all                                              ┃  ┃
-┃ nnn                 ┃ ^A                          ┃ Top                                                     ┃  ┃
-┃ nnn                 ┃ b                           ┃ Bookrmark Key                                           ┃  ┃
-┃ nnn                 ┃ ^/                          ┃ Bookmark Key                                            ┃  ┃
-┃ nnn                 ┃ c                           ┃ Connect remote                                          ┃  ┃
-┃ nnn                 ┃ ]                           ┃ Cmd promp                                               ┃  ┃
-┃ nnn                 ┃ d                           ┃ Detail mode toggle                                      ┃  ┃
-┃ nnn                 ┃ Down                        ┃ Down                                                    ┃  ┃
-┃ nnn                 ┃ ^D                          ┃ Scroll Down                                             ┃  ┃
-┃ nnn                 ┃ e                           ┃ Edit in EDITOR                                          ┃  ┃
-┃ nnn                 ┃ E                           ┃ Edit sel                                                ┃  ┃
-┃ nnn                 ┃ ^E                          ┃ End                                                     ┃  ┃
-┃ nnn                 ┃ Esc                         ┃ Send to FIFO                                            ┃  ┃
-┃ nnn                 ┃ >                           ┃ Export list                                             ┃  ┃
-┃ nnn                 ┃ f                           ┃ File details                                            ┃  ┃
-┃ nnn                 ┃ ^F                          ┃ File details                                            ┃  ┃
-┃ nnn (Filter/Prompt) ┃ Esc                         ┃ Exit Prompt                                             ┃  ┃
-┃ nnn (Filter/Prompt) ┃ /                           ┃ Filter                                                  ┃  ┃
-┃ nnn (Filter/Prompt) ┃ ^L Clear prompt/last filter ┃                                                         ┃  ┃
-┃ nnn (Filter/Prompt) ┃ ^N                          ┃ Toggle type-to-nav                                      ┃  ┃
-┃ nnn                 ┃ '                           ┃ First file/match                                        ┃  ┃
-┃ nnn                 ┃ G                           ┃ End                                                     ┃  ┃
-┃ nnn                 ┃ ^G                          ┃ QuitCD                                                  ┃  ┃
-┃ nnn                 ┃ g                           ┃ Top                                                     ┃  ┃
-┃ nnn                 ┃ ~                           ┃ HOME                                                    ┃  ┃
-┃ nnn                 ┃ ^J                          ┃ (Un)select                                              ┃  ┃
-┃ nnn                 ┃ ^K                          ┃ Mark range/clear                                        ┃  ┃
-┃ nnn                 ┃ k                           ┃ Up                                                      ┃  ┃
-┃ nnn                 ┃ -                           ┃ Last                                                    ┃  ┃
-┃ nnn                 ┃ =                           ┃ Launch app                                              ┃  ┃
-┃ nnn                 ┃ l                           ┃ Open                                                    ┃  ┃
-┃ nnn                 ┃ ^L                          ┃ Redraw                                                  ┃  ┃
-┃ nnn                 ┃ m                           ┃ Mark range/clear                                        ┃  ┃
-┃ nnn                 ┃ n                           ┃ Create new/link                                         ┃  ┃
-┃ nnn                 ┃ o                           ┃ Open with...                                            ┃  ┃
-┃ nnn                 ┃ ^O                          ┃ Open with...                                            ┃  ┃
-┃ nnn                 ┃ p                           ┃ Copy sel here                                           ┃  ┃
-┃ nnn                 ┃ ^P                          ┃ Copy sel here                                           ┃  ┃
-┃ nnn                 ┃ PgDown                      ┃ Scroll Down                                             ┃  ┃
-┃ nnn                 ┃ PgUp                        ┃ Scroll Up                                               ┃  ┃
-┃ nnn                 ┃ ,                           ┃ Pin CWD                                                 ┃  ┃
-┃ nnn                 ┃ ;p                          ┃ Tabbed Preview                                          ┃  ┃
-┃ nnn                 ┃ ;P                          ┃ Tmux/TUI Preview                                        ┃  ┃
-┃ nnn                 ┃ ^Q (Q)                      ┃ Quit (with err)                                         ┃  ┃
-┃ nnn                 ┃ q                           ┃ Quit context                                            ┃  ┃
-┃ nnn                 ┃ r                           ┃ Batch rename                                            ┃  ┃
-┃ nnn                 ┃ Ret                         ┃ Open                                                    ┃  ┃
-┃ nnn                 ┃ R                           ┃ Help, conf                                              ┃  ┃
-┃ nnn                 ┃ ^R                          ┃ Rename/dup                                              ┃  ┃
-┃ nnn                 ┃ ;                           ┃ Select Plugin                                           ┃  ┃
-┃ nnn                 ┃ !                           ┃ Shell                                                   ┃  ┃
-┃ nnn                 ┃ ^]                          ┃ Shell                                                   ┃  ┃
-┃ nnn                 ┃ (Shift)Tab                  ┃ Cycle context                                           ┃  ┃
-┃ nnn                 ┃ s                           ┃ Manage session                                          ┃  ┃
-┃ nnn                 ┃ Space                       ┃ (Un)select                                              ┃  ┃
-┃ nnn                 ┃ @                           ┃ Start                                                   ┃  ┃
-┃ nnn                 ┃ +                           ┃ Toggle auto-advance                                     ┃  ┃
-┃ nnn                 ┃ *                           ┃ Toggle Exe                                              ┃  ┃
-┃ nnn                 ┃ .                           ┃ Toggle Hidden                                           ┃  ┃
-┃ nnn                 ┃ T                           ┃ Set time type                                           ┃  ┃
-┃ nnn                 ┃ t                           ┃ Sort toggles                                            ┃  ┃
-┃ nnn                 ┃ ^T                          ┃ Sort toggles                                            ┃  ┃
-┃ nnn                 ┃ Up                          ┃ Up                                                      ┃  ┃
-┃ nnn                 ┃ ^U                          ┃ Scroll Up                                               ┃  ┃
-┃ nnn                 ┃ u                           ┃ Unmount                                                 ┃  ┃
-┃ nnn                 ┃ v                           ┃ Move sel here                                           ┃  ┃
-┃ nnn                 ┃ ^V                          ┃ Move sel here                                           ┃  ┃
-┃ nnn                 ┃ w                           ┃ cp/mv sel as                                            ┃  ┃
-┃ nnn                 ┃ ^W                          ┃ cp/mv sel as                                            ┃  ┃
-┃ nnn                 ┃ x                           ┃ Delete                                                  ┃  ┃
-┃ nnn                 ┃ ^X                          ┃ Delete                                                  ┃  ┃
-┃ nnn                 ┃ z                           ┃ Archive                                                 ┃  ┃
+┃ cheet    ┃ Alt-1~4                ┃ Copy contents from column 1~4.                                                            ┃               ┃
+┃ cheet    ┃ Ctrl-a                 ┃ Add new items.                                                                            ┃               ┃
+┃ cheet    ┃ Ctrl-e                 ┃ Edit current item                                                                         ┃               ┃
+┃ cheet    ┃ Ctrl-i                 ┃ Edit all items                                                                            ┃               ┃
+┃ neomutt  ┃ $                      ┃ Save modifications                                                                        ┃               ┃
+┃ neomutt  ┃ 1-9                    ┃ Go the 1-9 index number                                                                   ┃               ┃
+┃ neomutt  ┃ a                      ┃ Add the sender address to abook                                                           ┃               ┃
+┃ neomutt  ┃ ;                      ┃ Apply the next function to marked messages                                                ┃               ┃
+┃ neomutt  ┃ A                      ┃ Show all messages (undo limit)                                                            ┃               ┃
+┃ neomutt  ┃ #                      ┃ Break the thread in two                                                                   ┃               ┃
+┃ neomutt  ┃ b                      ┃ Send the message to another user                                                          ┃               ┃
+┃ neomutt  ┃ B                      ┃ Toggle side bar                                                                           ┃               ┃
+┃ neomutt  ┃ Ca                     ┃ Copy mail to archive                                                                      ┃               ┃
+┃ neomutt  ┃ c                      ┃ Change the folder                                                                         ┃               ┃
+┃ neomutt  ┃ Cd                     ┃ Copy mail to drafts                                                                       ┃               ┃
+┃ neomutt  ┃ &                      ┃ Change the update option of the mailbox                                                   ┃               ┃
+┃ neomutt  ┃ Ci                     ┃ Copy mail to Inbox                                                                        ┃               ┃
+┃ neomutt  ┃ Cj                     ┃ Copy mail to Junk                                                                         ┃               ┃
+┃ neomutt  ┃ Cs                     ┃ Copy mail to Sent                                                                         ┃               ┃
+┃ neomutt  ┃ Ct                     ┃ Copy mail to Trash                                                                        ┃               ┃
+┃ neomutt  ┃ Ctrl-N                 ┃ Move the mark to the next mailbox with new messages                                       ┃               ┃
+┃ neomutt  ┃ Ctrl-O                 ┃ Open the selected mailbox                                                                 ┃               ┃
+┃ neomutt  ┃ Ctrl-P                 ┃ Move the mark to the previous mailbox with new messages                                   ┃               ┃
+┃ neomutt  ┃ Ctrl-R                 ┃ Mark all messages as read                                                                 ┃               ┃
+┃ neomutt  ┃ Ctrl-T                 ┃ Unmark every message corresponding to a motif                                             ┃               ┃
+┃ neomutt  ┃ Ctrl-U                 ┃ Recover every message of the thread                                                       ┃               ┃
+┃ neomutt  ┃ Ctrl-Y                 ┃ Go to previous not deleted message                                                        ┃               ┃
+┃ neomutt  ┃ D                      ┃ Erase the entry                                                                           ┃               ┃
+┃ neomutt  ┃ d                      ┃ Half a page down                                                                          ┃               ┃
+┃ neomutt  ┃ Down                   ┃ Go to next entry                                                                          ┃               ┃
+┃ neomutt  ┃ Down                   ┃ Next existing message                                                                     ┃               ┃
+┃ neomutt  ┃ e                      ┃ Edit or view the raw message                                                              ┃               ┃
+┃ neomutt  ┃ End                    ┃ Go to last entry                                                                          ┃               ┃
+┃ neomutt  ┃ :                      ┃ Enter a command                                                                           ┃               ┃
+┃ neomutt  ┃ Enter                  ┃ Select the entry                                                                          ┃               ┃
+┃ neomutt  ┃ <Esc>b                 ┃ Search in message bodies                                                                  ┃               ┃
+┃ neomutt  ┃ <Esc>C                 ┃ Make a decoded (text/plain) copy                                                          ┃               ┃
+┃ neomutt  ┃ <Esc>c                 ┃ Open a new directory in read only                                                         ┃               ┃
+┃ neomutt  ┃ <Esc>d                 ┃ Delete every message of the subthread                                                     ┃               ┃
+┃ neomutt  ┃ <Esc>e                 ┃ Use the existing message as a model for a new message                                     ┃               ┃
+┃ neomutt  ┃ <Esc>i                 ┃ Open a different newsgroup in read only mode                                              ┃               ┃
+┃ neomutt  ┃ <Esc>k                 ┃ Send a plublic PGP key                                                                    ┃               ┃
+┃ neomutt  ┃ <Esc>l                 ┃ Show the actual limit                                                                     ┃               ┃
+┃ neomutt  ┃ <Esc>n                 ┃ Next read subthread                                                                       ┃               ┃
+┃ neomutt  ┃ <Esc>p                 ┃ Previous read subthread                                                                   ┃               ┃
+┃ neomutt  ┃ <Esc>P                 ┃ Traditional PGP                                                                           ┃               ┃
+┃ neomutt  ┃ Esc/                   ┃ Reverse Search                                                                            ┃               ┃
+┃ neomutt  ┃ <Esc>r                 ┃ Mark the thread as Read                                                                   ┃               ┃
+┃ neomutt  ┃ <Esc>s                 ┃ Make a copy of the plain text and erase                                                   ┃               ┃
+┃ neomutt  ┃ <Esc><Tab>             ┃ Go to next new/unread message                                                             ┃               ┃
+┃ neomutt  ┃ <Esc>t                 ┃ Tag the thread                                                                            ┃               ┃
+┃ neomutt  ┃ <Esc>u                 ┃ Recover every message of the subthread                                                    ┃               ┃
+┃ neomutt  ┃ <Esc>V                 ┃ Toggle Collapsing for all threads                                                         ┃               ┃
+┃ neomutt  ┃ <Esc>v                 ┃ Toggle collapsing of the thread                                                           ┃               ┃
+┃ neomutt  ┃ F1                     ┃ show NeoMutt documentation                                                                ┃               ┃
+┃ neomutt  ┃ f                      ┃ Forward a message                                                                         ┃               ┃
+┃ neomutt  ┃ =                      ┃ First Entry                                                                               ┃               ┃
+┃ neomutt  ┃ F                      ┃ Modify 'Important' flag of a message                                                      ┃               ┃
+┃ neomutt  ┃ ga                     ┃ Go to Archive                                                                             ┃               ┃
+┃ neomutt  ┃ gd                     ┃ Go to Drafts                                                                              ┃               ┃
+┃ neomutt  ┃ gg                     ┃ Go to first entry                                                                         ┃               ┃
+┃ neomutt  ┃ G                      ┃ Go to last Entry                                                                          ┃               ┃
+┃ neomutt  ┃ gi                     ┃ Go to Inbox                                                                               ┃               ┃
+┃ neomutt  ┃ gj                     ┃ Go to Junk                                                                                ┃               ┃
+┃ neomutt  ┃ gs                     ┃ Go to Sent                                                                                ┃               ┃
+┃ neomutt  ┃ gt                     ┃ Go to Trash                                                                               ┃               ┃
+┃ neomutt  ┃ ]                      ┃ Half a page down                                                                          ┃               ┃
+┃ neomutt  ┃ [                      ┃ Half a page up                                                                            ┃               ┃
+┃ neomutt  ┃ H                      ┃ Go to top of the page                                                                     ┃               ┃
+┃ neomutt  ┃ Home                   ┃ Go to first entry                                                                         ┃               ┃
+┃ neomutt  ┃ H                      ┃ Show the raw message                                                                      ┃               ┃
+┃ neomutt  ┃ i1                     ┃ Switch to lucsaccoccio@disroot.org                                                        ┃               ┃
+┃ neomutt  ┃ j                      ┃ Go to next entry                                                                          ┃               ┃
+┃ neomutt  ┃ J                      ┃ Next Entry                                                                                ┃               ┃
+┃ neomutt  ┃ k                      ┃ Go to previous entry                                                                      ┃               ┃
+┃ neomutt  ┃ K                      ┃ Previous entry                                                                            ┃               ┃
+┃ neomutt  ┃ *                      ┃ Last Entry                                                                                ┃               ┃
+┃ neomutt  ┃ L                      ┃ Display only the messages corresponding to this pattern                                   ┃               ┃
+┃ neomutt  ┃ l                      ┃ Display the message                                                                       ┃               ┃
+┃ neomutt  ┃ Left                   ┃ Go to previous page                                                                       ┃               ┃
+┃ neomutt  ┃ L                      ┃ Go to bottom of the page                                                                  ┃               ┃
+┃ neomutt  ┃ .                      ┃ List mailbox having new messages                                                          ┃               ┃
+┃ neomutt  ┃ ^L                     ┃ Refresh the screen                                                                        ┃               ┃
+┃ neomutt  ┃ Ma                     ┃ Move mail to Archive                                                                      ┃               ┃
+┃ neomutt  ┃ ~                      ┃ Mark message                                                                              ┃               ┃
+┃ neomutt  ┃ Md                     ┃ Move mail to Drafts                                                                       ┃               ┃
+┃ neomutt  ┃ Mi                     ┃ Move mail to Inbox                                                                        ┃               ┃
+┃ neomutt  ┃ Mj                     ┃ Move mail to Junk                                                                         ┃               ┃
+┃ neomutt  ┃ M                      ┃ Middle of the page                                                                        ┃               ┃
+┃ neomutt  ┃ Ms                     ┃ Move mail to Sent                                                                         ┃               ┃
+┃ neomutt  ┃ Mt                     ┃ Move mail to Trash                                                                        ┃               ┃
+┃ neomutt  ┃ m                      ┃ Write a new message                                                                       ┃               ┃
+┃ neomutt  ┃ >                      ┃ Next Line                                                                                 ┃               ┃
+┃ neomutt  ┃ n                      ┃ Next occurrence                                                                           ┃               ┃
+┃ neomutt  ┃ N                      ┃ Toggle new/not new                                                                        ┃               ┃
+┃ neomutt  ┃ O                      ┃ Run mbsync to sync all mail                                                               ┃               ┃
+┃ neomutt  ┃ o                      ┃ Run mbsync to sync prep                                                                   ┃               ┃
+┃ neomutt  ┃ PageDown               ┃ Go to next page                                                                           ┃               ┃
+┃ neomutt  ┃ PageUp                 ┃ Go to previous page                                                                       ┃               ┃
+┃ neomutt  ┃ P                      ┃ Go to parent message                                                                      ┃               ┃
+┃ neomutt  ┃ |                      ┃ Pipe the message to a shell command                                                       ┃               ┃
+┃ neomutt  ┃ p                      ┃ Print the entry                                                                           ┃               ┃
+┃ neomutt  ┃ <                      ┃ Previous Line                                                                             ┃               ┃
+┃ neomutt  ┃ Q                      ┃ Ask adress from another program                                                           ┃               ┃
+┃ neomutt  ┃ q                      ┃ Exit                                                                                      ┃               ┃
+┃ neomutt  ┃ q                      ┃ Quit (saving)                                                                             ┃               ┃
+┃ neomutt  ┃ <Return>               ┃ Display a message                                                                         ┃               ┃
+┃ neomutt  ┃ Return                 ┃ Select the entry (Searching)                                                              ┃               ┃
+┃ neomutt  ┃ Right                  ┃ Go to next page                                                                           ┃               ┃
+┃ neomutt  ┃ r                      ┃ Reply to a message                                                                        ┃               ┃
+┃ neomutt  ┃ R                      ┃ Respond to everyone in the conversation                                                   ┃               ┃
+┃ neomutt  ┃ R                      ┃ Show the help                                                                             ┃               ┃
+┃ neomutt  ┃ /                      ┃ Search rationnal expression                                                               ┃               ┃
+┃ neomutt  ┃ @                      ┃ Show complete address of the sender                                                       ┃               ┃
+┃ neomutt  ┃ Space                  ┃ Mark the entry                                                                            ┃               ┃
+┃ neomutt  ┃ s                      ┃ Save the message                                                                          ┃               ┃
+┃ neomutt  ┃ S                      ┃ Sync mailbox                                                                              ┃               ┃
+┃ neomutt  ┃ t                      ┃ Mark the entry                                                                            ┃               ┃
+┃ neomutt  ┃ T                      ┃ Mark the messages with a tab                                                              ┃               ┃
+┃ neomutt  ┃ u                      ┃ Half Up                                                                                   ┃               ┃
+┃ neomutt  ┃ Up                     ┃ Go to previous entry                                                                      ┃               ┃
+┃ neomutt  ┃ Up                     ┃ Previous existing message                                                                 ┃               ┃
+┃ neomutt  ┃ U                      ┃ Recover the entry                                                                         ┃               ┃
+┃ neomutt  ┃ V                      ┃ Show the version of neomutt                                                               ┃               ┃
+┃ neomutt  ┃ v                      ┃ View MIME attachments                                                                     ┃               ┃
+┃ neomutt  ┃ W                      ┃ Erase a status of a message                                                               ┃               ┃
+┃ neomutt  ┃ w                      ┃ Set a flag                                                                                ┃               ┃
+┃ neomutt  ┃ x                      ┃ Exit the menu                                                                             ┃               ┃
+┃ neomutt  ┃ Y                      ┃ Modify the label of a message                                                             ┃               ┃
+┃ neomutt  ┃ y                      ┃ Show incoming mailboxes list                                                              ┃               ┃
+┃ neomutt  ┃ z                      ┃ Go to next page                                                                           ┃               ┃
+┃ neomutt  ┃ Z                      ┃ Previous Page                                                                             ┃               ┃
+┃ newsboat ┃ A                      ┃ Mark the feed as read                                                                     ┃               ┃
+┃ newsboat ┃ C                      ┃ Mark all feeds as read                                                                    ┃               ┃
+┃ newsboat ┃ Ctrl-F                 ┃ Clear a filter                                                                            ┃               ┃
+┃ newsboat ┃ Ctrl-G                 ┃ Previous dialog                                                                           ┃               ┃
+┃ newsboat ┃ Ctrl-K                 ┃ Random unread article                                                                     ┃               ┃
+┃ newsboat ┃ Ctrl-L                 ┃ Redraw screen                                                                             ┃               ┃
+┃ newsboat ┃ Ctrl-R                 ┃ Reload all links                                                                          ┃               ┃
+┃ newsboat ┃ Ctrl-T                 ┃ Clear tag                                                                                 ┃               ┃
+┃ newsboat ┃ Ctrl-V                 ┃ Next dialog                                                                               ┃               ┃
+┃ newsboat ┃ d                      ┃ Next page                                                                                 ┃               ┃
+┃ newsboat ┃ E                      ┃ Edit urls                                                                                 ┃               ┃
+┃ newsboat ┃ Enter                  ┃ Open the feed                                                                             ┃               ┃
+┃ newsboat ┃ f                      ┃ Select a filter                                                                           ┃               ┃
+┃ newsboat ┃ F                      ┃ Set a filter                                                                              ┃               ┃
+┃ newsboat ┃ G                      ┃ Go to the end of the list/page                                                            ┃               ┃
+┃ newsboat ┃ g                      ┃ Go to the start of the list/page                                                          ┃               ┃
+┃ newsboat ┃ h                      ┃ Quit/Return to previous interface                                                         ┃               ┃
+┃ newsboat ┃ J                      ┃ Next article                                                                              ┃               ┃
+┃ newsboat ┃ j                      ┃ Next element                                                                              ┃               ┃
+┃ newsboat ┃ K                      ┃ Previous Article                                                                          ┃               ┃
+┃ newsboat ┃ k                      ┃ Previous element                                                                          ┃               ┃
+┃ newsboat ┃ ,                      ┃ Launch a macro                                                                            ┃               ┃
+┃ newsboat ┃ l                      ┃ Open the feed                                                                             ┃               ┃
+┃ newsboat ┃ n                      ┃ Next unread article                                                                       ┃               ┃
+┃ newsboat ┃ N                      ┃ Previous unread article                                                                   ┃               ┃
+┃ newsboat ┃ o                      ┃ Open in browser                                                                           ┃               ┃
+┃ newsboat ┃ /                      ┃ Open a research                                                                           ┃               ┃
+┃ newsboat ┃ :                      ┃ Open prompt                                                                               ┃               ┃
+┃ newsboat ┃ p                      ┃ Previous unread article                                                                   ┃               ┃
+┃ newsboat ┃ Q                      ┃ Hard Quit                                                                                 ┃               ┃
+┃ newsboat ┃ q                      ┃ Quit/Return to previous interface                                                         ┃               ┃
+┃ newsboat ┃ R                      ┃ Display help                                                                              ┃               ┃
+┃ newsboat ┃ R                      ┃ Reload all feeds                                                                          ┃               ┃
+┃ newsboat ┃ r                      ┃ Reload the feed                                                                           ┃               ┃
+┃ newsboat ┃ T                      ┃ Clear tag                                                                                 ┃               ┃
+┃ newsboat ┃ t                      ┃ Set a tag                                                                                 ┃               ┃
+┃ newsboat ┃ u                      ┃ Previous Page                                                                             ┃               ┃
+┃ newsboat ┃ v                      ┃ View dialogs                                                                              ┃               ┃
+┃ nnn      ┃ `                      ┃ /                                                                                         ┃               ┃
+┃ nnn      ┃ 0                      ┃ Lock                                                                                      ┃               ┃
+┃ nnn      ┃ 1-4                    ┃ Contexts 1-4                                                                              ┃               ┃
+┃ nnn      ┃ Alt                    ┃ Select Plugin                                                                             ┃               ┃
+┃ nnn      ┃ a                      ┃ Select all                                                                                ┃               ┃
+┃ nnn      ┃ ^A                     ┃ Top                                                                                       ┃               ┃
+┃ nnn      ┃ b                      ┃ Bookrmark Key                                                                             ┃               ┃
+┃ nnn      ┃ ^/                     ┃ Bookmark Key                                                                              ┃               ┃
+┃ nnn      ┃ c                      ┃ Connect remote                                                                            ┃               ┃
+┃ nnn      ┃ ]                      ┃ Cmd promp                                                                                 ┃               ┃
+┃ nnn      ┃ d                      ┃ Detail mode toggle                                                                        ┃               ┃
+┃ nnn      ┃ Down                   ┃ Down                                                                                      ┃               ┃
+┃ nnn      ┃ ^D                     ┃ Scroll Down                                                                               ┃               ┃
+┃ nnn      ┃ e                      ┃ Edit in EDITOR                                                                            ┃               ┃
+┃ nnn      ┃ E                      ┃ Edit sel                                                                                  ┃               ┃
+┃ nnn      ┃ ^E                     ┃ End                                                                                       ┃               ┃
+┃ nnn      ┃ Esc                    ┃ Exit Prompt                                                                               ┃ Filter/Prompt ┃
+┃ nnn      ┃ Esc                    ┃ Send to FIFO                                                                              ┃               ┃
+┃ nnn      ┃ >                      ┃ Export list                                                                               ┃               ┃
+┃ nnn      ┃ f                      ┃ File details                                                                              ┃               ┃
+┃ nnn      ┃ ^F                     ┃ File details                                                                              ┃               ┃
+┃ nnn      ┃ /                      ┃ Filter                                                                                    ┃ Filter/Prompt ┃
+┃ nnn      ┃ '                      ┃ First file/match                                                                          ┃               ┃
+┃ nnn      ┃ G                      ┃ End                                                                                       ┃               ┃
+┃ nnn      ┃ ^G                     ┃ QuitCD                                                                                    ┃               ┃
+┃ nnn      ┃ g                      ┃ Top                                                                                       ┃               ┃
+┃ nnn      ┃ ~                      ┃ HOME                                                                                      ┃               ┃
+┃ nnn      ┃ ^J                     ┃ (Un)select                                                                                ┃               ┃
+┃ nnn      ┃ ^K                     ┃ Mark range/clear                                                                          ┃               ┃
+┃ nnn      ┃ k                      ┃ Up                                                                                        ┃               ┃
+┃ nnn      ┃ -                      ┃ Last                                                                                      ┃               ┃
+┃ nnn      ┃ =                      ┃ Launch app                                                                                ┃               ┃
+┃ nnn      ┃ ^L                     ┃ Clear prompt/last filter                                                                  ┃ Filter/Prompt ┃
+┃ nnn      ┃ l                      ┃ Open                                                                                      ┃               ┃
+┃ nnn      ┃ ^L                     ┃ Redraw                                                                                    ┃               ┃
+┃ nnn      ┃ m                      ┃ Mark range/clear                                                                          ┃               ┃
+┃ nnn      ┃ n                      ┃ Create new/link                                                                           ┃               ┃
+┃ nnn      ┃ ^N                     ┃ Toggle type-to-nav                                                                        ┃ Filter/Prompt ┃
+┃ nnn      ┃ o                      ┃ Open with...                                                                              ┃               ┃
+┃ nnn      ┃ ^O                     ┃ Open with...                                                                              ┃               ┃
+┃ nnn      ┃ p                      ┃ Copy sel here                                                                             ┃               ┃
+┃ nnn      ┃ ^P                     ┃ Copy sel here                                                                             ┃               ┃
+┃ nnn      ┃ PgDown                 ┃ Scroll Down                                                                               ┃               ┃
+┃ nnn      ┃ PgUp                   ┃ Scroll Up                                                                                 ┃               ┃
+┃ nnn      ┃ ,                      ┃ Pin CWD                                                                                   ┃               ┃
+┃ nnn      ┃ ;p                     ┃ Tabbed Preview                                                                            ┃               ┃
+┃ nnn      ┃ ;P                     ┃ Tmux/TUI Preview                                                                          ┃               ┃
+┃ nnn      ┃ ^Q (Q)                 ┃ Quit (with err)                                                                           ┃               ┃
+┃ nnn      ┃ q                      ┃ Quit context                                                                              ┃               ┃
+┃ nnn      ┃ r                      ┃ Batch rename                                                                              ┃               ┃
+┃ nnn      ┃ Ret                    ┃ Open                                                                                      ┃               ┃
+┃ nnn      ┃ R                      ┃ Help, conf                                                                                ┃               ┃
+┃ nnn      ┃ ^R                     ┃ Rename/dup                                                                                ┃               ┃
+┃ nnn      ┃ ;                      ┃ Select Plugin                                                                             ┃               ┃
+┃ nnn      ┃ !                      ┃ Shell                                                                                     ┃               ┃
+┃ nnn      ┃ ^]                     ┃ Shell                                                                                     ┃               ┃
+┃ nnn      ┃ (Shift)Tab             ┃ Cycle context                                                                             ┃               ┃
+┃ nnn      ┃ s                      ┃ Manage session                                                                            ┃               ┃
+┃ nnn      ┃ Space                  ┃ (Un)select                                                                                ┃               ┃
+┃ nnn      ┃ @                      ┃ Start                                                                                     ┃               ┃
+┃ nnn      ┃ +                      ┃ Toggle auto-advance                                                                       ┃               ┃
+┃ nnn      ┃ *                      ┃ Toggle Exe                                                                                ┃               ┃
+┃ nnn      ┃ .                      ┃ Toggle Hidden                                                                             ┃               ┃
+┃ nnn      ┃ T                      ┃ Set time type                                                                             ┃               ┃
+┃ nnn      ┃ t                      ┃ Sort toggles                                                                              ┃               ┃
+┃ nnn      ┃ ^T                     ┃ Sort toggles                                                                              ┃               ┃
+┃ nnn      ┃ Up                     ┃ Up                                                                                        ┃               ┃
+┃ nnn      ┃ ^U                     ┃ Scroll Up                                                                                 ┃               ┃
+┃ nnn      ┃ u                      ┃ Unmount                                                                                   ┃               ┃
+┃ nnn      ┃ v                      ┃ Move sel here                                                                             ┃               ┃
+┃ nnn      ┃ ^V                     ┃ Move sel here                                                                             ┃               ┃
+┃ nnn      ┃ w                      ┃ cp/mv sel as                                                                              ┃               ┃
+┃ nnn      ┃ ^W                     ┃ cp/mv sel as                                                                              ┃               ┃
+┃ nnn      ┃ x                      ┃ Delete                                                                                    ┃               ┃
+┃ nnn      ┃ ^X                     ┃ Delete                                                                                    ┃               ┃
+┃ nnn      ┃ z                      ┃ Archive                                                                                   ┃               ┃
+┃ sxhkd    ┃ Print                  ┃ Show perscrot                                                                             ┃               ┃
+┃ sxhkd    ┃ Shift + XF86AudioPrev  ┃ MPD menu                                                                                  ┃ MPD Control   ┃
+┃ sxhkd    ┃ Super + 1-10           ┃ Focus desktop 1-10                                                                        ┃               ┃
+┃ sxhkd    ┃ Super + Arrows         ┃ Focus a window                                                                            ┃               ┃
+┃ sxhkd    ┃ Super + a              ┃ Show "command" rofi                                                                       ┃               ┃
+┃ sxhkd    ┃ Super + Backspace      ┃ Spawn urxvt floating                                                                      ┃               ┃
+┃ sxhkd    ┃ Super + b              ┃ Toggle Screenkey                                                                          ┃               ┃
+┃ sxhkd    ┃ Super + c              ┃ Draw term                                                                                 ┃               ┃
+┃ sxhkd    ┃ Super + Ctrl + Arrows  ┃ Resize floating window                                                                    ┃               ┃
+┃ sxhkd    ┃ Super + d              ┃ Show dmenu                                                                                ┃               ┃
+┃ sxhkd    ┃ Super + e              ┃ Show "calculator" rofi                                                                    ┃               ┃
+┃ sxhkd    ┃ Super + f              ┃ Fullscreen Window state                                                                   ┃               ┃
+┃ sxhkd    ┃ Super + g              ┃ Focus biggest node                                                                        ┃               ┃
+┃ sxhkd    ┃ Super + h              ┃ Hide window                                                                               ┃               ┃
+┃ sxhkd    ┃ Super + i              ┃ Random wallpaper                                                                          ┃               ┃
+┃ sxhkd    ┃ Super + j              ┃ Private Window                                                                            ┃               ┃
+┃ sxhkd    ┃ Super + Keypad 4-8-6-2 ┃ Preselect a place to spawn a window                                                       ┃               ┃
+┃ sxhkd    ┃ Super + Keypad 5       ┃ Stop preselecting                                                                         ┃               ┃
+┃ sxhkd    ┃ Super + k              ┃ Stick Window                                                                              ┃               ┃
+┃ sxhkd    ┃ Super + l              ┃ Lock window                                                                               ┃               ┃
+┃ sxhkd    ┃ Super + m              ┃ Next desktop                                                                              ┃               ┃
+┃ sxhkd    ┃ Super + n              ┃ Spawn qutebrowser                                                                         ┃               ┃
+┃ sxhkd    ┃ Super + o              ┃ Show "applications" rofi                                                                  ┃               ┃
+┃ sxhkd    ┃ Super + p              ┃ Spawn thunar file manager                                                                 ┃               ┃
+┃ sxhkd    ┃ Super + q              ┃ Toggle polybar                                                                            ┃               ┃
+┃ sxhkd    ┃ Super + Return         ┃ Spawn Termite terminal                                                                    ┃               ┃
+┃ sxhkd    ┃ Super + r              ┃ Kill current window                                                                       ┃               ┃
+┃ sxhkd    ┃ Super + Shift + 1-10   ┃ Move focused window to dekstop 1-10                                                       ┃               ┃
+┃ sxhkd    ┃ Super + Shift + a      ┃ Close current window                                                                      ┃               ┃
+┃ sxhkd    ┃ Super + Shift + Arrows ┃ Move a window                                                                             ┃               ┃
+┃ sxhkd    ┃ Super + Shift + e      ┃ Show exit menu                                                                            ┃               ┃
+┃ sxhkd    ┃ Super + Shift + f      ┃ Floating window state                                                                     ┃               ┃
+┃ sxhkd    ┃ Super + Shift + h      ┃ Unhide dmenu menu                                                                         ┃               ┃
+┃ sxhkd    ┃ Super + Shift + i      ┃ Apply pywal to current wallpaper                                                          ┃               ┃
+┃ sxhkd    ┃ Super + shift + m      ┃ Show clipmenu                                                                             ┃               ┃
+┃ sxhkd    ┃ Super + shift + o      ┃ Show "windows" rofi                                                                       ┃               ┃
+┃ sxhkd    ┃ Super + Shift + Prin   ┃ Take a screenshot                                                                         ┃               ┃
+┃ sxhkd    ┃ Super + Shift + p      ┃ Show emoji dmenu                                                                          ┃               ┃
+┃ sxhkd    ┃ Super + Shift + q      ┃ Restart polybar                                                                           ┃               ┃
+┃ sxhkd    ┃ Super + Shift + Return ┃ Spawn st floating                                                                         ┃               ┃
+┃ sxhkd    ┃ Super + Shift + r      ┃ Restart bspwm                                                                             ┃               ┃
+┃ sxhkd    ┃ Super + Shift + t      ┃ Spawn surf on startpage                                                                   ┃               ┃
+┃ sxhkd    ┃ Super + Shift + z      ┃ Lock bspwm                                                                                ┃               ┃
+┃ sxhkd    ┃ Super + s              ┃ Tiled Window state                                                                        ┃               ┃
+┃ sxhkd    ┃ Super + t              ┃ Spawn firefox                                                                             ┃               ┃
+┃ sxhkd    ┃ Super + u              ┃ Show "theme selector" rofi                                                                ┃               ┃
+┃ sxhkd    ┃ Super + w              ┃ Choose a wallpaper                                                                        ┃               ┃
+┃ sxhkd    ┃ Super + z              ┃ Pseudo_tiled Window state                                                                 ┃               ┃
+┃ sxhkd    ┃ XF86AudioLowerVolume   ┃ Lower the volume                                                                          ┃               ┃
+┃ sxhkd    ┃ XF86AudioMute          ┃ Mute the volume                                                                           ┃               ┃
+┃ sxhkd    ┃ XF86AudioNext          ┃ Next song                                                                                 ┃ MPD Control   ┃
+┃ sxhkd    ┃ XF86AudioPause         ┃ Pause song                                                                                ┃ MPD Control   ┃
+┃ sxhkd    ┃ XF86AudioPlay          ┃ Play song                                                                                 ┃ MPD Control   ┃
+┃ sxhkd    ┃ XF86AudioPrev          ┃ Previous Song                                                                             ┃ MPD Control   ┃
+┃ sxhkd    ┃ XF86AudioRaiseVolume   ┃ Raise the volume                                                                          ┃               ┃
+┃ sxhkd    ┃ XF86AudioStop          ┃ Stop current song                                                                         ┃ MPD Control   ┃
+┃ sxiv     ┃ 0-9                    ┃ Prefix the next command with a number                                                     ┃ General       ┃
+┃ sxiv     ┃ a                      ┃ Toggle anti-aliasing                                                                      ┃ Image         ┃
+┃ sxiv     ┃ A                      ┃ Toggle visibility of alpha-channel, i.e. image transparency                               ┃ Image         ┃
+┃ sxiv     ┃ b                      ┃ Toggle visibility of info bar on bottom of window                                         ┃ General       ┃
+┃ sxiv     ┃ Button1                ┃ Go to the next image (right part of window) or previous image (left part of window)       ┃ Image         ┃
+┃ sxiv     ┃ Button2                ┃ Pan the image according to the cursor position                                            ┃ Image         ┃
+┃ sxiv     ┃ Button3 (Right click)  ┃ Switch to thumbnail mode                                                                  ┃ General       ┃
+┃ sxiv     ┃ Ctrl-g                 ┃ Reset gamma correction                                                                    ┃ General       ┃
+┃ sxiv     ┃ Ctrl-h, Ctrl-Left      ┃ Scroll left one screen width                                                              ┃ General       ┃
+┃ sxiv     ┃ Ctrl-j, Ctrl-Down      ┃ Scroll down one screen height                                                             ┃ General       ┃
+┃ sxiv     ┃ Ctrl-k, Ctrl-Up        ┃ Scroll up one screen height                                                               ┃ General       ┃
+┃ sxiv     ┃ Ctrl-l, Ctrl-Right     ┃ Scroll right one screen width                                                             ┃ General       ┃
+┃ sxiv     ┃ Ctrl-m                 ┃ Remove all images marks                                                                   ┃ General       ┃
+┃ sxiv     ┃ Ctrl-M                 ┃ Repeat last mark action on all images from the last marked/unmarked up to the current one ┃ General       ┃
+┃ sxiv     ┃ Ctrl-n                 ┃ Go count frames of a multi-frame image forward                                            ┃ Image         ┃
+┃ sxiv     ┃ Ctrl-p                 ┃ Go count frames of a multi-frame image backward                                           ┃ Image         ┃
+┃ sxiv     ┃ Ctrl-Space             ┃ Play/Stop animations of multi-frames images                                               ┃ Image         ┃
+┃ sxiv     ┃ Ctrl-x                 ┃ Send the next key to the external key-handler                                             ┃ General       ┃
+┃ sxiv     ┃ {                      ┃ Devrease gamma correction by count steps                                                  ┃ General       ┃
+┃ sxiv     ┃ D                      ┃ Remove current image from file list and go to next image                                  ┃ General       ┃
+┃ sxiv     ┃ E                      ┃ Fit image to window height                                                                ┃ Image         ┃
+┃ sxiv     ┃ e                      ┃ Fit image to window width                                                                 ┃ Image         ┃
+┃ sxiv     ┃ |                      ┃ Flip image horizontally                                                                   ┃ Image         ┃
+┃ sxiv     ┃ -                      ┃ Flip image vertically                                                                     ┃ Image         ┃
+┃ sxiv     ┃ f                      ┃ Toggle fullscreen mode                                                                    ┃ General       ┃
+┃ sxiv     ┃ g                      ┃ Go to first image                                                                         ┃ General       ┃
+┃ sxiv     ┃ [                      ┃ Go count * 10 images backward                                                             ┃ Image         ┃
+┃ sxiv     ┃ ]                      ┃ Go count * 10 images backward                                                             ┃ Image         ┃
+┃ sxiv     ┃ G                      ┃ To to last image or image count                                                           ┃ General       ┃
+┃ sxiv     ┃ h, Left                ┃ Move selection left count times                                                           ┃ Thumbnail     ┃
+┃ sxiv     ┃ h, Left                ┃ Scroll image 1/5 of window width or count pixel left                                      ┃ Image         ┃
+┃ sxiv     ┃ }                      ┃ Increase gamma correction by count steps                                                  ┃ General       ┃
+┃ sxiv     ┃ j, Down                ┃ Move selection down count times                                                           ┃ Thumbnail     ┃
+┃ sxiv     ┃ j, Down                ┃ Scroll image 1/5 of window height or count pixel down                                     ┃ Image         ┃
+┃ sxiv     ┃ k, Up                  ┃ Move selection up count times                                                             ┃ Thumbnail     ┃
+┃ sxiv     ┃ k, Up                  ┃ Scroll image 1/5 of window height or count pixel up                                       ┃ Image         ┃
+┃ sxiv     ┃ l, Right               ┃ Move selection right count times                                                          ┃ Thumbnail     ┃
+┃ sxiv     ┃ l, Right               ┃ Scroll image 1/5 of window width or count pixel right                                     ┃ Image         ┃
+┃ sxiv     ┃ m                      ┃ Mark/Unmark the current image                                                             ┃ General       ┃
+┃ sxiv     ┃ M                      ┃ Reverse all image marks                                                                   ┃ General       ┃
+┃ sxiv     ┃ N                      ┃ Go count marked images forward                                                            ┃ General       ┃
+┃ sxiv     ┃ n, Space, Shift-Right  ┃ Go count images forward                                                                   ┃ Image         ┃
+┃ sxiv     ┃ P                      ┃ Go count image marked images backward                                                     ┃ General       ┃
+┃ sxiv     ┃ p, Return, Shift-Left  ┃ Go count images backward                                                                  ┃ Image         ┃
+┃ sxiv     ┃ q                      ┃ Quit sxiv                                                                                 ┃ General       ┃
+┃ sxiv     ┃ Return                 ┃ Switch to thumbnail mode                                                                  ┃ General       ┃
+┃ sxiv     ┃ >                      ┃ Rotate image clockwise by 90 degrees                                                      ┃ Image         ┃
+┃ sxiv     ┃ <                      ┃ Rotate image counter-clockwise by 90 degrees                                              ┃ Image         ┃
+┃ sxiv     ┃ R                      ┃ Reload all thumbnails                                                                     ┃ Thumbnail     ┃
+┃ sxiv     ┃ r                      ┃ Reload image                                                                              ┃ General       ┃
+┃ sxiv     ┃ R                      ┃ Rotate image by 180 degrees                                                               ┃ Image         ┃
+┃ sxiv     ┃ ScrollDown             ┃ Zoom out                                                                                  ┃ Image         ┃
+┃ sxiv     ┃ ScrollUp               ┃ Zoom in                                                                                   ┃ Image         ┃
+┃ sxiv     ┃ =                      ┃ Set zoom level to 100% or count%                                                          ┃ Image         ┃
+┃ sxiv     ┃ s                      ┃ Toggle slideshow mode and/or set the delay between images to count seconds.               ┃ Image         ┃
+┃ sxiv     ┃ W                      ┃ Fit image to window                                                                       ┃ Image         ┃
+┃ sxiv     ┃ w                      ┃ Set zoom level to 100% but fit large images into window                                   ┃ Image         ┃
+┃ sxiv     ┃ +                      ┃ Zoom in                                                                                   ┃ General       ┃
+┃ sxiv     ┃ -                      ┃ Zoom out                                                                                  ┃ General       ┃
 
