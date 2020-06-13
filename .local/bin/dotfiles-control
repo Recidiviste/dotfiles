@@ -43,17 +43,17 @@ function update_repo {
 		printf "Copied ${BRED}zathura ${NC}config\n"
 		rsync -a ~/.config/mimeapps.list .config/
 		printf "Copied ${BRED}mimeapps.list ${NC}\n"
-		rsync -a ~/.zshrc .config/
+		rsync -a ~/.zshrc ./
 		printf "Copied ${BRED}zsh ${NC}config\n"
 		rsync -a ~/.config/aliasrc .config/
 		printf "Copied ${BRED} alias ${NC}config\n"
-		rsync -a ~/.profile .config/
+		rsync -a ~/.profile ./
 		printf "Copied ${BRED}profile ${NC}config\n"
 		rsync -a ~/.config/mutt .config/
 		printf "Copied ${BRED}neomutt ${NC}config\n"
 		rsync -a ~/.config/newsboat .config/
 		printf "Copied ${BRED}newsboat ${NC}config\n"
-		git add *
+		git add ./
 		read -p "View changes ? [y/n]: " a
 		[[ $a =~ ^[Yy]$ ]] && git diff ./
 		read -p "Commmit ? [y/n]: " b
