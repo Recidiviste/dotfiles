@@ -1,6 +1,11 @@
-" NeoVim config
-" By Anarchiste
-" github.com/Recidiviste
+" ┏━┓━┏┓━━━━━━━━━━━━━━━━━━
+" ┃┃┗┓┃┃━━━━━━━━━━━━━━━━━━
+" ┃┏┓┗┛┃┏━━┓┏━━┓┏┓┏┓┏┓┏┓┏┓
+" ┃┃┗┓┃┃┃┏┓┃┃┏┓┃┃┗┛┃┣┫┃┗┛┃
+" ┃┃━┃┃┃┃┃━┫┃┗┛┃┗┓┏┛┃┃┃┃┃┃
+" ┗┛━┗━┛┗━━┛┗━━┛━┗┛━┗┛┗┻┻┛
+" ━━━━━━━━━━━━━━━━━━━━━━━━
+" ━━━━━━━━━━━━━━━━━━━━━━━━
 
 " ===================== PLUGINS ============================ "
 
@@ -17,11 +22,9 @@ Plug 'junegunn/fzf', { 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 "Plug 'sheerun/vim-polyglot'
 "	let g:tex_fold_enabled=1
-Plug 'edkolev/tmuxline.vim'
-Plug 'nightsense/rusticated'
-Plug 'ryanoasis/vim-devicons'
-Plug 'aurieh/discord.nvim'
-Plug 'evansalter/vim-checklist'
+Plug 'edkolev/tmuxline.vim' " Tmux matching nvim
+Plug 'ryanoasis/vim-devicons' "Have icons in vim
+Plug 'aurieh/discord.nvim' " Discord status
 
 call plug#end()
 

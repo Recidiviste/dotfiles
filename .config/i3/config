@@ -1,64 +1,58 @@
-##############################################
-#.-. -.   .-. .-. .-. .-.   . . .-. .  . .-. #
-# |  -|   |.. |-| |-' `-.   |\| |-   )(   |  #
-#`-' -'   `-' ` ' '   `-'   ' ` `-' '  `  '  #
-#                                            #
-#.-. .-. . . .-. .-. .-.   .-. .-. .   .-.   #
-#|   | | |\| |-   |  |..   |-   |  |   |-    #
-#`-' `-' ' ` '   `-' `-'   '   `-' `-' `-'   #
-##############################################
+# ━━┏━━━┓━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┏┓━
+# ━━┃┏━┓┃━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┏┛┗┓
+# ┏┓┗┛┏┛┃━━━━┏━━┓┏━━┓━┏━━┓┏━━┓━━━━┏━┓━┏━━┓┏┓┏┓┗┓┏┛
+# ┣┫┏┓┗┓┃━━━━┃┏┓┃┗━┓┃━┃┏┓┃┃━━┫━━━━┃┏┓┓┃┏┓┃┗╋╋┛━┃┃━
+# ┃┃┃┗━┛┃━━━━┃┗┛┃┃┗┛┗┓┃┗┛┃┣━━┃━━━━┃┃┃┃┃┃━┫┏╋╋┓━┃┗┓
+# ┗┛┗━━━┛━━━━┗━┓┃┗━━━┛┃┏━┛┗━━┛━━━━┗┛┗┛┗━━┛┗┛┗┛━┗━┛
+# ━━━━━━━━━━━┏━┛┃━━━━━┃┃━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ━━━━━━━━━━━┗━━┛━━━━━┗┛━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-#############################################
-# This config file was written from scratch #
-# By the one called Anarchiste              #
-# Feel free to use it or modify it          #
-#############################################
 
 ####################
-#     Variables
+#     Variables    #
 ####################
 set $mod Mod4
 set $term --no-startup-id termite
 set $editor nvim
 
 ####################
-#       Font
+#       Font       #
 ####################
 font pango:Code Source Pro Regular 8
 
 ####################
-#  Windows Borders
+#  Windows Borders #
 ####################
 bindsym $mod+Shift+x [class="^.*"] border toggle
 new_window 1pixel
 for_window [class="^.*"] border pixel 2
 
 ####################
-#   Borders colors
+#   Borders colors #
 ####################
 client.background #000000
 client.focused          #ffffff #575976 #ffffff #007A01   #007A01
 client.unfocused        #ffffff #1C1E26 #ffffff #2e9ef4   #26396D
 
 ####################
-# Floating Modifier
+# Floating Modifier#
 ####################
 floating_modifier $mod
 
 ####################
-# Term
+# Term             #
 ####################
 bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec urxvt
 
-####################
-# Kill focused window
-####################
+#######################
+# Kill focused window #
+#######################
 bindsym $mod+Shift+a kill
 
-####################
-#Programms launcher and dmenu-based things
-####################
+############################################
+#Programms launcher and dmenu-based things #
+############################################
 bindsym $mod+a exec rofi -show run
 bindsym $mod+o exec rofi -show drun
 bindsym $mod+Shift+o exec rofi -show window
@@ -68,39 +62,39 @@ bindsym $mod+Shift+y exec btmenu
 
 
 ###################
-# Screenshots
+# Screenshots     #
 ###################
 bindsym Print exec i3-scrot
 bindsym Shift+Print exec termite -e "ranger /home/luc/Images/screenshots"
 
 ###################
-# File Managers
+# File Managers   #
 ###################
 bindsym $mod+p exec thunar
 # bindsym $mod+Shift+p exec pcmanfm
 bindsym $mod+Shift+p exec termite -e "ranger"
 
 ###################
-# Web Browsers
+# Web Browsers    #
 ###################
 bindsym $mod+t exec firefox
 bindsym $mod+Shift+t exec surf duckduckgo.com
 
 ###################
-# Volume control
+# Volume control  #
 ###################
 bindsym XF86AudioLowerVolume exec --no-startup-id  amixer set Master 1%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id  amixer set Master 1%+
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-###################
-# Brightness control
-###################
+######################
+# Brightness control #
+######################
 bindsym XF86MonBrightnessDown exec light -U 5
 bindsym XF86MonBrightnessUp exec light -A 5
 
 ##################
-# Focus Control
+# Focus Control  #
 ##################
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -131,19 +125,19 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 ##################
-# Splitting
+# Splitting      #
 ##################
 bindsym $mod+h split h
 bindsym $mod+v split v
 
-##################
-# Fullscreen Mode
-##################
+###################
+# Fullscreen Mode #
+###################
 bindsym $mod+f fullscreen toggle
 
-##################
-# Change container layout (stacked, tabbed, toggle split)
-##################
+###########################################################
+# Change container layout (stacked, tabbed, toggle split) #
+###########################################################
 bindsym $mod+s layout stacking
 bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
@@ -154,7 +148,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 ##################
-# Workspaces
+# Workspaces     #
 ##################
 set $ws1 "1"
 set $ws2 "2"
@@ -167,9 +161,9 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-##################
-# Switch to workspace
-##################
+#######################
+# Switch to workspace #
+#######################
 bindsym $mod+ampersand workspace $ws1
 bindsym $mod+eacute workspace $ws2
 bindsym $mod+quotedbl workspace $ws3
@@ -181,9 +175,9 @@ bindsym $mod+underscore workspace $ws8
 bindsym $mod+ccedilla workspace $ws9
 bindsym $mod+agrave workspace $ws10
 
-##################
-# Move focused container to workspace
-##################
+#######################################
+# Move focused container to workspace #
+#######################################
 bindsym $mod+Shift+ampersand move container to workspace $ws1
 bindsym $mod+Shift+eacute move container to workspace $ws2
 bindsym $mod+Shift+quotedbl move container to workspace $ws3
@@ -207,26 +201,26 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q exec ./.config/polybar/launch.sh
 
 ##################
-# Exit i3
+# Exit i3        #
 ##################
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 #bindsym $mod+Shift+e exec "i3-msg 'workspace 10; exec oblogout; workspace 10' "
 bindsym $mod+Shift+e exec /home/luc/.config/polybar/scripts/powermenu
 
 #################
-# Lock i3
+# Lock i3       #
 #################
 bindsym $mod+Shift+f exec betterlockscreen -l dim
 bindsym $mod+Shift+z exec i3lock-fancy
 
-#################
-# Wallpaper Control
-#################
+#####################
+# Wallpaper Control #
+#####################
 bindsym $mod+i exec /home/luc/bin/random-wall
 bindsym $mod+Shift+i exec /home/luc/bin/current-wal
 
 #################
-# Resize window
+# Resize window #
 #################
 mode "Resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -261,7 +255,7 @@ mode "Resize" {
 bindsym $mod+r mode "Resize"
 
 #################
-# Default gaps
+# Default gaps  #
 #################
 gaps outer 0
 gaps inner 15
@@ -273,7 +267,7 @@ gaps bottom 0
 gaps left 0
 
 #################
-# Gaps variables
+# Gaps variables#
 #################
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -286,7 +280,7 @@ set $mode_gaps_bottom Bottom Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_left Left Gaps: +|-|0 (local), Shift + +|-|0 (global)
 
 #################
-# Gaps Mode
+# Gaps Mode     #
 #################
 bindsym $mod+g mode "$mode_gaps"
 
@@ -402,7 +396,7 @@ mode "$mode_gaps_left" {
 
 
 #################
-# MPD control
+# MPD control   #
 #################
 bindsym XF86AudioPlay exec mpd-control toggle
 bindsym XF86AudioPause exec mpd-control toggle
@@ -415,9 +409,9 @@ bindsym Shift+XF86AudioPause exec mpd-control volume-down
 bindsym Shift+XF86AudioPrev exec mpd-control menu
 
 
-#################
-# Some programms to start
-#################
+###########################
+# Some programms to start #
+###########################
 exec --no-startup-id /home/luc/.config/polybar/launch.sh
 exec --no-startup-id xautolock -locker "i3lock-fancy" -time 15
 exec --no-startup-id compton
@@ -428,7 +422,7 @@ exec --no-startup-id regen-wall-list
 exec --no-startup-id regen-zathura
 
 #################
-# Applets
+# Applets       #
 #################
 exec --no-startup-id nm-applet
 exec --no-startup-id copyq

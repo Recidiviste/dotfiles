@@ -1,5 +1,16 @@
 #!/bin/sh
 
+
+# ┏┓━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ┃┃━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ┃┗━┓┏━━┓┏━━┓┏┓┏┓┏┓┏┓┏┓┏━┓┏━━┓
+# ┃┏┓┃┃━━┫┃┏┓┃┃┗┛┗┛┃┃┗┛┃┃┏┛┃┏━┛
+# ┃┗┛┃┣━━┃┃┗┛┃┗┓┏┓┏┛┃┃┃┃┃┃━┃┗━┓
+# ┗━━┛┗━━┛┃┏━┛━┗┛┗┛━┗┻┻┛┗┛━┗━━┛
+# ━━━━━━━━┃┃━━━━━━━━━━━━━━━━━━━
+# ━━━━━━━━┗┛━━━━━━━━━━━━━━━━━━━
+
+
 ############
 # Monitors #
 ############
@@ -46,5 +57,5 @@ bspc rule -a Sxiv state=floating
 #############
 # Autostart #
 #############
-notify-send -i ~/Images/arch.png "Welcome $(whoami)!" &
-$HOME/.config/bspwm/autostart.sh # All programs to start
+notify-send -i ~/.local/share/welcome.png "Welcome $(whoami)!" & # Welcome user
+"$HOME/.config/bspwm/autostart.sh" # All programs to start

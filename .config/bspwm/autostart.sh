@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# ┏━━━┓━━━━━┏┓━━━━━━━━━━┏┓━━━━━━━━━━┏┓━━━━━
+# ┃┏━┓┃━━━━┏┛┗┓━━━━━━━━┏┛┗┓━━━━━━━━┏┛┗┓━━━━
+# ┃┃━┃┃┏┓┏┓┗┓┏┛┏━━┓┏━━┓┗┓┏┛┏━━┓━┏━┓┗┓┏┛┏━━┓
+# ┃┗━┛┃┃┃┃┃━┃┃━┃┏┓┃┃━━┫━┃┃━┗━┓┃━┃┏┛━┃┃━┃━━┫
+# ┃┏━┓┃┃┗┛┃━┃┗┓┃┗┛┃┣━━┃━┃┗┓┃┗┛┗┓┃┃━━┃┗┓┣━━┃
+# ┗┛━┗┛┗━━┛━┗━┛┗━━┛┗━━┛━┗━┛┗━━━┛┗┛━━┗━┛┗━━┛
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
 #######
 # TMP #
 #######
@@ -17,10 +27,10 @@ rm -f ~/.lesshst ~/.wget-hsts
 
 systemctl --user import-environment DISPLAY # To permit to dunst to work
 setxkbmap -layout fr # Put the keyboard in azerty
-xmodmap $HOME/.Xmodmap # Custom keyboard mappings
+xmodmap "$HOME/.Xmodmap" # Custom keyboard mappings
 xsetroot -cursor_name left_ptr # Basic cursor and not a cross
 sxhkd & # Start Simple Hotkey Daemon
-$HOME/.fehbg # Restore last wallpaper
+"$HOME/.fehbg" # Restore last wallpaper
 # $HOME/.local/bin/random-wall # Random wallpaper
 
 
@@ -29,9 +39,9 @@ $HOME/.fehbg # Restore last wallpaper
 #########################
 
 picom -fb --dbus & # Compositor
-$HOME/.config/polybar/launch.sh & # Polybar
+"$HOME/.config/polybar/launch.sh" & # Polybar
 echo > Images/wallpapers/.wall-list # Recreate wall list
-xautolock -locker "~/.local/bin/i3lock-blue.sh" -time 15 & # Autolock
+xautolock -locker "$HOME/.local/bin/i3lock-blue.sh" -time 15 & # Autolock
 mpd & # Music Player Daemon
 
 
