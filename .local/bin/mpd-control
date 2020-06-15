@@ -1,69 +1,42 @@
-#!/bin/fish
-# Script to control mpd
+#!/bin/bash
 
-function check_toggle
-	set -l check (mpc | grep "\[" | awk '{print $1}')
-	if [ $check = "[playing]" ]
-		dunstify --urgency=normal --icon=player_play --replace=14062003 "MPD Control" "Music Playing !"
-	else if [ $check = "[paused]" ]
-		dunstify --urgency=normal --icon=player_pause --replace=14062003 "MPD Control" "Music Paused !"
+
+send_notification() {
+	[ "$(dunstify -A f,focus --replace=14062003 --icon="$1" "MPD Control" "$2")" = f ] && xdo activate -N ncmpcpp && exit 0
+}
+
+
+check_toggle() {
+	check=$(mpc | grep "\[" | awk '{print $1}')
+	if [ "$check" = "[playing]" ]
+	then
+		send_notification "player_play" "Music Playing !"
+	elif [ "$check" = "[paused]" ]
+	then
+		send_notification "player_pause" "Music Paused"
 	else
-		dunstify --urgency=normal --replace=14062003 "MPD Control" "No status found"
-	end
-end
+		send_notification "audio-headphones" "No status found"
+	fi
+}
 
-function volume-up
-	set -l volume (mpc | grep volume | awk '{print $2}')
-	dunstify --urgency=normal --icon=audio-volume-high --replace=14062003 "MPD Control" "Volume increased \nCurent Volume: $volume"
-end
+volume_up() {
+	volume=$(mpc | grep volume | awk '{print $2}')
+	mpc volume +2
+	send_notification "audio-volume-high" "Volume increased \nCurrent Volume: $volume"
+}
 
-function volume-down
-	set -l volume (mpc | grep volume | awk '{print $2}')
-	dunstify --urgency=normal --icon=audio-volume-low --replace=14062003 "MPD Control" "Volume decreased \nCurent Volume: $volume"
-end
+volume_down() {
+	volume=$(mpc | grep volume | awk '{print $2}')
+	mpc volume -2
+	send_notification "audio-volume-low" "Volume decreased \nCurrent Volume: $volume"
+}
 
-function music_info
-	set -l music_info (mpc | head --lines=1)
-	dunstify --urgency=normal --icon=com.deepin.Music --replace=14062003 "MPD Control" "Music Playing: \n$music_info"
-end
+music_info() {
+	info=$(mc | head --lines=1)
+	send_notification "com.deepin.Music" "Music Playing:\n $info"
+}
 
-function mpd_menu
-	set -l menu (echo "Stop|Toggle|Next|Previous|Volume-Up|Volume-Down|Info|Clear|Start|Shutdown|Restart" | rofi -sep "|" -dmenu -i -p "MPD-Control" | head --lines 1)
-	switch $menu
-		case "Stop"
-			mpc stop
-		case "Toggle"
-			mpc toggle
-		case "Next"
-			mpc next
-		case "Previous"
-			mpc prev
-		case "Volume-Up"
-			mpc volume +2
-		case "Volume-Down"
-			mpc volume -2
-		case "Info"
-			music_info
-		case "Clear"
-			mpc clear
-		case "Start"
-			mpd
-		case "Shutdown"
-			mpd_shutdown
-		case "Restart"
-			mpd_shutdown
-			mpd
-	end
-end
-
-function mpd_shutdown
-	mpc clear
-	mpc volume 50
-	mpd --kill
-end
-
-
-function mpd_help
+mpd_help() {
 	echo "Usage: mpd-control [COMMAND or OPTION]"
 	echo "Options:"
 	echo "   -h, --help"
@@ -84,70 +57,51 @@ function mpd_help
 	echo "   info"
 	echo "       Send a notification displaying the information of the"
 	echo "       music currently playing"
-	echo "   menu"
-	echo "       Display a rofi menu to control mpd"
-	echo "   shutodwn"
-	echo "       Stop the the current iteration of mpd running and"
-	echo "       clear the playlist"
-	echo "   start"
-	echo "       Start mpd"
-	echo "   restart"
-	echo "       Restart mpd "
 	echo "   help"
 	echo "       Display Help"
 	echo ""
 	exit 0
-end
+}
 
 
-if [ -z $argv ]
+if [ $# -eq 0 ]
+then
 	echo "Missing options!"
         echo "(run mpd-control -h for help)"
 	exit 1
-else if [ -n $argv  ]
-	switch $argv
-	case "-h"
-		mpd_help
-	case "--help"
-		mpd_help
-	case "stop"
-	mpc stop
-		dunstify --urgency=normal --icon=player_stop --replace=14062003 "MPD Control" "Music Stopped !"
-	case "toggle"
-		mpc toggle
-		check_toggle
-	case "next"
-		mpc next
-		dunstify --urgency=normal --icon=player_fwd --replace=14062003 "MPD Control" "Next Music !"
-	case "prev"
-		mpc prev
-		dunstify --urgency=normal --icon=player_rew --replace=14062003 "MPD Control" "Previous Music !"
-	case "volume-up"
-		mpc volume +2
-		volume-up
-	case "volume-down"
-		mpc volume -2
-		volume-down
-	case "info"
-		music_info
-	case "menu"
-		mpd_menu
-	case "shutdown"
-		mpd_shutdown
-	case "start"
-		mpd
-	case "restart"
-		mpd_shutdown
-		mpd
-	case "help"
-		mpd_help
-	case 0
-		echo "run mpd-control -h for help"
-		exit 1
-	case '*'
-		echo "Unknown Command"
-		echo "run mpd-control -h for help"
-		exit 1
-	end
-end
-
+else
+	case $1 in
+		-h)
+		       mpd_help;;
+	       --help)
+		       mpd_help;;
+	       stop)
+		       mpc stop
+		       send_notification "player_stop" "Music Stopped !";;
+	       toggle)
+		       mpc toggle
+		       check_toggle;;
+	       next)
+		       mpc next
+		       send_notification "player_fwd" "Next Music";;
+	       prev)
+		       mpc prev
+		       send_notification "player_rew" "Previous Music !";;
+	       volume-up)
+		       volume-up;;
+	       volume-down)
+		       volume-down;;
+	       info)
+		       music_info;;
+	       help)
+		       mpd_help;;
+	       0)
+		       echo "run mpd-control -h for help"
+		       exit 1;;
+		       
+	       *)
+		       echo "Unknown Command"
+		       echo "run mpd-control -h for help"
+		       exit 1;;
+esac
+fi
