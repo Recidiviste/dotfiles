@@ -113,6 +113,41 @@ Stolen from Luke Smith, [dmenuunicode](https://github.com/Recidiviste/dotfiles/b
 [fontpreview](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/fontpreview) is a very cool script that lets you browse through the available fonts and preview them.
 
 
+### lock.sh
+* Type : `bash`
+* Dependencies : `i3lock`
+
+[lock.sh](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/lock.sh) is a tiny script that lock my computer with custom settings
+
+
+### manpdf
+* Type : `sh`
+* Dependencies : `zathura`
+
+[manpdf](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/manpdf) is used to view man pages in zathura (pdf viewer).
+
+
+### mpd-control
+* Type : `bash`
+* Dependencies : `dunstify`, `mpc`, `xdo`
+
+[mpd-control](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/mpd-control) is another control script used to change the state of mpd (next/previous song, stop, pause...) while notifying me.
+
+
+### newsboat-notifier
+* Type : `sh`
+* Dependencies : `dunst`, `xdo`
+
+[newsboat-notifier](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/newsboat-notifier) is a wrapper script used by newsboat to notify me for news, and focus the window with newsboat if I middle-click on the notification
+
+
+### opout
+* Type : `sh`
+* Dependencies : `zathura`
+
+[opout](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/opout) is a script I stole from Luke Smith. It opens the corresponding document of the source passed (tex -> pdf, html/Rmd -> browser).
+
+
 ### perscrot
 * Type : `bash`
 * Dependencies : `shotgun`, `xclip`, `dmenu`, `libnotify`
