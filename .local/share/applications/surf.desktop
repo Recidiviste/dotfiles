@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Surf Browser
-Exec=/home/luc/.local/bin/surf %u
+Exec=/usr/local/bin/surf %u
