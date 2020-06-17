@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 
 send_notification() {
@@ -61,7 +61,7 @@ mpd_help() {
 	echo "       music currently playing"
 	echo "   help"
 	echo "       Display Help"
-	echo ""
+	echo 
 	exit 0
 }
 

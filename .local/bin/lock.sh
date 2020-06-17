@@ -14,7 +14,6 @@ verifcolor=fff28aff
 wrongcolor=d23c3dff
 timecolor=ffffffff
 datecolor=ffffffff
-loginbox=000000ff
 font="FiraCode NF:style=Bold"
 locktext='This computer is locked.'
 wrongsize=16

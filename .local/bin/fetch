@@ -4,18 +4,15 @@
 echo
 
 # color escapes
-BLK="$(printf "\033[30m")"
 RED="$(printf "\033[31m")"
 GRN="$(printf "\033[32m")"
 YLW="$(printf "\033[33m")"
 BLU="$(printf "\033[34m")"
 PUR="$(printf "\033[35m")"
 CYN="$(printf "\033[36m")"
-WHT="$(printf "\033[37m")"
 RST="$(printf "\033[0m")"
 
 BAR="━━━━━"
-LEN=6
 OUTT="$RED$BAR$GRN$BAR$YLW$BAR$BLU$BAR$PUR$BAR$CYN$BAR$RST"
 
 format_info() {

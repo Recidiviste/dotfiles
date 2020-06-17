@@ -1,14 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 
 
-if [ -z $1 ]
+if [ -z "$1" ]
 then
-	cd /home/luc/Images/wallpapers/
-	chosen_wall="$(ls | shuf -n 1)"
-	feh --bg-fill $chosen_wall
-	echo $chosen_wall >> .wall-list
-elif [ -n $1 ]
+	chosen_wall="$(find /home/luc/Images/wallpapers -maxdepth 1 | shuf -n 1)"
+	feh --bg-fill "$chosen_wall"
+	echo "$chosen_wall" >> .wall-list
+elif [ -n "$1" ]
 	then
-		feh --bg-fill $1
-		echo $(basename $1) >> $WALLPAPER/.wall-list
+		feh --bg-fill "$1"
+		name=$(basename "$1")
+		echo "$name" >> "$WALLPAPER"/.wall-list
 	fi
