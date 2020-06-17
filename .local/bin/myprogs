@@ -1,0 +1,35 @@
+#!/bin/sh
+
+
+chk() {
+    for i ; do
+        command -v "$i" >/dev/null || >&2 echo "* $i"
+    done
+}
+
+# Basics
+chk awk sed grep pgrep file tree gcc make
+
+# Usuals
+chk bspwm st tabbed dunst notify-send wal sxhkd pmenu
+
+# Programs
+chk exa nnn mpv ffmpeg zathura youtube-dl sxiv
+
+# Dev
+chk nvim git
+
+# X11
+chk xprop xev xmodmap xdo
+
+# Networking
+chk ssh curl rsync sshd wpa_supplicant
+
+# Monitoring
+chk htop gotop 
+
+# Must have
+chk mpd ncmpcpp calcurse neomutt newsboat
+
+# Big
+chk firefox libreoffice

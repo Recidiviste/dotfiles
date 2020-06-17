@@ -1,0 +1,35 @@
+#!/bin/sh
+
+
+echo
+
+# color escapes
+BLK="$(printf "\033[30m")"
+RED="$(printf "\033[31m")"
+GRN="$(printf "\033[32m")"
+YLW="$(printf "\033[33m")"
+BLU="$(printf "\033[34m")"
+PUR="$(printf "\033[35m")"
+CYN="$(printf "\033[36m")"
+WHT="$(printf "\033[37m")"
+RST="$(printf "\033[0m")"
+
+BAR="━━━━━"
+LEN=6
+OUTT="$RED$BAR$GRN$BAR$YLW$BAR$BLU$BAR$PUR$BAR$CYN$BAR$RST"
+
+format_info() {
+    printf '%s%-8s %s%21s\n' "$BLU" "$1" \
+        "$RST" "$2"
+}
+
+echo "${OUTT}"
+format_info os		"$(grep 'PRETTY' /etc/os-release | cut -d\" -f2)"
+format_info kernel	"$(uname -r | cut -d- -f1,2)"
+format_info editor	"$EDITOR""$($EDITOR --version | head -n1 | cut -d\  -f2)"
+format_info packages	"$(pacman -Qq | wc -l)"" (pacman)"
+format_info shell	"${SHELL##*/}"
+format_info term	"$TERM"
+format_info uptime	"$(uptime | cut -d\  -f5 | sed 's/:/h/;s/,/m/')"
+echo "${OUTT}"
+echo

@@ -2,7 +2,9 @@
 
 
 send_notification() {
-	[ "$(dunstify -A f,focus --replace=14062003 --icon="$1" "MPD Control" "$2")" = f ] && xdo activate -N ncmpcpp && exit 0
+	r=$(dunstify -A f,focus --replace=14062003 --timeout=2000 --icon="$1" "MPD Control" "$2")
+	[ "$r" = f ] && xdo activate -N ncmpcpp
+	exit 0
 }
 
 

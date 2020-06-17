@@ -1,0 +1,36 @@
+#!/bin/sh
+
+base=$(
+cat <<EOF | pmenu | cat &
+Linux
+	linux		r/linux
+	arch		r/archlinux
+	unixporn	r/unixporn
+	usability	r/UsabilityPorn
+Math
+	memes		r/mathmemes
+	math		r/math
+	jokes		r/MathJokes
+Walls
+	wall		r/wallpaper
+	walls		r/wallpapers
+	dump		r/wallpaperdump
+Leftist
+	Memes
+		GenZ	r/GenZommunist
+		dank	r/DankLeft
+		fixed	r/FixedPoliticalMemes
+	Cultures
+		prog	r/socialistprogrammers
+		movies	r/SocialistMovies
+	Learning
+		reds	r/Communism101
+		anars	r/Anarchy101
+	francais	r/anarchisme
+	Online
+		hack	r/HackBloc
+		stats	r/LeftStatistics
+EOF
+)
+
+[ -n "$base" ] && firefox "https://www.reddit.com/$base"
