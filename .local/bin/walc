@@ -9,12 +9,14 @@ wall1=$(printf "%s" "$walls" | awk '{w = 1; for (--w; w >=0; w--){printf "%s\t",
 # if no picture is marked in sxiv, exit.
 if [ -z "$walls" ]
 then
-exit 0
+	exit 0
 else
-$SingleWallMenu
+	$SingleWallMenu
 fi
 
 SingleWallMenu="dmenu -i -l 5 -p Options"
 SingleWallOptions=$(printf "fill\ncenter\ntile\nscale\nseamless" | $SingleWallMenu)
+
+echo "$SingleWallOptions"
 
 feh --bg-"$SingleWallOptions" "$wall1"

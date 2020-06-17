@@ -6,7 +6,6 @@ export EDITOR="nvim"
 export TERMINAL="termite"
 export BROWSER="firefox"
 export READER="zathura"
-export NNN_LOCKER="bashlock"
 
 # Path
 export PATH=/home/luc/.local/share/cargo/bin:/home/luc/.local/share/go/bin:/home/luc/.local/bin:$PATH$( find $HOME/bin/ -type d -printf ":%p" )
@@ -21,6 +20,7 @@ export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_DEFAULT_OPTS='--layout=reverse --preview-window right:70%'
 
 # NNN
+export NNN_LOCKER="binarix"
 export NNN_PLUG='p:preview-tabbed;P:preview-tui'
 
 # Cleanup

@@ -11,10 +11,13 @@ chk() {
 chk awk sed grep pgrep file tree gcc make
 
 # Usuals
-chk bspwm st tabbed dunst notify-send wal sxhkd pmenu
+chk bspwm st tabbed dunst notify-send wal sxhkd surf polybar
+
+# Launchers
+chk pmenu dmenu rofi
 
 # Programs
-chk exa nnn mpv ffmpeg zathura youtube-dl sxiv
+chk exa nnn mpv ffmpeg zathura youtube-dl sxiv thunar
 
 # Dev
 chk nvim git
@@ -32,4 +35,7 @@ chk htop gotop
 chk mpd ncmpcpp calcurse neomutt newsboat
 
 # Big
-chk firefox libreoffice
+chk firefox libreoffice qutebrowser
+
+# Others
+chk scrot 
