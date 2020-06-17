@@ -106,11 +106,25 @@ Stolen from Luke Smith, [dmenuunicode](https://github.com/Recidiviste/dotfiles/b
 [dunst-reload](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/dunst-reload) is a script to restart dunst and test every urgency level.
 
 
+### fetch
+* Type : `sh`
+* Dependencies : `pacman`
+
+[fetch](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/fetch) is a tiny fetch script, that displays informations about my system. 
+
+
 ### fontpreview
 * Type : `bash`
 * Dependencies : `imagemagick`, `xdotool`, `fzf`, `sxiv`
 
 [fontpreview](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/fontpreview) is a very cool script that lets you browse through the available fonts and preview them.
+
+
+### games.sh
+* Type : `sh`
+* Dependencies : `dmenu`, `steam`, some games
+
+[games.sh](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/games.sh) is a dmenu script that let me choose a game to play from my Steam Library without having to manually launch Steam.
 
 
 ### lock.sh
@@ -134,6 +148,13 @@ Stolen from Luke Smith, [dmenuunicode](https://github.com/Recidiviste/dotfiles/b
 [mpd-control](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/mpd-control) is another control script used to change the state of mpd (next/previous song, stop, pause...) while notifying me.
 
 
+### myprogs
+* Type : `sh`
+* Dependencies : None
+
+[myprogs](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/myprogs) is a script that I use to check if all my programs are on my computer.
+
+
 ### newsboat-notifier
 * Type : `sh`
 * Dependencies : `dunst`, `xdo`
@@ -155,6 +176,13 @@ Stolen from Luke Smith, [dmenuunicode](https://github.com/Recidiviste/dotfiles/b
 [perscrot](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/perscrot) is a useful script that lets you choose if you want to take a screenshot of a window/zone or of the full screen, and if you want to store it into your clipboard or in your directory for screenshots.
 
 
+### pmenu.sh
+* Type : `sh`
+* Dependencies : `pmenu`, all the programs launched from the menu
+
+[pmenu.sh](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/pmenu.sh) is a menu launched from sxhkd that let me launch some of my most frequent programs.
+
+
 ### powermenu
 * Type : `bash`
 * Dependencies : `lock.sh` script, `bspwm` (made for it but changeable)
@@ -167,6 +195,13 @@ Stolen from Luke Smith, [dmenuunicode](https://github.com/Recidiviste/dotfiles/b
 * Dependencies : `feh`
 
 [random-wall](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/random-wall), as the name tells it, set a random wallpaper from the directory containing them.
+
+
+### reddit
+* Type : `sh`
+* Dependencies : `pmenu`, `firefox`
+
+[reddit](https://github.com/Recidiviste/dotfiles/blob/master/.local/bin/reddit) is a tiny script using pmenu. It's a fast way to launch firefox on the subreddit I want to visit.
 
 
 ### sxivr
