@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -53,12 +53,14 @@ update_repo() {
 		rsync -a ~/.config/newsboat .config/
 		printf "Copied ${BRED}newsboat ${NC}config\n"
 		git add ./
-		read -p "View changes ? [y/n]: " a
+		printf "View changes ? [y/n]: "
+		read -r a
 		[[ $a =~ ^[Yy]$ ]] && git diff ./
-		read -p "Commmit ? [y/n]: " b
+		printf "Commit ? [y/n]: "
+		read -r b
 		if [[ $b =~ ^[Yy]$ ]]
 		then
-			read -p "Message : " m
+			read -r -p "Message : " m
 			if [[ -z "$m" ]]
 			then
 				printf "${BRED}Empty message${NC}"
@@ -67,7 +69,7 @@ update_repo() {
 				git commit -m "$m"
 			fi
 		fi
-		read -p -r "Push ? [y/n]: " c
+		read -r -p "Push ? [y/n]: " c
 		if [[ $c =~ ^[Yy]$ ]] ; then git push origin master; fi
 }
 
@@ -82,7 +84,7 @@ update_pc() {
 wals_changes() {
 	printf "${BLUE} 1${BWHITE} Import Wallpapers ${BGREEN}($(ls $WAL_DIR/wallpapers | wc -l) wals on git)
 ${BLUE} 2${BWHITE} Upload to Github ${BGREEN}($(ls $WALLPAPER | wc -l) wals on PC)${NC}\n"
-	read -p -r "Choose: " choice
+	read -r -p "Choose: " choice
 	case $choice in
 		1) cd "$WAL_DIR" || exit 1
 			git pull
@@ -93,9 +95,9 @@ ${BLUE} 2${BWHITE} Upload to Github ${BGREEN}($(ls $WALLPAPER | wc -l) wals on P
 			rsync -av ./* "$WAL_DIR"/wallpapers --exclude .wall-list
 			cd "$WAL_DIR" || exit 1
 			git add ./*
-			read -p -r "Commit ? [y/n]: " c
+			read -r -p "Commit ? [y/n]: " c
 			if [[ $c =~ ^[Yy]$ ]] ; then git commit -m "Scripted Update"; fi
-			read -p "Push ? [y/n]: " d
+			read -r -p "Push ? [y/n]: " d
 			if [[ $d =~ ^[Yy]$ ]] ; then git push origin master; fi
 			;;
 		*) printf "${RED}!!${NC} Bad option ${RED}!!${NC}"
@@ -109,7 +111,8 @@ ${GREEN}|  ${BLUE}1 · ${NC}Upload to Github    ${GREEN}|
 ${GREEN}|  ${BLUE}2 · ${NC}Import configs      ${GREEN}|
 ${GREEN}|  ${BLUE}3 · ${NC}Wallpapers Changes  ${GREEN}|
 ${RED}+${GREEN}--------------------------${RED}+${NC}\n"
-read -p "Choose: " dec
+printf "Choose : "
+read -r dec
 
 case $dec in
 	1) update_repo
@@ -118,7 +121,7 @@ case $dec in
 		;;
 	3) wals_changes
 		;;
-	*) printf "${RED}!!${NC} Bad option ${RED}!!${NC}\n"
+	*) printf "${RED}%s${NC} %s ${RED}%s${NC}\n" "!!" "Bad Option" "!!"
 		false
 esac
 

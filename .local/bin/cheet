@@ -32,7 +32,7 @@ _show() {
 	add_items="ctrl-a:execute(_add)+abort"
 	reload_all="ctrl-r:execute(_format)+reload(cat \"$SHEET_FILE\")"
 	
-	cat "$SHEET_FILE" | fzf --preview "_preview -c {}" --preview-window=up:70%:wrap --bind="$cp_ac,$cp_ka,$cp_dp,$cp_nt,$edit_all,$edit_single,$add_items,$reload_all,$sd_notify"
+	cat "$SHEET_FILE" | fzf --preview "_preview -c {}" --preview-window=up:50%:wrap --bind="$cp_ac,$cp_ka,$cp_dp,$cp_nt,$edit_all,$edit_single,$add_items,$reload_all,$sd_notify"
 }
 
 
@@ -67,7 +67,8 @@ _edit_single() {
 	item=( $(cat $temp_file) )
 	others=$(grep -v -F "$@" "$SHEET_FILE")
 	
-	( echo -E "$DM ${item[0]} $DM ${item[1]} $DM ${item[2]} $DM ${item[3]} $DM"; echo -E "$others"  ) > $SHEET_FILE
+	( echo -E "$DM ${item[0]} $DM ${item[1]} $DM ${item[2]} $DM ${item[3]} $DM"; echo -E "$others"  ) > "$SHEET_FILE"
+	rm "$temp_file"
 
 	_format
 	_show
@@ -111,6 +112,7 @@ _add() {
 	done
 
 	printf '%s\n' "${items[@]}" >> "$SHEET_FILE"
+	rm "$temp_file"
 
 	_format
 	_show
