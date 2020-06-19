@@ -19,6 +19,8 @@ image/jpeg=img.desktop;feh.desktop
 image/png=img.desktop;feh.desktop
 application/ogg=video.desktop
 application/x-shockwave-flash=video.desktop
+application/csv=tab.desjtop
+application/x-sc=tab.desktop
 application/pdf=pdf.desktop
 application/x-compressed-tar=xarchiver.desktop
 application/x-tar=xarchiver.desktop
@@ -34,8 +36,5 @@ video/x-theora=video.desktop
 video/quicktime=video.desktop
 video/x-ms-wmv=video.desktop
 audio/mpeg=video.desktop
-x-scheme-handler/discord-577632370602278912=discord-577632370602278912.desktop
-x-scheme-handler/discord-474605546457137157=discord-474605546457137157.desktop
-
-[Added Associations]
 application/octetstream=text.desktop;
+audio/wav=video.desktop;
